@@ -1,0 +1,19 @@
+{
+  "id": "misc_trees_graphs_core",
+  "title": "Trees & Graphs — Core",
+  "track": "misc",
+  "description": "Traversals, DAGs, shortest paths, MSTs.",
+  "items": [
+    { "id": "bfs_support", "type": "mcq", "prompt": "BFS uses which data structure?", "choices": ["Stack", "Queue", "Priority Queue", "Set"], "answer": "Queue" },
+    { "id": "dfs_support", "type": "mcq", "prompt": "DFS typically uses which data structure?", "choices": ["Stack", "Queue", "Priority Queue", "Deque"], "answer": "Stack" },
+    { "id": "dag_def", "type": "mcq", "prompt": "A directed acyclic graph is abbreviated as…", "choices": ["BST", "DAG", "MST", "RBT"], "answer": "DAG" },
+    { "id": "topo_sort", "type": "mcq", "prompt": "Topological sort applies to which graphs?", "choices": ["Undirected graphs", "Graphs with cycles", "DAGs", "Trees only"], "answer": "DAGs" },
+    { "id": "shortest_path_nonneg", "type": "input", "prompt": "Shortest paths in a graph with non-negative edge weights: algorithm?", "answer": ["dijkstra", "dijkstra's", "dijkstras"], "hints": ["Starts with D"] },
+    { "id": "bfs_time", "type": "input", "prompt": "Time complexity of BFS in adjacency-list graph?", "answer": ["o(v+e)", "O(V+E)", "v+e"], "hints": ["Big-O"] },
+    { "id": "mst_algo", "type": "mcq", "prompt": "Pick a minimum spanning tree algorithm:", "choices": ["Kruskal's", "Dijkstra's", "Bellman–Ford", "Floyd–Warshall"], "answer": "Kruskal's" },
+    { "id": "kruskal_ds", "type": "input", "prompt": "Data structure commonly used in Kruskal's algorithm?", "answer": ["union find", "union-find", "disjoint set", "disjoint-set", "dsu"], "hints": ["Two words"] },
+    { "id": "tree_preorder", "type": "mcq", "prompt": "Pre-order traversal order: ", "choices": ["Left, Root, Right", "Root, Left, Right", "Left, Right, Root", "Right, Root, Left"], "answer": "Root, Left, Right" },
+    { "id": "graph_repr", "type": "mcq", "prompt": "Which representation is usually more space-efficient for sparse graphs?", "choices": ["Adjacency matrix", "Adjacency list", "Incidence matrix", "Edge matrix"], "answer": "Adjacency list" }
+  ]
+}
+

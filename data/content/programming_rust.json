@@ -1,0 +1,16 @@
+{
+  "id": "programming_rust_basics",
+  "title": "Rust — Basics",
+  "track": "programming",
+  "description": "println!, variables, references, cargo.",
+  "items": [
+    { "id": "hello_world", "type": "code", "prompt": "Write Rust that prints: Hello, Rust!", "checkTokens": ["fn main", "println!", "Hello", "Rust"], "hints": ["Use println! in main"] },
+    { "id": "mutable_var", "type": "mcq", "prompt": "Which declares a mutable variable?", "choices": ["let mut x = 5;", "var x = 5;", "let x: mut i32 = 5;", "x := 5"], "answer": "let mut x = 5;" },
+    { "id": "immutable_ref", "type": "mcq", "prompt": "Which creates an immutable reference to x?", "choices": ["let r = &x;", "let r = &mut x;", "*x", "Box::new(x)"], "answer": "let r = &x;" },
+    { "id": "cargo_new", "type": "input", "prompt": "Cargo command to create a new project?", "answer": ["cargo new"], "hints": ["Two words"] },
+    { "id": "file_ext", "type": "input", "prompt": "Common Rust source file extension?", "answer": [".rs", "rs"], "hints": ["Starts with a dot"] },
+    { "id": "growable_collection", "type": "mcq", "prompt": "Which is a growable collection?", "choices": ["Vec<T>", "[T; 4]", "(T, U)", "&str"], "answer": "Vec<T>" },
+    { "id": "result_fn", "type": "code", "prompt": "Write a function `run` that returns Result<(), String> and returns Ok(()).", "checkTokens": ["fn run", "Result", "Ok(())", "<(), String>"] }
+  ]
+}
+

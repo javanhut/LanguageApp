@@ -1,0 +1,14 @@
+{
+  "id": "spoken_spanish_listening_a1",
+  "title": "Spanish — Listening A1",
+  "track": "spoken",
+  "langFrom": "en",
+  "langTo": "es",
+  "description": "Basic dictation and recognition with TTS.",
+  "items": [
+    { "id": "listen_hola", "type": "listen", "prompt": "Listen and type what you hear.", "answer": ["hola"], "data": { "tts": { "text": "hola", "lang": "es-ES" } } },
+    { "id": "listen_buenos_dias", "type": "listen", "prompt": "Listen and type.", "answer": ["buenos días", "buenos dias"], "data": { "tts": { "text": "buenos días", "lang": "es-ES" } } },
+    { "id": "listen_como_estas", "type": "listen", "prompt": "Listen and type.", "answer": ["¿cómo estás?", "como estas?"], "data": { "tts": { "text": "¿cómo estás?", "lang": "es-ES" } } }
+  ]
+}
+

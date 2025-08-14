@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LanguageApp — Learn Anything</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="/app.js" as="script">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand" id="logo" style="cursor: pointer;">🌟 LanguageApp <span id="env-badge" class="env-badge hidden">DEV</span></div>
+    <div class="nav-section">
+      <button class="nav active" data-nav="onboarding">Learn</button>
+      <button class="nav" data-nav="stats">Stats</button>
+      <button id="reset" class="nav danger">Reset</button>
+    </div>
+    <div class="stats">
+      <span id="level">Lvl 1</span>
+      <span id="xp">0 XP</span>
+      <span id="streak">🔥 0</span>
+    </div>
+  </header>
+
+  <main id="app" class="no-bottom-padding">
+    <!-- Welcome/Setup Modal -->
+    <div id="welcome-modal" class="modal-overlay hidden">
+      <div class="modal">
+        <h2>🌟 Welcome to LanguageApp!</h2>
+        <p>Let's personalize your learning experience</p>
+        
+        <div class="form-group">
+          <label for="user-name">What's your name? (Optional)</label>
+          <input type="text" id="user-name" placeholder="Enter your name" />
+        </div>
+        
+        <div class="form-group">
+          <label>How do you identify? (Optional - helps with gendered language)</label>
+          <div class="gender-options">
+            <button type="button" class="gender-btn" data-gender="male">♂️ Male</button>
+            <button type="button" class="gender-btn" data-gender="female">♀️ Female</button>
+            <button type="button" class="gender-btn" data-gender="neutral">⚡ Other/Prefer not to say</button>
+          </div>
+        </div>
+        
+        <div class="modal-actions">
+          <button id="skip-setup" class="ghost">Skip Setup</button>
+          <button id="save-profile" class="primary-btn">Let's Learn! 🚀</button>
+        </div>
+      </div>
+    </div>
+
+    <section id="view-onboarding" class="view">
+      <h1 id="welcome-title">Choose a Language</h1>
+      <div id="language-grid" class="language-grid"></div>
+    </section>
+
+    <section id="view-language-lessons" class="view hidden">
+      <div class="practice-header">
+        <button id="back-to-languages" class="ghost">← Languages</button>
+        <h2 id="language-title">Lessons</h2>
+      </div>
+      <div id="lessons" class="subject-grid"></div>
+    </section>
+
+    <section id="view-practice" class="view hidden">
+      <div class="practice-header">
+        <button id="back-to-subjects" class="ghost">← Lessons</button>
+        <h2 id="subject-title">Practice</h2>
+        <div class="progress"><div id="progress-bar"></div></div>
+      </div>
+      
+      <!-- Lesson Navigation -->
+      <div id="lesson-nav" class="lesson-nav hidden">
+        <button id="prev-lesson" class="nav-btn" disabled>← Previous</button>
+        <span id="lesson-info">Lesson 1 of 10</span>
+        <button id="next-lesson" class="nav-btn" disabled>Next →</button>
+      </div>
+
+      <!-- Mode Selection -->
+      <div id="mode-selection" class="mode-selection">
+        <button id="learn-mode" class="mode-btn active">📚 Learn</button>
+        <button id="practice-mode" class="mode-btn">🎯 Practice</button>
+        <button id="review-mode" class="mode-btn">🔄 Review</button>
+      </div>
+      
+      <div id="card" class="card">
+        <div id="prompt" class="prompt">Loading…</div>
+        <div id="teaching-card" class="teaching-card hidden">
+          <div id="word-display" class="word-display"></div>
+          <div id="word-meaning" class="word-meaning"></div>
+          <div id="word-pronunciation" class="word-pronunciation"></div>
+          <button id="got-it-btn" class="primary-btn">Got it! 👍</button>
+        </div>
+        <div id="answer-section" class="answer-section">
+          <div id="helper-buttons" class="helper-buttons"></div>
+          <div id="answer-input-container" class="answer-input-container">
+            <div id="answer-area" class="answer-area"></div>
+            <div id="accent-dropdown" class="accent-dropdown hidden">
+              <button id="accent-toggle" class="accent-toggle">á ñ ç ▼</button>
+              <div id="accent-menu" class="accent-menu"></div>
+            </div>
+          </div>
+        </div>
+        <div id="hints" class="hints"></div>
+      </div>
+    </section>
+
+    <section id="view-stats" class="view hidden">
+      <h2>Your Stats</h2>
+      <div class="stats-grid">
+        <div class="stat"><div class="label">Level</div><div id="stat-level" class="value">1</div></div>
+        <div class="stat"><div class="label">XP</div><div id="stat-xp" class="value">0</div></div>
+        <div class="stat"><div class="label">Streak</div><div id="stat-streak" class="value">0</div></div>
+        <div class="stat"><div class="label">Progress</div><div id="stat-progress" class="value">0%</div></div>
+      </div>
+      <h3>Badges</h3>
+      <div id="badges" class="badge-row"></div>
+    </section>
+  </main>
+
+
+  <div id="toast" class="toast hidden"></div>
+  <div id="dev-watermark" class="dev-watermark hidden">DEV</div>
+
+  <!-- Lesson Completion Modal -->
+  <div id="lesson-completion-modal" class="modal-overlay hidden">
+    <div class="modal">
+      <h2>🎉 Lesson Completed!</h2>
+      <p id="completion-message">Great job! You've successfully completed this lesson.</p>
+      
+      <div class="completion-stats">
+        <div class="stat">
+          <div class="label">Assessment Score</div>
+          <div id="completion-score" class="value">80%</div>
+        </div>
+      </div>
+      
+      <div class="modal-actions">
+        <button id="stay-lesson" class="ghost">Stay Here</button>
+        <button id="next-lesson" class="primary-btn">Next Lesson →</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

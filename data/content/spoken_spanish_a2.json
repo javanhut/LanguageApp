@@ -1,0 +1,21 @@
+{
+  "id": "spoken_spanish_es_a2",
+  "title": "Spanish — A2 Essentials",
+  "track": "spoken",
+  "langFrom": "en",
+  "langTo": "es",
+  "description": "Polite forms, past/future, directions, and everyday phrases.",
+  "items": [
+    { "id": "polite_would_like", "type": "input", "prompt": "Translate: I would like a coffee.", "answer": ["me gustaría un café", "me gustaria un cafe"], "hints": ["Conditional form", "Accent optional"] },
+    { "id": "past_went_market", "type": "input", "prompt": "Translate: Yesterday I went to the market.", "answer": ["ayer fui al mercado"], "hints": ["Preterite of ir"] },
+    { "id": "future_going_travel", "type": "input", "prompt": "Translate: We are going to travel tomorrow.", "answer": ["vamos a viajar mañana", "vamos a viajar manana"], "hints": ["ir + a + infinitive"] },
+    { "id": "direction_station", "type": "input", "prompt": "Translate: Where is the train station?", "answer": ["¿dónde está la estación de tren?", "donde esta la estacion de tren?"], "hints": ["Accent optional"] },
+    { "id": "time_what_time", "type": "input", "prompt": "Translate: What time is it?", "answer": ["¿qué hora es?", "que hora es?"], "hints": ["Common question"] },
+    { "id": "could_help_me", "type": "input", "prompt": "Translate: Could you help me?", "answer": ["¿podría ayudarme?", "podria ayudarme?"], "hints": ["Polite conditional"] },
+    { "id": "mcq_gender_plural", "type": "mcq", "prompt": "Choose the correct plural: the houses.", "choices": ["los casas", "las casas", "las caso", "los casases"], "answer": "las casas" },
+    { "id": "mcq_preterite_comer_yo", "type": "mcq", "prompt": "Preterite of comer (yo):", "choices": ["comé", "comí", "como", "comía"], "answer": "comí" },
+    { "id": "transport_ticket", "type": "input", "prompt": "Translate: A one-way ticket, please.", "answer": ["un billete de ida, por favor", "un boleto de ida, por favor"], "hints": ["billete/boleta regional"] },
+    { "id": "hotel_reservation", "type": "input", "prompt": "Translate: I have a reservation.", "answer": ["tengo una reserva", "tengo una reservación", "tengo una reservacion"], "hints": ["Two variants"] }
+  ]
+}
+

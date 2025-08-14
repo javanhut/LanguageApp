@@ -1,0 +1,20 @@
+{
+  "id": "italian_basics", 
+  "title": "Italian - Basic Phrases",
+  "track": "spoken",
+  "langFrom": "en",
+  "langTo": "it",
+  "description": "Essential Italian phrases with proper accents",
+  "items": [
+    { "id": "it_1", "type": "input", "prompt": "Hello", "answer": ["ciao"], "hints": ["Informal greeting"] },
+    { "id": "it_2", "type": "input", "prompt": "Thank you", "answer": ["grazie"], "hints": ["Gratitude"] },
+    { "id": "it_3", "type": "input", "prompt": "There is", "answer": ["c'è", "c'e"], "hints": ["Existence"] },
+    { "id": "it_4", "type": "input", "prompt": "Because", "answer": ["perché", "perche"], "hints": ["Reason"] },
+    { "id": "it_5", "type": "input", "prompt": "Coffee", "answer": ["caffè", "caffe"], "hints": ["Beverage"] },
+    { "id": "it_6", "type": "input", "prompt": "City", "answer": ["città", "citta"], "hints": ["Urban area"] },
+    { "id": "it_7", "type": "input", "prompt": "More", "answer": ["più", "piu"], "hints": ["Quantity"] },
+    { "id": "it_8", "type": "input", "prompt": "Can", "answer": ["può", "puo"], "hints": ["Ability"] },
+    { "id": "it_9", "type": "input", "prompt": "Quality", "answer": ["qualità", "qualita"], "hints": ["Standard"] },
+    { "id": "it_10", "type": "input", "prompt": "University", "answer": ["università", "universita"], "hints": ["Education"] }
+  ]
+}

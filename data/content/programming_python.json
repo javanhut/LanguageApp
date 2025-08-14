@@ -1,0 +1,14 @@
+{
+  "id": "programming_python_basics",
+  "title": "Python — Basics",
+  "track": "programming",
+  "description": "Print, variables, and simple syntax.",
+  "items": [
+    { "id": "print_hello", "type": "code", "prompt": "Write Python that prints: Hello, World!", "checkTokens": ["print", "Hello", "World"], "hints": ["Use print(...) "] },
+    { "id": "var_assign", "type": "mcq", "prompt": "Which assigns 42 to x?", "choices": ["x := 42", "x = 42", "let x = 42", "var x = 42"], "answer": "x = 42" },
+    { "id": "string_len", "type": "input", "prompt": "In Python, function to get string length?", "answer": ["len", "len()"], "hints": ["Built-in function"] },
+    { "id": "comment", "type": "mcq", "prompt": "How to write a comment?", "choices": ["// comment", "# comment", "/* comment */", "-- comment"], "answer": "# comment" },
+    { "id": "list_literal", "type": "input", "prompt": "Python literal for an empty list?", "answer": ["[]"], "hints": ["Square brackets"] }
+  ]
+}
+

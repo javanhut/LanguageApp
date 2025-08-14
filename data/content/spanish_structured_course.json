@@ -1,0 +1,191 @@
+{
+  "id": "spanish_structured_course",
+  "title": "Spanish Complete Course (10 Lessons)",
+  "track": "spoken",
+  "langFrom": "en",
+  "langTo": "es",
+  "description": "Complete Spanish course with grammar, vocabulary, and conversations",
+  "lessons": [
+    {
+      "id": "lesson_1",
+      "title": "Lesson 1: Greetings & Introductions",
+      "grammar": "Spanish uses inverted question marks (¿?) and exclamation marks (¡!). Gender matters: 'o' endings are typically masculine, 'a' endings feminine.",
+      "vocabulary": ["hola", "adiós", "buenos días", "buenas tardes", "buenas noches", "por favor", "gracias", "de nada"],
+      "items": [
+        { "id": "l1_1", "type": "input", "prompt": "Hello", "answer": ["hola"], "hints": ["Most common greeting"] },
+        { "id": "l1_2", "type": "input", "prompt": "Good morning", "answer": ["buenos días", "buenos dias"], "hints": ["Until noon"] },
+        { "id": "l1_3", "type": "input", "prompt": "Good afternoon", "answer": ["buenas tardes"], "hints": ["After noon"] },
+        { "id": "l1_4", "type": "input", "prompt": "Good night", "answer": ["buenas noches"], "hints": ["Evening/night"] },
+        { "id": "l1_5", "type": "input", "prompt": "Please", "answer": ["por favor"], "hints": ["Polite request"] },
+        { "id": "l1_6", "type": "input", "prompt": "Thank you", "answer": ["gracias"], "hints": ["Show gratitude"] },
+        { "id": "l1_7", "type": "input", "prompt": "You're welcome", "answer": ["de nada"], "hints": ["Response to thanks"] },
+        { "id": "l1_8", "type": "input", "prompt": "Translate: ¿Cómo te llamas?", "answer": ["what is your name", "what's your name"], "hints": ["Asking someone's name"] },
+        { "id": "l1_9", "type": "input", "prompt": "My name is Maria", "answer": ["me llamo maria", "me llamo María", "mi nombre es maria"], "hints": ["Introducing yourself"] },
+        { "id": "l1_10", "type": "input", "prompt": "Nice to meet you", "answer": ["mucho gusto", "encantado", "encantada"], "hints": ["Greeting someone new"] }
+      ]
+    },
+    {
+      "id": "lesson_2",
+      "title": "Lesson 2: Basic Questions & Answers",
+      "grammar": "Question words: ¿Qué? (What?), ¿Cómo? (How?), ¿Dónde? (Where?), ¿Cuándo? (When?), ¿Por qué? (Why?). All question words have accent marks.",
+      "vocabulary": ["sí", "no", "cómo", "qué", "dónde", "cuándo", "por qué", "porque"],
+      "items": [
+        { "id": "l2_1", "type": "input", "prompt": "Yes", "answer": ["sí", "si"], "hints": ["Affirmative"] },
+        { "id": "l2_2", "type": "input", "prompt": "No", "answer": ["no"], "hints": ["Negative"] },
+        { "id": "l2_3", "type": "input", "prompt": "How are you?", "answer": ["¿cómo estás?", "como estas", "¿qué tal?", "que tal"], "hints": ["Common greeting"] },
+        { "id": "l2_4", "type": "input", "prompt": "I'm fine", "answer": ["estoy bien", "bien"], "hints": ["Response to how are you"] },
+        { "id": "l2_5", "type": "input", "prompt": "And you?", "answer": ["¿y tú?", "y tu", "¿y usted?"], "hints": ["Returning the question"] },
+        { "id": "l2_6", "type": "input", "prompt": "What?", "answer": ["¿qué?", "que"], "hints": ["Question word"] },
+        { "id": "l2_7", "type": "input", "prompt": "Where?", "answer": ["¿dónde?", "donde"], "hints": ["Location question"] },
+        { "id": "l2_8", "type": "input", "prompt": "When?", "answer": ["¿cuándo?", "cuando"], "hints": ["Time question"] },
+        { "id": "l2_9", "type": "input", "prompt": "Why?", "answer": ["¿por qué?", "por que"], "hints": ["Reason question"] },
+        { "id": "l2_10", "type": "input", "prompt": "Because", "answer": ["porque"], "hints": ["Giving a reason"] }
+      ]
+    },
+    {
+      "id": "lesson_3",
+      "title": "Lesson 3: Numbers 1-20",
+      "grammar": "Numbers 1-15 have unique names. From 16-19, numbers combine 'dieci' + unit. Number 20 is 'veinte'.",
+      "vocabulary": ["uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "diez"],
+      "items": [
+        { "id": "l3_1", "type": "mcq", "prompt": "Select: One", "choices": ["uno", "dos", "tres", "cuatro"], "answer": "uno" },
+        { "id": "l3_2", "type": "mcq", "prompt": "Select: Two", "choices": ["uno", "dos", "tres", "cuatro"], "answer": "dos" },
+        { "id": "l3_3", "type": "mcq", "prompt": "Select: Three", "choices": ["uno", "dos", "tres", "cuatro"], "answer": "tres" },
+        { "id": "l3_4", "type": "input", "prompt": "Four", "answer": ["cuatro"], "hints": ["4"] },
+        { "id": "l3_5", "type": "input", "prompt": "Five", "answer": ["cinco"], "hints": ["5"] },
+        { "id": "l3_6", "type": "input", "prompt": "Ten", "answer": ["diez"], "hints": ["10"] },
+        { "id": "l3_7", "type": "input", "prompt": "Eleven", "answer": ["once"], "hints": ["11"] },
+        { "id": "l3_8", "type": "input", "prompt": "Fifteen", "answer": ["quince"], "hints": ["15"] },
+        { "id": "l3_9", "type": "input", "prompt": "Twenty", "answer": ["veinte"], "hints": ["20"] },
+        { "id": "l3_10", "type": "mcq", "prompt": "Select: Seventeen", "choices": ["diecisiete", "dieciocho", "diecinueve", "veinte"], "answer": "diecisiete" }
+      ]
+    },
+    {
+      "id": "lesson_4",
+      "title": "Lesson 4: Days & Time",
+      "grammar": "Days of the week are masculine. Use 'el' for singular days, 'los' for plural. Months are not capitalized in Spanish.",
+      "vocabulary": ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo", "hoy", "mañana", "ayer"],
+      "items": [
+        { "id": "l4_1", "type": "input", "prompt": "Monday", "answer": ["lunes"], "hints": ["First workday"] },
+        { "id": "l4_2", "type": "input", "prompt": "Friday", "answer": ["viernes"], "hints": ["TGIF"] },
+        { "id": "l4_3", "type": "input", "prompt": "Sunday", "answer": ["domingo"], "hints": ["Weekend"] },
+        { "id": "l4_4", "type": "input", "prompt": "Today", "answer": ["hoy"], "hints": ["Present day"] },
+        { "id": "l4_5", "type": "input", "prompt": "Tomorrow", "answer": ["mañana"], "hints": ["Next day"] },
+        { "id": "l4_6", "type": "input", "prompt": "Yesterday", "answer": ["ayer"], "hints": ["Previous day"] },
+        { "id": "l4_7", "type": "input", "prompt": "What time is it?", "answer": ["¿qué hora es?", "que hora es"], "hints": ["Asking time"] },
+        { "id": "l4_8", "type": "input", "prompt": "It's one o'clock", "answer": ["es la una"], "hints": ["1:00"] },
+        { "id": "l4_9", "type": "input", "prompt": "It's two o'clock", "answer": ["son las dos"], "hints": ["2:00"] },
+        { "id": "l4_10", "type": "input", "prompt": "In the morning", "answer": ["por la mañana", "en la mañana"], "hints": ["AM"] }
+      ]
+    },
+    {
+      "id": "lesson_5",
+      "title": "Lesson 5: Family & People",
+      "grammar": "Family nouns have gender: padre/madre, hermano/hermana. Use 'mi' for my, 'tu' for your (informal), 'su' for his/her/your(formal).",
+      "vocabulary": ["familia", "madre", "padre", "hermano", "hermana", "hijo", "hija", "amigo", "amiga"],
+      "items": [
+        { "id": "l5_1", "type": "input", "prompt": "Family", "answer": ["familia"], "hints": ["Relatives"] },
+        { "id": "l5_2", "type": "input", "prompt": "Mother", "answer": ["madre", "mamá", "mama"], "hints": ["Female parent"] },
+        { "id": "l5_3", "type": "input", "prompt": "Father", "answer": ["padre", "papá", "papa"], "hints": ["Male parent"] },
+        { "id": "l5_4", "type": "input", "prompt": "Brother", "answer": ["hermano"], "hints": ["Male sibling"] },
+        { "id": "l5_5", "type": "input", "prompt": "Sister", "answer": ["hermana"], "hints": ["Female sibling"] },
+        { "id": "l5_6", "type": "input", "prompt": "My family", "answer": ["mi familia"], "hints": ["Possessive + family"] },
+        { "id": "l5_7", "type": "input", "prompt": "Friend (male)", "answer": ["amigo"], "hints": ["Male friend"] },
+        { "id": "l5_8", "type": "input", "prompt": "Friend (female)", "answer": ["amiga"], "hints": ["Female friend"] },
+        { "id": "l5_9", "type": "input", "prompt": "I have two brothers", "answer": ["tengo dos hermanos"], "hints": ["Possession"] },
+        { "id": "l5_10", "type": "input", "prompt": "She is my sister", "answer": ["ella es mi hermana", "es mi hermana"], "hints": ["Identification"] }
+      ]
+    },
+    {
+      "id": "lesson_6",
+      "title": "Lesson 6: Food & Drink",
+      "grammar": "Use 'quiero' (I want), 'me gusta' (I like), 'necesito' (I need). Articles: el/la (the), un/una (a/an).",
+      "vocabulary": ["agua", "comida", "pan", "leche", "café", "té", "cerveza", "vino", "carne", "pollo"],
+      "items": [
+        { "id": "l6_1", "type": "input", "prompt": "Water", "answer": ["agua"], "hints": ["H2O"] },
+        { "id": "l6_2", "type": "input", "prompt": "Food", "answer": ["comida"], "hints": ["Meal"] },
+        { "id": "l6_3", "type": "input", "prompt": "Bread", "answer": ["pan"], "hints": ["Bakery item"] },
+        { "id": "l6_4", "type": "input", "prompt": "Coffee", "answer": ["café", "cafe"], "hints": ["Morning drink"] },
+        { "id": "l6_5", "type": "input", "prompt": "I want water", "answer": ["quiero agua"], "hints": ["Expressing desire"] },
+        { "id": "l6_6", "type": "input", "prompt": "I like coffee", "answer": ["me gusta el café", "me gusta el cafe", "me gusta café"], "hints": ["Preference"] },
+        { "id": "l6_7", "type": "input", "prompt": "The menu, please", "answer": ["el menú por favor", "el menu por favor", "la carta por favor"], "hints": ["Restaurant request"] },
+        { "id": "l6_8", "type": "input", "prompt": "How much does it cost?", "answer": ["¿cuánto cuesta?", "cuanto cuesta"], "hints": ["Asking price"] },
+        { "id": "l6_9", "type": "input", "prompt": "It's delicious", "answer": ["está delicioso", "esta delicioso", "está rico"], "hints": ["Compliment"] },
+        { "id": "l6_10", "type": "input", "prompt": "The bill, please", "answer": ["la cuenta por favor"], "hints": ["Payment request"] }
+      ]
+    },
+    {
+      "id": "lesson_7",
+      "title": "Lesson 7: Places & Directions",
+      "grammar": "Use 'estar' for location: estoy (I am), estás (you are), está (he/she/it is). Prepositions: en (in), cerca de (near), lejos de (far from).",
+      "vocabulary": ["casa", "escuela", "trabajo", "tienda", "restaurante", "hotel", "baño", "calle", "ciudad", "país"],
+      "items": [
+        { "id": "l7_1", "type": "input", "prompt": "House/Home", "answer": ["casa"], "hints": ["Where you live"] },
+        { "id": "l7_2", "type": "input", "prompt": "School", "answer": ["escuela", "colegio"], "hints": ["Education place"] },
+        { "id": "l7_3", "type": "input", "prompt": "Store", "answer": ["tienda"], "hints": ["Shopping place"] },
+        { "id": "l7_4", "type": "input", "prompt": "Where is the bathroom?", "answer": ["¿dónde está el baño?", "donde esta el baño", "¿dónde está el servicio?"], "hints": ["Important question"] },
+        { "id": "l7_5", "type": "input", "prompt": "To the right", "answer": ["a la derecha"], "hints": ["Direction"] },
+        { "id": "l7_6", "type": "input", "prompt": "To the left", "answer": ["a la izquierda"], "hints": ["Direction"] },
+        { "id": "l7_7", "type": "input", "prompt": "Straight ahead", "answer": ["todo recto", "derecho"], "hints": ["Direction"] },
+        { "id": "l7_8", "type": "input", "prompt": "Near", "answer": ["cerca"], "hints": ["Proximity"] },
+        { "id": "l7_9", "type": "input", "prompt": "Far", "answer": ["lejos"], "hints": ["Distance"] },
+        { "id": "l7_10", "type": "input", "prompt": "I'm at home", "answer": ["estoy en casa"], "hints": ["Location"] }
+      ]
+    },
+    {
+      "id": "lesson_8",
+      "title": "Lesson 8: Common Verbs",
+      "grammar": "Spanish verbs end in -ar, -er, or -ir. Basic conjugation for -ar verbs: o, as, a, amos, áis, an.",
+      "vocabulary": ["hablar", "comer", "vivir", "trabajar", "estudiar", "comprar", "necesitar", "ayudar", "caminar", "escuchar"],
+      "items": [
+        { "id": "l8_1", "type": "input", "prompt": "To speak", "answer": ["hablar"], "hints": ["Communication"] },
+        { "id": "l8_2", "type": "input", "prompt": "To eat", "answer": ["comer"], "hints": ["Consumption"] },
+        { "id": "l8_3", "type": "input", "prompt": "To live", "answer": ["vivir"], "hints": ["Existence"] },
+        { "id": "l8_4", "type": "input", "prompt": "I speak Spanish", "answer": ["hablo español", "yo hablo español"], "hints": ["First person"] },
+        { "id": "l8_5", "type": "input", "prompt": "You eat", "answer": ["comes", "tú comes", "tu comes"], "hints": ["Second person"] },
+        { "id": "l8_6", "type": "input", "prompt": "He works", "answer": ["él trabaja", "el trabaja", "trabaja"], "hints": ["Third person"] },
+        { "id": "l8_7", "type": "input", "prompt": "We study", "answer": ["estudiamos", "nosotros estudiamos"], "hints": ["First person plural"] },
+        { "id": "l8_8", "type": "input", "prompt": "I need help", "answer": ["necesito ayuda"], "hints": ["Request"] },
+        { "id": "l8_9", "type": "input", "prompt": "Can you help me?", "answer": ["¿puedes ayudarme?", "puedes ayudarme", "¿me puedes ayudar?"], "hints": ["Polite request"] },
+        { "id": "l8_10", "type": "input", "prompt": "I don't understand", "answer": ["no entiendo", "no comprendo"], "hints": ["Confusion"] }
+      ]
+    },
+    {
+      "id": "lesson_9",
+      "title": "Lesson 9: Descriptions & Adjectives",
+      "grammar": "Adjectives agree with gender and number: alto/alta (tall), buenos/buenas (good). Usually come after the noun.",
+      "vocabulary": ["grande", "pequeño", "bueno", "malo", "bonito", "feo", "nuevo", "viejo", "fácil", "difícil"],
+      "items": [
+        { "id": "l9_1", "type": "input", "prompt": "Big/Large", "answer": ["grande"], "hints": ["Size"] },
+        { "id": "l9_2", "type": "input", "prompt": "Small", "answer": ["pequeño", "pequeña"], "hints": ["Size"] },
+        { "id": "l9_3", "type": "input", "prompt": "Good", "answer": ["bueno", "buena", "bien"], "hints": ["Quality"] },
+        { "id": "l9_4", "type": "input", "prompt": "Beautiful", "answer": ["bonito", "bonita", "hermoso", "hermosa", "bello", "bella"], "hints": ["Appearance"] },
+        { "id": "l9_5", "type": "input", "prompt": "The house is big", "answer": ["la casa es grande"], "hints": ["Description"] },
+        { "id": "l9_6", "type": "input", "prompt": "She is pretty", "answer": ["ella es bonita", "es bonita", "ella es guapa"], "hints": ["Description"] },
+        { "id": "l9_7", "type": "input", "prompt": "It's easy", "answer": ["es fácil", "es facil"], "hints": ["Difficulty"] },
+        { "id": "l9_8", "type": "input", "prompt": "Very good", "answer": ["muy bueno", "muy bien"], "hints": ["Emphasis"] },
+        { "id": "l9_9", "type": "input", "prompt": "Too expensive", "answer": ["demasiado caro", "muy caro"], "hints": ["Price"] },
+        { "id": "l9_10", "type": "input", "prompt": "It's important", "answer": ["es importante"], "hints": ["Significance"] }
+      ]
+    },
+    {
+      "id": "lesson_10",
+      "title": "Lesson 10: Travel & Conversation",
+      "grammar": "Useful phrases for travel. Formal 'usted' vs informal 'tú'. Conditional 'quisiera' (I would like) is more polite than 'quiero'.",
+      "vocabulary": ["aeropuerto", "hotel", "pasaporte", "maleta", "avión", "tren", "autobús", "taxi", "billete", "reserva"],
+      "items": [
+        { "id": "l10_1", "type": "input", "prompt": "Airport", "answer": ["aeropuerto"], "hints": ["Flying from"] },
+        { "id": "l10_2", "type": "input", "prompt": "I have a reservation", "answer": ["tengo una reserva", "tengo una reservación"], "hints": ["Hotel check-in"] },
+        { "id": "l10_3", "type": "input", "prompt": "Do you speak English?", "answer": ["¿hablas inglés?", "hablas ingles", "¿habla inglés?", "habla ingles"], "hints": ["Language help"] },
+        { "id": "l10_4", "type": "input", "prompt": "I'm lost", "answer": ["estoy perdido", "estoy perdida", "me perdí"], "hints": ["Need directions"] },
+        { "id": "l10_5", "type": "input", "prompt": "How do I get to...?", "answer": ["¿cómo llego a?", "como llego a", "¿cómo voy a?"], "hints": ["Asking directions"] },
+        { "id": "l10_6", "type": "input", "prompt": "I would like a room", "answer": ["quisiera una habitación", "quisiera una habitacion", "quiero una habitación"], "hints": ["Hotel request"] },
+        { "id": "l10_7", "type": "input", "prompt": "Is there WiFi?", "answer": ["¿hay wifi?", "hay wifi", "¿hay internet?"], "hints": ["Modern necessity"] },
+        { "id": "l10_8", "type": "input", "prompt": "Could you repeat that?", "answer": ["¿puedes repetir?", "puedes repetir", "¿puede repetir?", "repite por favor"], "hints": ["Clarification"] },
+        { "id": "l10_9", "type": "input", "prompt": "Emergency!", "answer": ["¡emergencia!", "emergencia", "¡socorro!", "socorro"], "hints": ["Help needed"] },
+        { "id": "l10_10", "type": "input", "prompt": "Have a good trip!", "answer": ["¡buen viaje!", "buen viaje", "que tengas buen viaje"], "hints": ["Farewell wish"] }
+      ]
+    }
+  ],
+  "items": []
+}

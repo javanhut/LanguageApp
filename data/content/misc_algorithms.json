@@ -1,0 +1,12 @@
+{
+  "id": "misc_algorithms_fundamentals",
+  "title": "Algorithms — Fundamentals",
+  "track": "misc",
+  "description": "Big-O, sorting, and core ideas.",
+  "items": [
+    { "id": "bigo_nlogn", "type": "mcq", "prompt": "Average time complexity of Merge Sort?", "choices": ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"], "answer": "O(n log n)" },
+    { "id": "stable_sort", "type": "mcq", "prompt": "Which is stable?", "choices": ["Quick Sort", "Heap Sort", "Merge Sort", "Selection Sort"], "answer": "Merge Sort" },
+    { "id": "binary_search", "type": "input", "prompt": "Binary search requires the array to be…", "answer": ["sorted"], "hints": ["One word"] }
+  ]
+}
+

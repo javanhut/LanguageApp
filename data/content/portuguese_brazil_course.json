@@ -1,0 +1,191 @@
+{
+  "id": "portuguese_brazil_course",
+  "title": "Brazilian Portuguese Complete Course (10 Lessons)",
+  "track": "spoken",
+  "langFrom": "en",
+  "langTo": "pt",
+  "description": "Complete Brazilian Portuguese course with grammar, vocabulary, and conversations",
+  "lessons": [
+    {
+      "id": "lesson_1",
+      "title": "Lesson 1: Greetings & Basic Phrases",
+      "grammar": "Portuguese has formal (você/o senhor/a senhora) and informal (tu - less common in Brazil) forms. Brazilian Portuguese tends to drop pronouns more than European Portuguese.",
+      "vocabulary": ["olá", "oi", "tchau", "bom dia", "boa tarde", "boa noite", "obrigado/obrigada", "por favor", "com licença", "desculpe"],
+      "items": [
+        { "id": "l1_1", "type": "input", "prompt": "Hello (informal)", "answer": ["oi", "olá"], "hints": ["Most common greeting"] },
+        { "id": "l1_2", "type": "input", "prompt": "Good morning", "answer": ["bom dia"], "hints": ["Until noon"] },
+        { "id": "l1_3", "type": "input", "prompt": "Good afternoon", "answer": ["boa tarde"], "hints": ["After noon"] },
+        { "id": "l1_4", "type": "input", "prompt": "Good evening/night", "answer": ["boa noite"], "hints": ["Evening greeting"] },
+        { "id": "l1_5", "type": "input", "prompt": "Thank you (said by a man)", "answer": ["obrigado"], "hints": ["Male speaker"] },
+        { "id": "l1_6", "type": "input", "prompt": "Thank you (said by a woman)", "answer": ["obrigada"], "hints": ["Female speaker"] },
+        { "id": "l1_7", "type": "input", "prompt": "Please", "answer": ["por favor"], "hints": ["Polite request"] },
+        { "id": "l1_8", "type": "input", "prompt": "Excuse me", "answer": ["com licença", "com licenca"], "hints": ["Getting attention"] },
+        { "id": "l1_9", "type": "input", "prompt": "Sorry", "answer": ["desculpe", "desculpa"], "hints": ["Apology"] },
+        { "id": "l1_10", "type": "input", "prompt": "Goodbye (informal)", "answer": ["tchau", "até logo", "ate logo"], "hints": ["Casual farewell"] }
+      ]
+    },
+    {
+      "id": "lesson_2",
+      "title": "Lesson 2: Introductions & Personal Information",
+      "grammar": "Verbs 'ser' (permanent) vs 'estar' (temporary). Ser: eu sou, você é, ele/ela é. Estar: eu estou, você está, ele/ela está.",
+      "vocabulary": ["nome", "chamar", "prazer", "conhecer", "morar", "trabalhar", "estudar", "idade", "anos", "brasileiro/brasileira"],
+      "items": [
+        { "id": "l2_1", "type": "input", "prompt": "What is your name?", "answer": ["qual é seu nome", "qual e seu nome", "como você se chama", "como voce se chama"], "hints": ["Asking name"] },
+        { "id": "l2_2", "type": "input", "prompt": "My name is João", "answer": ["meu nome é joão", "meu nome e joao", "me chamo joão", "me chamo joao"], "hints": ["Introduction"] },
+        { "id": "l2_3", "type": "input", "prompt": "Nice to meet you", "answer": ["prazer em conhecê-lo", "prazer em conhece-lo", "muito prazer", "prazer"], "hints": ["Meeting someone"] },
+        { "id": "l2_4", "type": "input", "prompt": "How are you?", "answer": ["como vai", "como você está", "como voce esta", "tudo bem"], "hints": ["Greeting question"] },
+        { "id": "l2_5", "type": "input", "prompt": "I'm fine", "answer": ["estou bem", "tudo bem", "bem"], "hints": ["Response"] },
+        { "id": "l2_6", "type": "input", "prompt": "Where are you from?", "answer": ["de onde você é", "de onde voce e", "você é de onde"], "hints": ["Origin question"] },
+        { "id": "l2_7", "type": "input", "prompt": "I am Brazilian (male)", "answer": ["sou brasileiro", "eu sou brasileiro"], "hints": ["Nationality"] },
+        { "id": "l2_8", "type": "input", "prompt": "I am Brazilian (female)", "answer": ["sou brasileira", "eu sou brasileira"], "hints": ["Nationality"] },
+        { "id": "l2_9", "type": "input", "prompt": "How old are you?", "answer": ["quantos anos você tem", "quantos anos voce tem", "qual é sua idade"], "hints": ["Age question"] },
+        { "id": "l2_10", "type": "input", "prompt": "I am 25 years old", "answer": ["tenho 25 anos", "tenho vinte e cinco anos", "eu tenho 25 anos"], "hints": ["Age response"] }
+      ]
+    },
+    {
+      "id": "lesson_3",
+      "title": "Lesson 3: Numbers, Days & Time",
+      "grammar": "Numbers 1-10: um/uma, dois/duas, três, quatro, cinco, seis, sete, oito, nove, dez. Gender agreement for 1 and 2.",
+      "vocabulary": ["um", "dois", "três", "quatro", "cinco", "hoje", "amanhã", "ontem", "semana", "mês", "ano", "hora", "minuto"],
+      "items": [
+        { "id": "l3_1", "type": "mcq", "prompt": "Select: One (masculine)", "choices": ["um", "uma", "dois", "duas"], "answer": "um" },
+        { "id": "l3_2", "type": "mcq", "prompt": "Select: Two (feminine)", "choices": ["dois", "duas", "três", "quatro"], "answer": "duas" },
+        { "id": "l3_3", "type": "input", "prompt": "Three", "answer": ["três", "tres"], "hints": ["3"] },
+        { "id": "l3_4", "type": "input", "prompt": "Ten", "answer": ["dez"], "hints": ["10"] },
+        { "id": "l3_5", "type": "input", "prompt": "Today", "answer": ["hoje"], "hints": ["Present day"] },
+        { "id": "l3_6", "type": "input", "prompt": "Tomorrow", "answer": ["amanhã", "amanha"], "hints": ["Next day"] },
+        { "id": "l3_7", "type": "input", "prompt": "Yesterday", "answer": ["ontem"], "hints": ["Previous day"] },
+        { "id": "l3_8", "type": "input", "prompt": "What time is it?", "answer": ["que horas são", "que horas sao", "que hora é"], "hints": ["Time question"] },
+        { "id": "l3_9", "type": "input", "prompt": "Monday", "answer": ["segunda-feira", "segunda feira", "segunda"], "hints": ["Weekday"] },
+        { "id": "l3_10", "type": "input", "prompt": "Sunday", "answer": ["domingo"], "hints": ["Weekend"] }
+      ]
+    },
+    {
+      "id": "lesson_4",
+      "title": "Lesson 4: Family & Relationships",
+      "grammar": "Possessive pronouns: meu/minha (my), seu/sua (your), nosso/nossa (our). Articles must agree with gender: o pai (the father), a mãe (the mother).",
+      "vocabulary": ["família", "pai", "mãe", "filho", "filha", "irmão", "irmã", "marido", "esposa", "avô", "avó", "primo", "prima"],
+      "items": [
+        { "id": "l4_1", "type": "input", "prompt": "Family", "answer": ["família", "familia"], "hints": ["Relatives"] },
+        { "id": "l4_2", "type": "input", "prompt": "Mother", "answer": ["mãe", "mae", "mamãe"], "hints": ["Female parent"] },
+        { "id": "l4_3", "type": "input", "prompt": "Father", "answer": ["pai", "papai"], "hints": ["Male parent"] },
+        { "id": "l4_4", "type": "input", "prompt": "Son", "answer": ["filho"], "hints": ["Male child"] },
+        { "id": "l4_5", "type": "input", "prompt": "Daughter", "answer": ["filha"], "hints": ["Female child"] },
+        { "id": "l4_6", "type": "input", "prompt": "My brother", "answer": ["meu irmão", "meu irmao"], "hints": ["Male sibling"] },
+        { "id": "l4_7", "type": "input", "prompt": "My sister", "answer": ["minha irmã", "minha irma"], "hints": ["Female sibling"] },
+        { "id": "l4_8", "type": "input", "prompt": "I have two children", "answer": ["tenho dois filhos", "eu tenho dois filhos"], "hints": ["Possession"] },
+        { "id": "l4_9", "type": "input", "prompt": "This is my wife", "answer": ["esta é minha esposa", "essa é minha esposa", "esta e minha esposa"], "hints": ["Introduction"] },
+        { "id": "l4_10", "type": "input", "prompt": "Do you have siblings?", "answer": ["você tem irmãos", "voce tem irmaos", "tem irmãos"], "hints": ["Family question"] }
+      ]
+    },
+    {
+      "id": "lesson_5",
+      "title": "Lesson 5: Food, Drinks & Dining",
+      "grammar": "Verb 'querer' (to want): eu quero, você quer. 'Gostar de' (to like): eu gosto de, você gosta de. Always use 'de' after gostar.",
+      "vocabulary": ["comida", "bebida", "água", "café", "pão", "queijo", "carne", "frango", "peixe", "arroz", "feijão", "salada", "fruta"],
+      "items": [
+        { "id": "l5_1", "type": "input", "prompt": "Water", "answer": ["água", "agua"], "hints": ["H2O"] },
+        { "id": "l5_2", "type": "input", "prompt": "Coffee", "answer": ["café", "cafe"], "hints": ["Morning drink"] },
+        { "id": "l5_3", "type": "input", "prompt": "Bread", "answer": ["pão", "pao"], "hints": ["Bakery item"] },
+        { "id": "l5_4", "type": "input", "prompt": "Rice and beans", "answer": ["arroz e feijão", "arroz e feijao"], "hints": ["Brazilian staple"] },
+        { "id": "l5_5", "type": "input", "prompt": "I want coffee", "answer": ["quero café", "eu quero café", "quero cafe"], "hints": ["Request"] },
+        { "id": "l5_6", "type": "input", "prompt": "I like cheese", "answer": ["gosto de queijo", "eu gosto de queijo"], "hints": ["Preference"] },
+        { "id": "l5_7", "type": "input", "prompt": "The bill, please", "answer": ["a conta por favor", "a conta, por favor"], "hints": ["Restaurant"] },
+        { "id": "l5_8", "type": "input", "prompt": "I'm hungry", "answer": ["estou com fome", "tô com fome", "to com fome"], "hints": ["Need food"] },
+        { "id": "l5_9", "type": "input", "prompt": "I'm thirsty", "answer": ["estou com sede", "tô com sede", "to com sede"], "hints": ["Need drink"] },
+        { "id": "l5_10", "type": "input", "prompt": "It's delicious", "answer": ["está delicioso", "esta delicioso", "tá gostoso", "ta gostoso"], "hints": ["Compliment"] }
+      ]
+    },
+    {
+      "id": "lesson_6",
+      "title": "Lesson 6: Shopping & Money",
+      "grammar": "Currency: real/reais (R$). Verb 'custar' (to cost): custa/custam. 'Poder' (can/to be able): eu posso, você pode.",
+      "vocabulary": ["dinheiro", "real", "reais", "cartão", "comprar", "vender", "pagar", "preço", "barato", "caro", "desconto", "troco"],
+      "items": [
+        { "id": "l6_1", "type": "input", "prompt": "Money", "answer": ["dinheiro"], "hints": ["Currency"] },
+        { "id": "l6_2", "type": "input", "prompt": "How much does it cost?", "answer": ["quanto custa", "quanto é", "quanto e"], "hints": ["Price question"] },
+        { "id": "l6_3", "type": "input", "prompt": "It's expensive", "answer": ["é caro", "e caro", "está caro", "tá caro"], "hints": ["High price"] },
+        { "id": "l6_4", "type": "input", "prompt": "It's cheap", "answer": ["é barato", "e barato", "está barato", "tá barato"], "hints": ["Low price"] },
+        { "id": "l6_5", "type": "input", "prompt": "Credit card", "answer": ["cartão de crédito", "cartao de credito"], "hints": ["Payment method"] },
+        { "id": "l6_6", "type": "input", "prompt": "Can I pay by card?", "answer": ["posso pagar com cartão", "posso pagar com cartao", "aceita cartão"], "hints": ["Payment question"] },
+        { "id": "l6_7", "type": "input", "prompt": "I want to buy", "answer": ["quero comprar", "eu quero comprar"], "hints": ["Purchase intent"] },
+        { "id": "l6_8", "type": "input", "prompt": "Do you have discount?", "answer": ["tem desconto", "você faz desconto", "faz desconto"], "hints": ["Bargaining"] },
+        { "id": "l6_9", "type": "input", "prompt": "Keep the change", "answer": ["pode ficar com o troco", "fica com o troco"], "hints": ["Tip"] },
+        { "id": "l6_10", "type": "input", "prompt": "It costs 10 reais", "answer": ["custa dez reais", "é dez reais", "são dez reais"], "hints": ["Price statement"] }
+      ]
+    },
+    {
+      "id": "lesson_7",
+      "title": "Lesson 7: Directions & Transportation",
+      "grammar": "Imperative forms: vá (go), vire (turn), siga (follow). Prepositions: em (in/at), para (to), de (from), por (through).",
+      "vocabulary": ["rua", "avenida", "esquina", "direita", "esquerda", "reto", "perto", "longe", "ônibus", "metrô", "táxi", "carro", "a pé"],
+      "items": [
+        { "id": "l7_1", "type": "input", "prompt": "Street", "answer": ["rua"], "hints": ["Road type"] },
+        { "id": "l7_2", "type": "input", "prompt": "Where is...?", "answer": ["onde fica", "onde está", "onde é", "onde e"], "hints": ["Location question"] },
+        { "id": "l7_3", "type": "input", "prompt": "Turn right", "answer": ["vire à direita", "vire a direita", "vira à direita"], "hints": ["Direction"] },
+        { "id": "l7_4", "type": "input", "prompt": "Turn left", "answer": ["vire à esquerda", "vire a esquerda", "vira à esquerda"], "hints": ["Direction"] },
+        { "id": "l7_5", "type": "input", "prompt": "Straight ahead", "answer": ["em frente", "reto", "siga reto", "siga em frente"], "hints": ["Direction"] },
+        { "id": "l7_6", "type": "input", "prompt": "It's near", "answer": ["é perto", "e perto", "fica perto", "está perto"], "hints": ["Proximity"] },
+        { "id": "l7_7", "type": "input", "prompt": "It's far", "answer": ["é longe", "e longe", "fica longe", "está longe"], "hints": ["Distance"] },
+        { "id": "l7_8", "type": "input", "prompt": "By bus", "answer": ["de ônibus", "de onibus"], "hints": ["Transport method"] },
+        { "id": "l7_9", "type": "input", "prompt": "By car", "answer": ["de carro"], "hints": ["Transport method"] },
+        { "id": "l7_10", "type": "input", "prompt": "On foot", "answer": ["a pé", "a pe", "andando", "caminhando"], "hints": ["Walking"] }
+      ]
+    },
+    {
+      "id": "lesson_8",
+      "title": "Lesson 8: Daily Activities & Routine",
+      "grammar": "Present continuous: estar + gerund (-ando/-endo/-indo). Eu estou trabalhando (I am working). Reflexive verbs: me levanto, se levanta.",
+      "vocabulary": ["acordar", "levantar", "tomar banho", "café da manhã", "almoço", "jantar", "trabalhar", "estudar", "dormir", "descansar"],
+      "items": [
+        { "id": "l8_1", "type": "input", "prompt": "To wake up", "answer": ["acordar"], "hints": ["Morning action"] },
+        { "id": "l8_2", "type": "input", "prompt": "To take a shower", "answer": ["tomar banho"], "hints": ["Hygiene"] },
+        { "id": "l8_3", "type": "input", "prompt": "Breakfast", "answer": ["café da manhã", "cafe da manha"], "hints": ["Morning meal"] },
+        { "id": "l8_4", "type": "input", "prompt": "Lunch", "answer": ["almoço", "almoco"], "hints": ["Midday meal"] },
+        { "id": "l8_5", "type": "input", "prompt": "Dinner", "answer": ["jantar", "janta"], "hints": ["Evening meal"] },
+        { "id": "l8_6", "type": "input", "prompt": "I wake up at 7", "answer": ["acordo às 7", "acordo as 7", "eu acordo às 7"], "hints": ["Morning routine"] },
+        { "id": "l8_7", "type": "input", "prompt": "I'm working", "answer": ["estou trabalhando", "tô trabalhando", "to trabalhando"], "hints": ["Present continuous"] },
+        { "id": "l8_8", "type": "input", "prompt": "I'm studying Portuguese", "answer": ["estou estudando português", "tô estudando português", "to estudando portugues"], "hints": ["Learning"] },
+        { "id": "l8_9", "type": "input", "prompt": "I need to sleep", "answer": ["preciso dormir", "eu preciso dormir", "tenho que dormir"], "hints": ["Necessity"] },
+        { "id": "l8_10", "type": "input", "prompt": "What time do you work?", "answer": ["que horas você trabalha", "que horas voce trabalha", "a que horas você trabalha"], "hints": ["Schedule question"] }
+      ]
+    },
+    {
+      "id": "lesson_9",
+      "title": "Lesson 9: Weather, Feelings & Health",
+      "grammar": "Weather: está + adjective (está quente - it's hot). Feelings with estar: estou feliz (I'm happy). Health: estar com + noun (estar com dor).",
+      "vocabulary": ["quente", "frio", "chuva", "sol", "feliz", "triste", "cansado", "doente", "dor", "médico", "remédio", "saúde"],
+      "items": [
+        { "id": "l9_1", "type": "input", "prompt": "It's hot", "answer": ["está quente", "tá quente", "ta quente"], "hints": ["Temperature"] },
+        { "id": "l9_2", "type": "input", "prompt": "It's cold", "answer": ["está frio", "tá frio", "ta frio"], "hints": ["Temperature"] },
+        { "id": "l9_3", "type": "input", "prompt": "It's raining", "answer": ["está chovendo", "tá chovendo", "ta chovendo"], "hints": ["Weather"] },
+        { "id": "l9_4", "type": "input", "prompt": "I'm happy", "answer": ["estou feliz", "tô feliz", "to feliz"], "hints": ["Emotion"] },
+        { "id": "l9_5", "type": "input", "prompt": "I'm sad", "answer": ["estou triste", "tô triste", "to triste"], "hints": ["Emotion"] },
+        { "id": "l9_6", "type": "input", "prompt": "I'm tired", "answer": ["estou cansado", "estou cansada", "tô cansado", "to cansado"], "hints": ["Physical state"] },
+        { "id": "l9_7", "type": "input", "prompt": "I'm sick", "answer": ["estou doente", "tô doente", "to doente"], "hints": ["Health"] },
+        { "id": "l9_8", "type": "input", "prompt": "I have a headache", "answer": ["estou com dor de cabeça", "tô com dor de cabeça", "tenho dor de cabeça"], "hints": ["Pain"] },
+        { "id": "l9_9", "type": "input", "prompt": "I need a doctor", "answer": ["preciso de um médico", "preciso de um medico", "preciso de médico"], "hints": ["Medical help"] },
+        { "id": "l9_10", "type": "input", "prompt": "Get well soon", "answer": ["melhoras", "fique bom logo", "fique boa logo"], "hints": ["Well wishes"] }
+      ]
+    },
+    {
+      "id": "lesson_10",
+      "title": "Lesson 10: Brazilian Culture & Advanced Conversations",
+      "grammar": "Diminutives with -inho/-inha (cafezinho, obrigadinho). Slang: 'tá' for 'está', 'pra' for 'para', 'né' for 'não é'.",
+      "vocabulary": ["praia", "carnaval", "futebol", "samba", "churrasco", "feijoada", "caipirinha", "brigadeiro", "legal", "bacana", "beleza"],
+      "items": [
+        { "id": "l10_1", "type": "input", "prompt": "Beach", "answer": ["praia"], "hints": ["Coast"] },
+        { "id": "l10_2", "type": "input", "prompt": "Soccer/Football", "answer": ["futebol"], "hints": ["Popular sport"] },
+        { "id": "l10_3", "type": "input", "prompt": "Cool! (slang)", "answer": ["legal", "bacana", "massa", "show"], "hints": ["Approval"] },
+        { "id": "l10_4", "type": "input", "prompt": "Everything good?", "answer": ["tudo bem", "tudo bom", "beleza"], "hints": ["Casual greeting"] },
+        { "id": "l10_5", "type": "input", "prompt": "Let's go", "answer": ["vamos", "bora", "vamo", "vambora"], "hints": ["Movement"] },
+        { "id": "l10_6", "type": "input", "prompt": "Little coffee", "answer": ["cafezinho", "cafézinho"], "hints": ["Diminutive"] },
+        { "id": "l10_7", "type": "input", "prompt": "Right? (tag question)", "answer": ["né", "ne", "não é", "nao e"], "hints": ["Confirmation"] },
+        { "id": "l10_8", "type": "input", "prompt": "For you", "answer": ["para você", "pra você", "pra voce"], "hints": ["Preposition"] },
+        { "id": "l10_9", "type": "input", "prompt": "What's up? (very informal)", "answer": ["e aí", "e ai", "fala aí", "qual é"], "hints": ["Slang greeting"] },
+        { "id": "l10_10", "type": "input", "prompt": "See you later", "answer": ["até mais", "ate mais", "até logo", "a gente se vê"], "hints": ["Farewell"] }
+      ]
+    }
+  ],
+  "items": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "misc_data_structures_fundamentals",
+  "title": "Data Structures — Fundamentals",
+  "track": "misc",
+  "description": "Core structures and complexities.",
+  "items": [
+    { "id": "ds_lifo", "type": "mcq", "prompt": "Which data structure is LIFO?", "choices": ["Stack", "Queue", "Deque", "Set"], "answer": "Stack" },
+    { "id": "ds_fifo", "type": "mcq", "prompt": "Which data structure is FIFO?", "choices": ["Stack", "Queue", "Tree", "Heap"], "answer": "Queue" },
+    { "id": "ds_bst_balanced", "type": "input", "prompt": "Name a self-balancing BST (e.g., AVL).", "answer": ["avl", "red-black", "red black", "redblack", "rb tree"], "hints": ["One or two words"] },
+    { "id": "ds_hashmap_lookup", "type": "mcq", "prompt": "Average time for hash map lookup?", "choices": ["O(1)", "O(log n)", "O(n)", "O(n log n)"], "answer": "O(1)" },
+    { "id": "ds_llist_insert_head", "type": "input", "prompt": "Time to insert at head of singly linked list?", "answer": ["o(1)", "O(1)", "constant", "constant time"], "hints": ["Big-O"] },
+    { "id": "ds_bfs_structure", "type": "mcq", "prompt": "BFS typically uses which supporting structure?", "choices": ["Stack", "Queue", "Priority Queue", "Set"], "answer": "Queue" }
+  ]
+}
+

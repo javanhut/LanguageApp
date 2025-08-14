@@ -1,0 +1,30 @@
+{
+  "id": "programming_rust_borrow_fixes",
+  "title": "Rust — Borrow Checker Fixes",
+  "track": "programming",
+  "description": "Fix common borrow checker issues by editing code.",
+  "items": [
+    {
+      "id": "fix_double_mut_borrow",
+      "type": "code",
+      "prompt": "Fix the code to avoid two mutable borrows of v while pushing and reading. Provide a corrected version.",
+      "checkTokens": ["let mut v", "push", "let x = v[0]"],
+      "hints": ["Don't borrow v mutably and immutably at the same time", "Read before mutating"]
+    },
+    {
+      "id": "fix_move_out_of_borrow",
+      "type": "code",
+      "prompt": "Change code so you clone before moving a value out while borrowed.",
+      "checkTokens": ["clone"],
+      "hints": ["Use .clone() on the value or Rc/Arc"]
+    },
+    {
+      "id": "fix_lifetime_return",
+      "type": "code",
+      "prompt": "Write a function longest<'a>(a: &'a str, b: &'a str) -> &'a str that returns the longer slice.",
+      "checkTokens": ["fn longest", "<'a>", "&'a str", "-> &'a str", "if", "else"],
+      "hints": ["Annotate both params and return with 'a"]
+    }
+  ]
+}
+

@@ -1,0 +1,14 @@
+{
+  "id": "misc_algorithms_sorting_searching",
+  "title": "Algorithms — Sorting & Searching",
+  "track": "misc",
+  "description": "Complexities, stability, and preconditions.",
+  "items": [
+    { "id": "qs_avg", "type": "mcq", "prompt": "Average time complexity of Quick Sort?", "choices": ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"], "answer": "O(n log n)" },
+    { "id": "qs_worst", "type": "mcq", "prompt": "Worst-case time of Quick Sort (naive pivot)?", "choices": ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"], "answer": "O(n^2)" },
+    { "id": "stable_sort", "type": "mcq", "prompt": "Which sorting algorithm is stable by default?", "choices": ["Quick Sort", "Heap Sort", "Merge Sort", "Selection Sort"], "answer": "Merge Sort" },
+    { "id": "binsearch_time", "type": "input", "prompt": "Binary search time complexity?", "answer": ["o(log n)", "O(log n)", "log n"], "hints": ["Big-O"] },
+    { "id": "binsearch_precond", "type": "input", "prompt": "Binary search requires the array to be…", "answer": ["sorted"], "hints": ["One word"] }
+  ]
+}
+

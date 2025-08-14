@@ -1,0 +1,21 @@
+{
+  "id": "spoken_spanish_es_basics",
+  "title": "Spanish — Basics",
+  "track": "spoken",
+  "langFrom": "en",
+  "langTo": "es",
+  "description": "Greetings, numbers, and essential phrases.",
+  "items": [
+    { "id": "greet_hello", "type": "input", "prompt": "Translate to Spanish: Hello", "answer": ["hola"], "hints": ["Lowercase is fine"] },
+    { "id": "greet_good_morning", "type": "input", "prompt": "Translate to Spanish: Good morning", "answer": ["buenos días", "buenos dias"], "hints": ["Accent optional"] },
+    { "id": "greet_how_are_you", "type": "input", "prompt": "Translate to Spanish: How are you?", "answer": ["¿cómo estás?", "como estas?", "¿qué tal?", "que tal?"], "hints": ["Multiple valid forms"] },
+    { "id": "number_one", "type": "mcq", "prompt": "Select the translation: One", "choices": ["uno", "dos", "tres", "cuatro"], "answer": "uno" },
+    { "id": "phrase_please", "type": "input", "prompt": "Translate to Spanish: Please", "answer": ["por favor"] },
+    { "id": "phrase_thank_you", "type": "input", "prompt": "Translate to Spanish: Thank you", "answer": ["gracias"] },
+    { "id": "phrase_yes", "type": "mcq", "prompt": "Select the translation: Yes", "choices": ["sí", "no", "tal vez", "vale"], "answer": "sí" },
+    { "id": "phrase_no", "type": "mcq", "prompt": "Select the translation: No", "choices": ["sí", "no", "tal vez", "vale"], "answer": "no" },
+    { "id": "phrase_my_name_is", "type": "input", "prompt": "Translate: My name is…", "answer": ["me llamo", "mi nombre es"], "hints": ["Two common forms"] },
+    { "id": "phrase_good_night", "type": "input", "prompt": "Translate: Good night", "answer": ["buenas noches"] }
+  ]
+}
+

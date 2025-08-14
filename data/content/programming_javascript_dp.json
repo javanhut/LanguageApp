@@ -1,0 +1,54 @@
+{
+  "id": "programming_javascript_dp_core",
+  "title": "JavaScript — DP Core",
+  "track": "programming",
+  "description": "Code-tested DP exercises in JS.",
+  "items": [
+    {
+      "id": "kadane_max_subarray",
+      "type": "code",
+      "prompt": "Implement function solution(nums) that returns maximum subarray sum (Kadane).",
+      "lang": "javascript",
+      "tests": {
+        "entry": "solution",
+        "cases": [
+          {"args": [[-2,1,-3,4,-1,2,1,-5,4]], "expect": 6},
+          {"args": [[1]], "expect": 1},
+          {"args": [[5,4,-1,7,8]], "expect": 23}
+        ]
+      },
+      "hints": ["Track current and best sums"]
+    },
+    {
+      "id": "coin_change_min",
+      "type": "code",
+      "prompt": "Implement solution(coins, amount) → minimum coins to make amount; return -1 if impossible.",
+      "lang": "javascript",
+      "tests": {
+        "entry": "solution",
+        "cases": [
+          {"args": [[1,2,5], 11], "expect": 3},
+          {"args": [[2], 3], "expect": -1},
+          {"args": [[1], 0], "expect": 0}
+        ]
+      },
+      "hints": ["Bottom-up DP over amounts"]
+    },
+    {
+      "id": "lis_length",
+      "type": "code",
+      "prompt": "Implement solution(nums) that returns the length of the LIS (O(n log n) or O(n^2) accepted).",
+      "lang": "javascript",
+      "tests": {
+        "entry": "solution",
+        "cases": [
+          {"args": [[10,9,2,5,3,7,101,18]], "expect": 4},
+          {"args": [[0,1,0,3,2,3]], "expect": 4},
+          {"args": [[7,7,7,7,7]], "expect": 1}
+        ]
+      },
+      "hints": ["Binary search tails array"]
+    }
+  ]
+}
+

@@ -1,0 +1,17 @@
+{
+  "id": "programming_rust_ownership_borrowing",
+  "title": "Rust — Ownership & Borrowing",
+  "track": "programming",
+  "description": "Ownership rules, borrowing, lifetimes, and signatures.",
+  "items": [
+    { "id": "rule_mut_ref", "type": "mcq", "prompt": "Which statement is correct?", "choices": ["You can have many mutable references at once.", "Only one mutable reference at a time.", "References have no lifetimes.", "Moving a value copies it by default."], "answer": "Only one mutable reference at a time." },
+    { "id": "sig_borrow_str", "type": "code", "prompt": "Write a function `len_str` that borrows `&str` and returns its length as `usize`.", "checkTokens": ["fn len_str", "&str", "-> usize", ".len()"] , "hints": ["Borrow, do not take ownership"] },
+    { "id": "lifetime_syntax", "type": "mcq", "prompt": "What denotes a lifetime parameter in Rust?", "choices": ["@a", "#a", "'a", "&a"], "answer": "'a" },
+    { "id": "concept_drop_raii", "type": "input", "prompt": "Mechanism by which Rust frees resources at end of scope? (term)", "answer": ["drop", "raii"], "hints": ["Four letters or 'drop'"] },
+    { "id": "mcq_ref_types", "type": "mcq", "prompt": "Which type signature prevents mutation of the referent?", "choices": ["&T", "&mut T", "Box<T>", "Rc<RefCell<T>>"], "answer": "&T" },
+    { "id": "iter_borrow", "type": "input", "prompt": "Borrow a vector immutably to read items in a loop: method name?", "answer": ["iter", ".iter", "&v", "v.iter"], "hints": ["Use .iter()"] },
+    { "id": "longest_lifetime", "type": "code", "prompt": "Implement `fn longest<'a>(a: &'a str, b: &'a str) -> &'a str` returning the longer string slice.", "checkTokens": ["fn longest", "<'a>", "&'a str", "-> &'a str", "if", "else"] },
+    { "id": "mut_borrow_push", "type": "code", "prompt": "Create a mutable Vec<i32> and push 5 into it (valid mutable borrow).", "checkTokens": ["let mut v", "Vec", "push(5)"], "hints": ["Use let mut and push"] }
+  ]
+}
+

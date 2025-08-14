@@ -1,0 +1,18 @@
+{
+  "name": "languageapp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Gamified learning for spoken and programming languages (SRS, XP, TTS, graphs).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node tools/dev.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0",
+    "translate": "^3.0.1"
+  }
+}

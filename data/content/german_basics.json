@@ -1,0 +1,20 @@
+{
+  "id": "german_basics",
+  "title": "German - Basic Phrases",
+  "track": "spoken",
+  "langFrom": "en",
+  "langTo": "de",
+  "description": "Essential German phrases with umlauts",
+  "items": [
+    { "id": "de_1", "type": "input", "prompt": "Hello", "answer": ["hallo"], "hints": ["Common greeting"] },
+    { "id": "de_2", "type": "input", "prompt": "Thank you", "answer": ["danke"], "hints": ["Gratitude"] },
+    { "id": "de_3", "type": "input", "prompt": "Beautiful", "answer": ["schön", "schon"], "hints": ["Adjective"] },
+    { "id": "de_4", "type": "input", "prompt": "Green", "answer": ["grün", "grun"], "hints": ["Color"] },
+    { "id": "de_5", "type": "input", "prompt": "Over", "answer": ["über", "uber"], "hints": ["Preposition"] },
+    { "id": "de_6", "type": "input", "prompt": "For", "answer": ["für", "fur"], "hints": ["Preposition"] },
+    { "id": "de_7", "type": "input", "prompt": "Girl", "answer": ["mädchen", "madchen"], "hints": ["Young female"] },
+    { "id": "de_8", "type": "input", "prompt": "White", "answer": ["weiß", "weiss"], "hints": ["Color"] },
+    { "id": "de_9", "type": "input", "prompt": "Can", "answer": ["können", "konnen"], "hints": ["Modal verb"] },
+    { "id": "de_10", "type": "input", "prompt": "Größe (size)", "answer": ["größe", "grosse"], "hints": ["Dimension"] }
+  ]
+}

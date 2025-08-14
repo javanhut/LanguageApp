@@ -1,0 +1,13 @@
+{
+  "id": "programming_javascript_basics",
+  "title": "JavaScript — Basics",
+  "track": "programming",
+  "description": "Console log, variables, and types.",
+  "items": [
+    { "id": "log_hello", "type": "code", "prompt": "Write JS that logs: Hello, JS!", "checkTokens": ["console.log", "Hello", "JS"], "hints": ["Use console.log(...)"] },
+    { "id": "declare_let", "type": "mcq", "prompt": "How to declare a mutable variable?", "choices": ["let x = 1", "var x: number = 1", "x := 1", "const x = 1"], "answer": "let x = 1" },
+    { "id": "strict_equal", "type": "mcq", "prompt": "Strict equality operator?", "choices": ["==", "!=" , "===", "=:="], "answer": "===" },
+    { "id": "array_empty", "type": "input", "prompt": "JS literal for empty array?", "answer": ["[]"], "hints": ["Square brackets"] }
+  ]
+}
+

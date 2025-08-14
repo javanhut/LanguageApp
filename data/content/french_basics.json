@@ -1,0 +1,20 @@
+{
+  "id": "french_basics",
+  "title": "French - Basic Phrases",
+  "track": "spoken",
+  "langFrom": "en",
+  "langTo": "fr",
+  "description": "Essential French phrases with proper accents",
+  "items": [
+    { "id": "fr_1", "type": "input", "prompt": "Hello", "answer": ["bonjour"], "hints": ["Common greeting"] },
+    { "id": "fr_2", "type": "input", "prompt": "How are you?", "answer": ["comment allez-vous", "comment ça va", "comment ca va"], "hints": ["Polite or casual"] },
+    { "id": "fr_3", "type": "input", "prompt": "Thank you", "answer": ["merci"], "hints": ["Gratitude"] },
+    { "id": "fr_4", "type": "input", "prompt": "Please", "answer": ["s'il vous plaît", "s'il vous plait"], "hints": ["Polite request"] },
+    { "id": "fr_5", "type": "input", "prompt": "Excuse me", "answer": ["excusez-moi"], "hints": ["Getting attention"] },
+    { "id": "fr_6", "type": "input", "prompt": "Coffee", "answer": ["café", "cafe"], "hints": ["Beverage"] },
+    { "id": "fr_7", "type": "input", "prompt": "Window", "answer": ["fenêtre", "fenetre"], "hints": ["House part"] },
+    { "id": "fr_8", "type": "input", "prompt": "Ready", "answer": ["prêt", "prête", "pret", "prete"], "hints": ["Masculine/feminine"] },
+    { "id": "fr_9", "type": "input", "prompt": "Être (to be)", "answer": ["être", "etre"], "hints": ["Important verb"] },
+    { "id": "fr_10", "type": "input", "prompt": "Très bien (very good)", "answer": ["très bien", "tres bien"], "hints": ["Excellent"] }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "misc_dp_greedy_core",
+  "title": "DP & Greedy — Core",
+  "track": "misc",
+  "description": "Optimal substructure, memoization, classic problems.",
+  "items": [
+    { "id": "dp_feature", "type": "mcq", "prompt": "Which best describes dynamic programming?", "choices": ["Randomized search", "Divide and conquer only", "Memoization or tabulation of subproblems", "Always greedy"], "answer": "Memoization or tabulation of subproblems" },
+    { "id": "kadane", "type": "input", "prompt": "Name the O(n) algorithm for maximum subarray sum.", "answer": ["kadane", "kadane's", "kadanes"], "hints": ["Starts with K"] },
+    { "id": "coin_change_min", "type": "input", "prompt": "Classic approach for minimum coin change? (two words)", "answer": ["dynamic programming", "dp"], "hints": ["DP"] },
+    { "id": "interval_sched", "type": "mcq", "prompt": "Greedy choice for max non-overlapping intervals:", "choices": ["Earliest start time", "Shortest interval first", "Earliest finish time", "Random"] , "answer": "Earliest finish time" },
+    { "id": "knapsack_01", "type": "input", "prompt": "0/1 knapsack optimal solution paradigm?", "answer": ["dynamic programming", "dp"], "hints": ["Not greedy in general"] },
+    { "id": "huffman", "type": "mcq", "prompt": "Huffman coding is an example of which paradigm?", "choices": ["Greedy", "Dynamic programming", "Backtracking", "Brute force"], "answer": "Greedy" },
+    { "id": "lis_binary", "type": "input", "prompt": "O(n log n) LIS uses which technique? (two words)", "answer": ["binary search", "patience sorting", "patience"] , "hints": ["Search inside a tails array"] },
+    { "id": "fib_bottom_up", "type": "mcq", "prompt": "Bottom-up DP for Fibonacci fills table in which order?", "choices": ["From n down to 0", "Random order", "From 0 up to n", "Only even indices"], "answer": "From 0 up to n" },
+    { "id": "edit_distance", "type": "input", "prompt": "Algorithmic name for string edit distance DP?", "answer": ["levenshtein", "levenshtein distance", "edit distance"], "hints": ["L… distance"] },
+    { "id": "rod_cutting", "type": "mcq", "prompt": "Rod cutting optimal revenue is typically solved via:", "choices": ["Greedy", "Dynamic programming", "Randomized", "Binary search"], "answer": "Dynamic programming" }
+  ]
+}
+

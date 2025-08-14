@@ -1,0 +1,449 @@
+{
+  "user": {
+    "id": "local-user",
+    "name": "Player 1",
+    "displayName": "Javan",
+    "gender": "male",
+    "isProfileComplete": true,
+    "xp": 41,
+    "level": 3,
+    "streak": 1,
+    "lastActiveDate": "2025-08-14T04:00:00.000Z",
+    "badges": [
+      "Polyglot Beginner",
+      "Level 2",
+      "First 10 Correct",
+      "Level 3"
+    ],
+    "preferences": {
+      "track": "spoken",
+      "subjectId": "portuguese_brazil_course::lesson_2"
+    }
+  },
+  "srs": {
+    "portuguese_brazil_course::lesson_1::l1_1": {
+      "EF": 3.000000000000001,
+      "intervalDays": 151,
+      "reps": 5,
+      "lapses": 0,
+      "due": 1768198973913,
+      "last": 1755152573913,
+      "streak": 5
+    },
+    "portuguese_brazil_course::lesson_1::l1_2": {
+      "EF": 2.7,
+      "intervalDays": 6,
+      "reps": 2,
+      "lapses": 0,
+      "due": 1755670644328,
+      "last": 1755152244328,
+      "streak": 2
+    },
+    "portuguese_brazil_course::lesson_1::l1_3": {
+      "EF": 2.7,
+      "intervalDays": 6,
+      "reps": 2,
+      "lapses": 0,
+      "due": 1755671280731,
+      "last": 1755152880731,
+      "streak": 2
+    },
+    "portuguese_brazil_course::lesson_1::l1_4": {
+      "EF": 2.6,
+      "intervalDays": 1,
+      "reps": 1,
+      "lapses": 0,
+      "due": 1755237765302,
+      "last": 1755151365302,
+      "streak": 1
+    },
+    "portuguese_brazil_course::lesson_1::l1_5": {
+      "EF": 3.000000000000001,
+      "intervalDays": 151,
+      "reps": 5,
+      "lapses": 0,
+      "due": 1768199265524,
+      "last": 1755152865524,
+      "streak": 5
+    },
+    "portuguese_brazil_course::lesson_1::l1_6": {
+      "EF": 2.2800000000000002,
+      "intervalDays": 0,
+      "reps": 0,
+      "lapses": 1,
+      "due": 1755152857986,
+      "last": 1755152857986,
+      "streak": 0
+    },
+    "portuguese_brazil_course::lesson_1::l1_7": {
+      "EF": 2.7,
+      "intervalDays": 6,
+      "reps": 2,
+      "lapses": 0,
+      "due": 1755670967771,
+      "last": 1755152567771,
+      "streak": 2
+    },
+    "portuguese_brazil_course::lesson_1::l1_8": {
+      "EF": 2.9000000000000004,
+      "intervalDays": 50,
+      "reps": 4,
+      "lapses": 0,
+      "due": 1759472908162,
+      "last": 1755152908162,
+      "streak": 4
+    },
+    "portuguese_brazil_course::lesson_1::l1_9": {
+      "EF": 1.8599999999999997,
+      "intervalDays": 0,
+      "reps": 0,
+      "lapses": 2,
+      "due": 1755152849532,
+      "last": 1755152849532,
+      "streak": 0
+    },
+    "portuguese_brazil_course::lesson_2::l2_1": {
+      "EF": 2.6,
+      "intervalDays": 1,
+      "reps": 1,
+      "lapses": 0,
+      "due": 1755237826403,
+      "last": 1755151426403,
+      "streak": 1
+    },
+    "portuguese_brazil_course::lesson_1::l1_10": {
+      "EF": 2.6,
+      "intervalDays": 1,
+      "reps": 1,
+      "lapses": 0,
+      "due": 1755238947762,
+      "last": 1755152547762,
+      "streak": 1
+    },
+    "french_basics::fr_1": {
+      "EF": 2.5,
+      "intervalDays": 0,
+      "reps": 0,
+      "lapses": 0,
+      "due": 1755153002715,
+      "last": null,
+      "streak": 0
+    },
+    "portuguese_brazil_course::lesson_2::l2_2": {
+      "EF": 2.1799999999999997,
+      "intervalDays": 0,
+      "reps": 0,
+      "lapses": 1,
+      "due": 1755153044507,
+      "last": 1755153044507,
+      "streak": 0
+    },
+    "portuguese_brazil_course::lesson_2::l2_3": {
+      "EF": 2.1799999999999997,
+      "intervalDays": 0,
+      "reps": 0,
+      "lapses": 1,
+      "due": 1755153096751,
+      "last": 1755153096751,
+      "streak": 0
+    },
+    "portuguese_brazil_course::lesson_2::l2_4": {
+      "EF": 2.1799999999999997,
+      "intervalDays": 0,
+      "reps": 0,
+      "lapses": 1,
+      "due": 1755153107121,
+      "last": 1755153107121,
+      "streak": 0
+    },
+    "portuguese_brazil_course::lesson_2::l2_5": {
+      "EF": 2.6,
+      "intervalDays": 1,
+      "reps": 1,
+      "lapses": 0,
+      "due": 1755239518420,
+      "last": 1755153118420,
+      "streak": 1
+    },
+    "portuguese_brazil_course::lesson_2::l2_6": {
+      "EF": 2.1799999999999997,
+      "intervalDays": 0,
+      "reps": 0,
+      "lapses": 1,
+      "due": 1755153148815,
+      "last": 1755153148815,
+      "streak": 0
+    },
+    "portuguese_brazil_course::lesson_2::l2_7": {
+      "EF": 2.1799999999999997,
+      "intervalDays": 0,
+      "reps": 0,
+      "lapses": 1,
+      "due": 1755153165335,
+      "last": 1755153165335,
+      "streak": 0
+    }
+  },
+  "progress": {
+    "portuguese_brazil_course::lesson_1": {
+      "correct": 23,
+      "attempts": 26
+    },
+    "portuguese_brazil_course::lesson_2": {
+      "correct": 2,
+      "attempts": 7
+    }
+  },
+  "lessonProgress": {
+    "portuguese_brazil_course": {
+      "completedLessons": [
+        1
+      ],
+      "unlockedLessons": [
+        1,
+        2
+      ]
+    }
+  },
+  "log": [
+    {
+      "ts": 1755151338754,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_1",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755151347838,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_2",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755151358688,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_3",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755151365303,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_4",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755151372212,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_5",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755151381415,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_6",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755151389925,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_7",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755151401754,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_8",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755151426404,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_2::l2_1",
+      "subjectId": "portuguese_brazil_course::lesson_2",
+      "correct": true
+    },
+    {
+      "ts": 1755152235014,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_9",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": false
+    },
+    {
+      "ts": 1755152244328,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_2",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755152251213,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_5",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755152268276,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_8",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755152272314,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_1",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755152277509,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_5",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755152547764,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_10",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755152556393,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_1",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755152560937,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_5",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755152567771,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_7",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755152570852,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_1",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755152573916,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_1",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755152849535,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_9",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": false
+    },
+    {
+      "ts": 1755152857986,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_6",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": false
+    },
+    {
+      "ts": 1755152865524,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_5",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755152880732,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_3",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755152891145,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_8",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755152908162,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_8",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755153044507,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_2::l2_2",
+      "subjectId": "portuguese_brazil_course::lesson_2",
+      "correct": false
+    },
+    {
+      "ts": 1755153096751,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_2::l2_3",
+      "subjectId": "portuguese_brazil_course::lesson_2",
+      "correct": false
+    },
+    {
+      "ts": 1755153107122,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_2::l2_4",
+      "subjectId": "portuguese_brazil_course::lesson_2",
+      "correct": false
+    },
+    {
+      "ts": 1755153118421,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_2::l2_5",
+      "subjectId": "portuguese_brazil_course::lesson_2",
+      "correct": true
+    },
+    {
+      "ts": 1755153148815,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_2::l2_6",
+      "subjectId": "portuguese_brazil_course::lesson_2",
+      "correct": false
+    },
+    {
+      "ts": 1755153165335,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_2::l2_7",
+      "subjectId": "portuguese_brazil_course::lesson_2",
+      "correct": false
+    }
+  ],
+  "assessmentState": {
+    "portuguese_brazil_course::lesson_1": {
+      "isInAssessment": false,
+      "assessmentAttempts": 5,
+      "assessmentCorrect": 4,
+      "startTime": 1755152849535
+    }
+  }
+}

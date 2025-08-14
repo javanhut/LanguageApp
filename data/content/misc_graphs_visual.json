@@ -1,0 +1,31 @@
+{
+  "id": "misc_graphs_visual_bfs",
+  "title": "Graphs — Visual BFS",
+  "track": "misc",
+  "description": "Practice BFS orders with a visual graph.",
+  "items": [
+    {
+      "id": "bfs_order_a",
+      "type": "graph",
+      "prompt": "From A, enter BFS visit order (comma-separated).",
+      "answer": ["A,B,C,D,E"],
+      "data": {
+        "graph": {
+          "nodes": [
+            {"id": "A", "label": "A", "x": 60, "y": 50},
+            {"id": "B", "label": "B", "x": 180, "y": 40},
+            {"id": "C", "label": "C", "x": 180, "y": 120},
+            {"id": "D", "label": "D", "x": 280, "y": 30},
+            {"id": "E", "label": "E", "x": 280, "y": 130}
+          ],
+          "edges": [
+            {"from": "A", "to": "B"}, {"from": "A", "to": "C"},
+            {"from": "B", "to": "D"}, {"from": "C", "to": "E"}
+          ]
+        }
+      },
+      "hints": ["Neighbors of A first", "Then their neighbors"]
+    }
+  ]
+}
+

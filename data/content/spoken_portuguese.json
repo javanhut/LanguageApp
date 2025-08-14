@@ -1,0 +1,21 @@
+{
+  "id": "spoken_portuguese_pt_br_basics",
+  "title": "Portuguese (BR) — Basics",
+  "track": "spoken",
+  "langFrom": "en",
+  "langTo": "pt",
+  "description": "Greetings, numbers, and core phrases.",
+  "items": [
+    { "id": "greet_hello", "type": "input", "prompt": "Translate to Portuguese: Hello", "answer": ["olá", "ola"], "hints": ["Common greeting", "Accent optional" ] },
+    { "id": "greet_good_morning", "type": "input", "prompt": "Translate to Portuguese: Good morning", "answer": ["bom dia"], "hints": ["Two words"] },
+    { "id": "greet_how_are_you", "type": "input", "prompt": "Translate to Portuguese: How are you?", "answer": ["como vai?", "tudo bem?", "como você está?", "como voce esta?"], "hints": ["Several correct forms"] },
+    { "id": "number_one", "type": "mcq", "prompt": "Select the translation: One", "choices": ["um", "dois", "três", "quatro"], "answer": "um", "hints": ["Cardinal number"] },
+    { "id": "number_two", "type": "mcq", "prompt": "Select the translation: Two", "choices": ["três", "dois", "quatro", "cinco"], "answer": "dois" },
+    { "id": "phrase_please", "type": "input", "prompt": "Translate to Portuguese: Please", "answer": ["por favor"], "hints": ["Polite phrase"] },
+    { "id": "phrase_thank_you", "type": "input", "prompt": "Translate to Portuguese: Thank you", "answer": ["obrigado", "obrigada"], "hints": ["Gendered form"] },
+    { "id": "phrase_yes", "type": "mcq", "prompt": "Select the translation: Yes", "choices": ["não", "sim", "talvez", "ok"], "answer": "sim" },
+    { "id": "phrase_no", "type": "mcq", "prompt": "Select the translation: No", "choices": ["não", "sim", "talvez", "ok"], "answer": "não" },
+    { "id": "phrase_my_name_is", "type": "input", "prompt": "Translate: My name is…", "answer": ["meu nome é", "meu nome e"], "hints": ["Accent optional"] }
+  ]
+}
+
