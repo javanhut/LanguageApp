@@ -258,6 +258,18 @@
     const baseTitle = sub ? sub.title : 'Practice';
     $('#subject-title').textContent = baseTitle;
     
+    // Display grammar info if available
+    const grammarInfo = $('#grammar-info');
+    if (sub && sub.grammar) {
+      grammarInfo.innerHTML = '<h4>Grammar Notes</h4>' + sub.grammar;
+      grammarInfo.classList.remove('hidden');
+    } else {
+      grammarInfo.classList.add('hidden');
+    }
+    
+    // Load and display vocabulary progress
+    await loadVocabularyProgress(subjectId);
+    
     // Setup lesson navigation if this is part of a course
     if (sub && sub.courseId && sub.lessonNumber) {
       setupLessonNavigation(sub);
@@ -477,13 +489,21 @@
     const area = $('#answer-area');
     const hints = $('#hints');
     const helperButtons = $('#helper-buttons');
+    const explanation = $('#explanation');
     
     hints.textContent = (item.hints && item.hints.join(' · ')) || '';
     area.innerHTML = '';
     helperButtons.innerHTML = '';
+    
+    // Hide explanation initially (will show after answer)
+    explanation.classList.add('hidden');
+    explanation.textContent = '';
 
     // Setup helper buttons in the dedicated container
     setupHelperButtons(item, helperButtons, hints);
+    
+    // Setup script helpers for multi-script languages
+    setupScriptHelpers(item, helperButtons);
     
     // Setup accent dropdown
     setupAccentDropdown(item);
@@ -621,6 +641,11 @@
         { char: 'è', label: 'è' }, { char: 'ê', label: 'ê' }, { char: 'ë', label: 'ë' },
         { char: 'î', label: 'î' }, { char: 'ï', label: 'ï' }, { char: 'ô', label: 'ô' },
         { char: 'ù', label: 'ù' }, { char: 'û', label: 'û' }, { char: 'ç', label: 'ç' }
+      ];
+    } else if (langTo === 'it' || subjectLower.includes('italian')) {
+      return [
+        { char: 'à', label: 'à' }, { char: 'è', label: 'è' }, { char: 'é', label: 'é' },
+        { char: 'ì', label: 'ì' }, { char: 'ò', label: 'ò' }, { char: 'ù', label: 'ù' }
       ];
     }
     return [];
@@ -770,10 +795,25 @@
         }, 1500);
       }
       
-      // reveal correct answer briefly
+      // Handle correct vs incorrect answers differently
       const hints = $('#hints');
-      hints.textContent = res.correct ? 'Correct!' : `Answer: ${Array.isArray(res.answer) ? res.answer.join(', ') : res.answer}`;
-      setTimeout(() => nextQuestion(), 600);
+      const explanation = $('#explanation');
+      
+      if (res.correct) {
+        hints.textContent = 'Correct! ✅';
+        hints.className = 'hints correct';
+        
+        // Show explanation if available
+        if (state.currentItem && state.currentItem.explanation) {
+          explanation.textContent = state.currentItem.explanation;
+          explanation.classList.remove('hidden');
+        }
+        
+        setTimeout(() => nextQuestion(), 800);
+      } else {
+        // Show learning mode for incorrect answers
+        showLearningMode(res.answer, state.currentItem);
+      }
     } catch (e) {
       console.error(e);
     }
@@ -796,6 +836,156 @@
     const attempts = state.progress.attempts || 0;
     const pct = Math.min(100, (attempts % 20) * 5); // cycles each 20
     $('#progress-bar').style.width = pct + '%';
+  }
+  
+  async function loadVocabularyProgress(subjectId) {
+    try {
+      const { mastery, vocabulary, readyForNextLesson } = await api(`/api/vocabulary-progress?subjectId=${encodeURIComponent(subjectId)}`);
+      displayVocabularyProgress(mastery, readyForNextLesson);
+    } catch (e) {
+      // Hide vocabulary progress if no data or error
+      $('#vocabulary-progress').classList.add('hidden');
+    }
+  }
+  
+  function displayVocabularyProgress(mastery, readyForNext) {
+    const progressDiv = $('#vocabulary-progress');
+    
+    if (mastery.total === 0) {
+      progressDiv.classList.add('hidden');
+      return;
+    }
+    
+    const percentage = mastery.percentage;
+    const progressClass = readyForNext ? 'vocab-ready' : 'vocab-not-ready';
+    const message = readyForNext ? 
+      '✅ Ready to advance to next lesson!' : 
+      `Master ${8 - mastery.mastered} more words to advance`;
+    
+    progressDiv.innerHTML = `
+      <h4>Vocabulary Progress</h4>
+      <div class="vocab-stats">
+        <div class="vocab-stat">
+          <div class="number">${mastery.mastered}</div>
+          <div class="label">Mastered</div>
+        </div>
+        <div class="vocab-stat">
+          <div class="number">${mastery.total}</div>
+          <div class="label">Total Words</div>
+        </div>
+        <div class="vocab-stat">
+          <div class="number">${percentage}%</div>
+          <div class="label">Progress</div>
+        </div>
+      </div>
+      <div class="vocab-progress-bar">
+        <div class="vocab-progress-fill" style="width: ${percentage}%"></div>
+      </div>
+      <div class="vocab-message ${progressClass}">${message}</div>
+    `;
+    
+    progressDiv.classList.remove('hidden');
+  }
+  
+  function showLearningMode(correctAnswer, item) {
+    const hints = $('#hints');
+    const explanation = $('#explanation');
+    const answerArea = $('#answer-area');
+    
+    // Show the correct answer prominently
+    hints.textContent = `Incorrect ❌`;
+    hints.className = 'hints incorrect';
+    
+    // Create learning interface
+    answerArea.innerHTML = '';
+    
+    const learningDiv = document.createElement('div');
+    learningDiv.className = 'learning-mode';
+    
+    const correctAnswerText = Array.isArray(correctAnswer) ? correctAnswer.join(' or ') : correctAnswer;
+    
+    learningDiv.innerHTML = `
+      <div class="correct-answer-display">
+        <h4>Correct Answer:</h4>
+        <div class="correct-answer">${correctAnswerText}</div>
+      </div>
+      <div class="learning-explanation">
+        ${item.explanation || 'Study this answer and try to remember it.'}
+      </div>
+      <div class="learning-actions">
+        <button id="practice-again" class="primary-btn">Practice This Again</button>
+        <button id="continue-learning" class="ghost">Continue →</button>
+      </div>
+    `;
+    
+    answerArea.appendChild(learningDiv);
+    
+    // Add event listeners
+    $('#practice-again').addEventListener('click', () => {
+      // Reset the current question for immediate retry
+      renderQuestion(item);
+    });
+    
+    $('#continue-learning').addEventListener('click', () => {
+      nextQuestion();
+    });
+  }
+  
+  function setupScriptHelpers(item, container) {
+    // For Japanese and other multi-script languages
+    if (item.scripts) {
+      const scriptDiv = document.createElement('div');
+      scriptDiv.className = 'script-helpers';
+      
+      if (item.scripts.hiragana) {
+        const btn = document.createElement('button');
+        btn.className = 'ghost';
+        btn.textContent = `あ ${item.scripts.hiragana}`;
+        btn.title = 'Show hiragana';
+        btn.addEventListener('click', () => {
+          const input = $('#answer-area input');
+          if (input) {
+            input.value = item.scripts.hiragana;
+            input.focus();
+          }
+        });
+        scriptDiv.appendChild(btn);
+      }
+      
+      if (item.scripts.kanji) {
+        const btn = document.createElement('button');
+        btn.className = 'ghost';
+        btn.textContent = `漢 ${item.scripts.kanji}`;
+        btn.title = 'Show kanji';
+        btn.addEventListener('click', () => {
+          const input = $('#answer-area input');
+          if (input) {
+            input.value = item.scripts.kanji;
+            input.focus();
+          }
+        });
+        scriptDiv.appendChild(btn);
+      }
+      
+      if (item.scripts.romanji) {
+        const btn = document.createElement('button');
+        btn.className = 'ghost';
+        btn.textContent = `R ${item.scripts.romanji}`;
+        btn.title = 'Show romanji';
+        btn.addEventListener('click', () => {
+          const input = $('#answer-area input');
+          if (input) {
+            input.value = item.scripts.romanji;
+            input.focus();
+          }
+        });
+        scriptDiv.appendChild(btn);
+      }
+      
+      if (scriptDiv.children.length > 0) {
+        container.appendChild(scriptDiv);
+      }
+    }
   }
 
   // Personalization functions

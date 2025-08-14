@@ -329,6 +329,51 @@ function updateProgress(subjectId, correct) {
   if (correct) state.progress[subjectId].correct += 1;
 }
 
+function updateVocabularyProgress(subjectId, word, correct) {
+  if (!state.vocabularyProgress) state.vocabularyProgress = {};
+  if (!state.vocabularyProgress[subjectId]) {
+    state.vocabularyProgress[subjectId] = {};
+  }
+  
+  if (!state.vocabularyProgress[subjectId][word]) {
+    state.vocabularyProgress[subjectId][word] = {
+      attempts: 0,
+      correct: 0,
+      mastered: false,
+      firstSeen: Date.now(),
+      lastSeen: Date.now()
+    };
+  }
+  
+  const vocab = state.vocabularyProgress[subjectId][word];
+  vocab.attempts += 1;
+  if (correct) vocab.correct += 1;
+  vocab.lastSeen = Date.now();
+  
+  // Consider word mastered if 80% accuracy with at least 3 attempts
+  vocab.mastered = vocab.attempts >= 3 && (vocab.correct / vocab.attempts) >= 0.8;
+}
+
+function getVocabularyMastery(subjectId) {
+  if (!state.vocabularyProgress) state.vocabularyProgress = {};
+  const vocab = state.vocabularyProgress[subjectId] || {};
+  const words = Object.keys(vocab);
+  if (words.length === 0) return { mastered: 0, total: 0, percentage: 0 };
+  
+  const mastered = words.filter(word => vocab[word].mastered).length;
+  const total = words.length;
+  const percentage = Math.round((mastered / total) * 100);
+  
+  return { mastered, total, percentage };
+}
+
+function checkVocabularyReadyForNextLesson(subjectId, requiredMastery = 8) {
+  if (!state.vocabularyProgress) state.vocabularyProgress = {};
+  const vocab = state.vocabularyProgress[subjectId] || {};
+  const masteredWords = Object.keys(vocab).filter(word => vocab[word].mastered);
+  return masteredWords.length >= requiredMastery;
+}
+
 function checkLessonReadyForAssessment(subjectId) {
   const subject = subjects.find(s => s.id === subjectId);
   if (!subject || !subject.courseId) return false;
@@ -579,11 +624,20 @@ async function handleApi(req, res) {
       if (!it) return json(res, 404, { error: 'Unknown item' });
       const normalized = (v) => ('' + v).trim().toLowerCase();
       let correct = false;
+      
+      // Helper function to replace dynamic placeholders
+      function processDynamicAnswer(answer) {
+        if (typeof answer !== 'string') return answer;
+        return answer.replace(/\{\{user\.name\}\}/g, state.user.displayName || state.user.name || 'Player 1')
+                    .replace(/\{\{user\.displayName\}\}/g, state.user.displayName || state.user.name || 'Player 1');
+      }
+      
       if (it.type === 'mcq') {
         correct = response === it.answer;
       } else if (it.type === 'input' || it.type === 'listen' || it.type === 'graph') {
         const answers = Array.isArray(it.answer) ? it.answer : [it.answer];
-        correct = answers.map(normalized).includes(normalized(response));
+        const processedAnswers = answers.map(processDynamicAnswer);
+        correct = processedAnswers.map(normalized).includes(normalized(response));
       } else if (it.type === 'code') {
         const src = (response || '').toString();
         // If JavaScript tests provided, evaluate in VM
@@ -603,6 +657,11 @@ async function handleApi(req, res) {
       schedule(itemId, !!correct);
       updateProgress(it.subjectId, !!correct);
       updateStreak();
+      
+      // Track vocabulary progress
+      if (it.newWord) {
+        updateVocabularyProgress(it.subjectId, it.newWord, !!correct);
+      }
       
       // Track assessment progress if in assessment mode
       if (!state.assessmentState) state.assessmentState = {};
@@ -645,9 +704,14 @@ async function handleApi(req, res) {
       
       logEvent('answer', { itemId, subjectId: it.subjectId, correct: !!correct });
       saveState();
+      // Process answer for display (replace placeholders)
+      const displayAnswer = Array.isArray(it.answer) ? 
+        it.answer.map(processDynamicAnswer) : 
+        processDynamicAnswer(it.answer);
+      
       const responseData = { 
         correct: !!correct, 
-        answer: it.answer, 
+        answer: displayAnswer, 
         user: state.user,
         lessonCompleted,
         assessmentStarted
@@ -676,6 +740,25 @@ async function handleApi(req, res) {
     return json(res, 200, { ok: true });
   }
 
+  if (pathname === '/api/vocabulary-progress' && req.method === 'GET') {
+    const url = new URL(req.url, `http://${req.headers.host}`);
+    const subjectId = url.searchParams.get('subjectId');
+    
+    if (!subjectId) {
+      return json(res, 400, { error: 'subjectId required' });
+    }
+    
+    const mastery = getVocabularyMastery(subjectId);
+    const vocab = state.vocabularyProgress[subjectId] || {};
+    const readyForNext = checkVocabularyReadyForNextLesson(subjectId);
+    
+    return json(res, 200, {
+      mastery,
+      vocabulary: vocab,
+      readyForNextLesson: readyForNext
+    });
+  }
+  
   if (pathname === '/api/translate' && req.method === 'POST') {
     try {
       const body = await parseBody(req);

@@ -1,0 +1,303 @@
+{
+  "id": "japanese_level_1",
+  "title": "Japanese - Level 1: Foundation",
+  "track": "spoken",
+  "langFrom": "en",
+  "langTo": "ja",
+  "description": "Complete beginner Japanese - start here! Learn hiragana, basic greetings, and essential words. Master 8/10 new words per lesson to advance.",
+  "level": 1,
+  "totalLessons": 6,
+  "vocabularyGoal": 48,
+  "lessons": [
+    {
+      "id": "lesson_1",
+      "title": "Lesson 1: Basic Greetings",
+      "newWords": ["こんにちは", "こんばんは", "おはよう", "ありがとう", "すみません", "はい", "いいえ", "さようなら", "はじめまして", "おげんきですか"],
+      "masteryRequired": 8,
+      "practicalGoal": "Greet people and respond politely in basic situations",
+      "grammar": "Japanese greetings change based on time of day. こんにちは (konnichiha) = hello (afternoon), おはよう (ohayou) = good morning. です (desu) makes sentences polite.",
+      "items": [
+        { 
+          "id": "l1_1", 
+          "type": "input", 
+          "prompt": "Hello (afternoon greeting)", 
+          "answer": ["こんにちは", "konnichiha", "konnichiwa"], 
+          "newWord": "こんにちは", 
+          "scripts": {
+            "hiragana": "こんにちは",
+            "romanji": "konnichiha",
+            "meaning": "hello (afternoon)"
+          },
+          "explanation": "こんにちは (konnichiha) - standard hello greeting for afternoon"
+        },
+        { 
+          "id": "l1_2", 
+          "type": "input", 
+          "prompt": "Good evening", 
+          "answer": ["こんばんは", "konbanwa"], 
+          "newWord": "こんばんは", 
+          "scripts": {
+            "hiragana": "こんばんは",
+            "romanji": "konbanwa",
+            "meaning": "good evening"
+          },
+          "explanation": "こんばんは (konbanwa) - evening greeting, used after 6pm"
+        },
+        { 
+          "id": "l1_3", 
+          "type": "input", 
+          "prompt": "Good morning", 
+          "answer": ["おはよう", "ohayou"], 
+          "newWord": "おはよう", 
+          "scripts": {
+            "hiragana": "おはよう",
+            "romanji": "ohayou",
+            "meaning": "good morning (casual)"
+          },
+          "explanation": "おはよう (ohayou) - casual good morning greeting"
+        },
+        { 
+          "id": "l1_4", 
+          "type": "input", 
+          "prompt": "Thank you", 
+          "answer": ["ありがとう", "arigatou"], 
+          "newWord": "ありがとう", 
+          "scripts": {
+            "hiragana": "ありがとう",
+            "romanji": "arigatou",
+            "meaning": "thank you (casual)"
+          },
+          "explanation": "ありがとう (arigatou) - casual thank you"
+        },
+        { 
+          "id": "l1_5", 
+          "type": "input", 
+          "prompt": "Excuse me/Sorry", 
+          "answer": ["すみません", "sumimasen"], 
+          "newWord": "すみません", 
+          "scripts": {
+            "hiragana": "すみません",
+            "romanji": "sumimasen",
+            "meaning": "excuse me/sorry"
+          },
+          "explanation": "すみません (sumimasen) - polite way to say excuse me or sorry"
+        },
+        { 
+          "id": "l1_6", 
+          "type": "input", 
+          "prompt": "Yes", 
+          "answer": ["はい", "hai"], 
+          "newWord": "はい", 
+          "scripts": {
+            "hiragana": "はい",
+            "romanji": "hai",
+            "meaning": "yes"
+          },
+          "explanation": "はい (hai) - yes (polite)"
+        },
+        { 
+          "id": "l1_7", 
+          "type": "input", 
+          "prompt": "No", 
+          "answer": ["いいえ", "iie"], 
+          "newWord": "いいえ", 
+          "scripts": {
+            "hiragana": "いいえ",
+            "romanji": "iie",
+            "meaning": "no"
+          },
+          "explanation": "いいえ (iie) - no (polite)"
+        },
+        { 
+          "id": "l1_8", 
+          "type": "input", 
+          "prompt": "Goodbye", 
+          "answer": ["さようなら", "sayounara"], 
+          "newWord": "さようなら", 
+          "scripts": {
+            "hiragana": "さようなら",
+            "romanji": "sayounara",
+            "meaning": "goodbye"
+          },
+          "explanation": "さようなら (sayounara) - formal goodbye"
+        },
+        { 
+          "id": "l1_9", 
+          "type": "input", 
+          "prompt": "Nice to meet you", 
+          "answer": ["はじめまして", "hajimemashite"], 
+          "newWord": "はじめまして", 
+          "scripts": {
+            "hiragana": "はじめまして",
+            "romanji": "hajimemashite",
+            "meaning": "nice to meet you"
+          },
+          "explanation": "はじめまして (hajimemashite) - nice to meet you (first meeting)"
+        },
+        { 
+          "id": "l1_10", 
+          "type": "input", 
+          "prompt": "How are you?", 
+          "answer": ["おげんきですか", "ogenki desu ka"], 
+          "newWord": "おげんきですか", 
+          "scripts": {
+            "hiragana": "おげんきですか",
+            "romanji": "ogenki desu ka",
+            "meaning": "how are you?"
+          },
+          "explanation": "おげんきですか (ogenki desu ka) - how are you? (polite)"
+        }
+      ]
+    },
+    {
+      "id": "lesson_2",
+      "title": "Lesson 2: Numbers 1-10",
+      "newWords": ["いち", "に", "さん", "よん", "ご", "ろく", "なな", "はち", "きゅう", "じゅう"],
+      "masteryRequired": 8,
+      "practicalGoal": "Count objects and express quantities 1-10",
+      "grammar": "Japanese numbers: いち (1) to じゅう (10). Note: 4 can be よん or し, 7 can be なな or しち, 9 can be きゅう or く.",
+      "items": [
+        { 
+          "id": "l2_1", 
+          "type": "input", 
+          "prompt": "One", 
+          "answer": ["いち", "ichi"], 
+          "newWord": "いち", 
+          "scripts": {
+            "hiragana": "いち",
+            "kanji": "一",
+            "romanji": "ichi",
+            "meaning": "one"
+          },
+          "explanation": "いち (ichi) - number one, kanji: 一"
+        },
+        { 
+          "id": "l2_2", 
+          "type": "input", 
+          "prompt": "Two", 
+          "answer": ["に", "ni"], 
+          "newWord": "に", 
+          "scripts": {
+            "hiragana": "に",
+            "kanji": "二",
+            "romanji": "ni",
+            "meaning": "two"
+          },
+          "explanation": "に (ni) - number two, kanji: 二"
+        },
+        { 
+          "id": "l2_3", 
+          "type": "input", 
+          "prompt": "Three", 
+          "answer": ["さん", "san"], 
+          "newWord": "さん", 
+          "scripts": {
+            "hiragana": "さん",
+            "kanji": "三",
+            "romanji": "san",
+            "meaning": "three"
+          },
+          "explanation": "さん (san) - number three, kanji: 三"
+        },
+        { 
+          "id": "l2_4", 
+          "type": "input", 
+          "prompt": "Four", 
+          "answer": ["よん", "yon"], 
+          "newWord": "よん", 
+          "scripts": {
+            "hiragana": "よん",
+            "kanji": "四",
+            "romanji": "yon",
+            "meaning": "four"
+          },
+          "explanation": "よん (yon) - number four, kanji: 四 (avoid し/shi as it sounds like death)"
+        },
+        { 
+          "id": "l2_5", 
+          "type": "input", 
+          "prompt": "Five", 
+          "answer": ["ご", "go"], 
+          "newWord": "ご", 
+          "scripts": {
+            "hiragana": "ご",
+            "kanji": "五",
+            "romanji": "go",
+            "meaning": "five"
+          },
+          "explanation": "ご (go) - number five, kanji: 五"
+        },
+        { 
+          "id": "l2_6", 
+          "type": "input", 
+          "prompt": "Six", 
+          "answer": ["ろく", "roku"], 
+          "newWord": "ろく", 
+          "scripts": {
+            "hiragana": "ろく",
+            "kanji": "六",
+            "romanji": "roku",
+            "meaning": "six"
+          },
+          "explanation": "ろく (roku) - number six, kanji: 六"
+        },
+        { 
+          "id": "l2_7", 
+          "type": "input", 
+          "prompt": "Seven", 
+          "answer": ["なな", "nana"], 
+          "newWord": "なな", 
+          "scripts": {
+            "hiragana": "なな",
+            "kanji": "七",
+            "romanji": "nana",
+            "meaning": "seven"
+          },
+          "explanation": "なな (nana) - number seven, kanji: 七"
+        },
+        { 
+          "id": "l2_8", 
+          "type": "input", 
+          "prompt": "Eight", 
+          "answer": ["はち", "hachi"], 
+          "newWord": "はち", 
+          "scripts": {
+            "hiragana": "はち",
+            "kanji": "八",
+            "romanji": "hachi",
+            "meaning": "eight"
+          },
+          "explanation": "はち (hachi) - number eight, kanji: 八"
+        },
+        { 
+          "id": "l2_9", 
+          "type": "input", 
+          "prompt": "Nine", 
+          "answer": ["きゅう", "kyuu"], 
+          "newWord": "きゅう", 
+          "scripts": {
+            "hiragana": "きゅう",
+            "kanji": "九",
+            "romanji": "kyuu",
+            "meaning": "nine"
+          },
+          "explanation": "きゅう (kyuu) - number nine, kanji: 九"
+        },
+        { 
+          "id": "l2_10", 
+          "type": "input", 
+          "prompt": "Ten", 
+          "answer": ["じゅう", "juu"], 
+          "newWord": "じゅう", 
+          "scripts": {
+            "hiragana": "じゅう",
+            "kanji": "十",
+            "romanji": "juu",
+            "meaning": "ten"
+          },
+          "explanation": "じゅう (juu) - number ten, kanji: 十"
+        }
+      ]
+    }
+  ]
+}

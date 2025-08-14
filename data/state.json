@@ -5,15 +5,16 @@
     "displayName": "Javan",
     "gender": "male",
     "isProfileComplete": true,
-    "xp": 41,
-    "level": 3,
+    "xp": 141,
+    "level": 4,
     "streak": 1,
     "lastActiveDate": "2025-08-14T04:00:00.000Z",
     "badges": [
       "Polyglot Beginner",
       "Level 2",
       "First 10 Correct",
-      "Level 3"
+      "Level 3",
+      "Level 4"
     ],
     "preferences": {
       "track": "spoken",
@@ -40,66 +41,66 @@
       "streak": 2
     },
     "portuguese_brazil_course::lesson_1::l1_3": {
-      "EF": 2.7,
-      "intervalDays": 6,
-      "reps": 2,
-      "lapses": 0,
-      "due": 1755671280731,
-      "last": 1755152880731,
-      "streak": 2
-    },
-    "portuguese_brazil_course::lesson_1::l1_4": {
-      "EF": 2.6,
-      "intervalDays": 1,
-      "reps": 1,
-      "lapses": 0,
-      "due": 1755237765302,
-      "last": 1755151365302,
-      "streak": 1
-    },
-    "portuguese_brazil_course::lesson_1::l1_5": {
-      "EF": 3.000000000000001,
-      "intervalDays": 151,
-      "reps": 5,
-      "lapses": 0,
-      "due": 1768199265524,
-      "last": 1755152865524,
-      "streak": 5
-    },
-    "portuguese_brazil_course::lesson_1::l1_6": {
-      "EF": 2.2800000000000002,
-      "intervalDays": 0,
-      "reps": 0,
-      "lapses": 1,
-      "due": 1755152857986,
-      "last": 1755152857986,
-      "streak": 0
-    },
-    "portuguese_brazil_course::lesson_1::l1_7": {
-      "EF": 2.7,
-      "intervalDays": 6,
-      "reps": 2,
-      "lapses": 0,
-      "due": 1755670967771,
-      "last": 1755152567771,
-      "streak": 2
-    },
-    "portuguese_brazil_course::lesson_1::l1_8": {
       "EF": 2.9000000000000004,
       "intervalDays": 50,
       "reps": 4,
       "lapses": 0,
-      "due": 1759472908162,
-      "last": 1755152908162,
+      "due": 1759520350231,
+      "last": 1755200350231,
       "streak": 4
     },
-    "portuguese_brazil_course::lesson_1::l1_9": {
-      "EF": 1.8599999999999997,
+    "portuguese_brazil_course::lesson_1::l1_4": {
+      "EF": 2.38,
+      "intervalDays": 0,
+      "reps": 0,
+      "lapses": 1,
+      "due": 1755199812869,
+      "last": 1755199812869,
+      "streak": 0
+    },
+    "portuguese_brazil_course::lesson_1::l1_5": {
+      "EF": 3.1000000000000014,
+      "intervalDays": 469,
+      "reps": 6,
+      "lapses": 0,
+      "due": 1795721419242,
+      "last": 1755199819242,
+      "streak": 6
+    },
+    "portuguese_brazil_course::lesson_1::l1_6": {
+      "EF": 1.96,
       "intervalDays": 0,
       "reps": 0,
       "lapses": 2,
-      "due": 1755152849532,
-      "last": 1755152849532,
+      "due": 1755200342958,
+      "last": 1755200342958,
+      "streak": 0
+    },
+    "portuguese_brazil_course::lesson_1::l1_7": {
+      "EF": 2.8000000000000003,
+      "intervalDays": 17,
+      "reps": 3,
+      "lapses": 0,
+      "due": 1756669156768,
+      "last": 1755200356768,
+      "streak": 3
+    },
+    "portuguese_brazil_course::lesson_1::l1_8": {
+      "EF": 3.000000000000001,
+      "intervalDays": 151,
+      "reps": 5,
+      "lapses": 0,
+      "due": 1768246230982,
+      "last": 1755199830982,
+      "streak": 5
+    },
+    "portuguese_brazil_course::lesson_1::l1_9": {
+      "EF": 1.5399999999999996,
+      "intervalDays": 0,
+      "reps": 0,
+      "lapses": 3,
+      "due": 1755199788716,
+      "last": 1755199788716,
       "streak": 0
     },
     "portuguese_brazil_course::lesson_2::l2_1": {
@@ -112,12 +113,12 @@
       "streak": 1
     },
     "portuguese_brazil_course::lesson_1::l1_10": {
-      "EF": 2.6,
+      "EF": 2.48,
       "intervalDays": 1,
       "reps": 1,
-      "lapses": 0,
-      "due": 1755238947762,
-      "last": 1755152547762,
+      "lapses": 1,
+      "due": 1755286791303,
+      "last": 1755200391303,
       "streak": 1
     },
     "french_basics::fr_1": {
@@ -130,12 +131,12 @@
       "streak": 0
     },
     "portuguese_brazil_course::lesson_2::l2_2": {
-      "EF": 2.1799999999999997,
+      "EF": 1.8599999999999997,
       "intervalDays": 0,
       "reps": 0,
-      "lapses": 1,
-      "due": 1755153044507,
-      "last": 1755153044507,
+      "lapses": 2,
+      "due": 1755199952625,
+      "last": 1755199952625,
       "streak": 0
     },
     "portuguese_brazil_course::lesson_2::l2_3": {
@@ -182,20 +183,181 @@
       "due": 1755153165335,
       "last": 1755153165335,
       "streak": 0
+    },
+    "portuguese_brazil_course::lesson_2::l2_8": {
+      "EF": 2.1799999999999997,
+      "intervalDays": 0,
+      "reps": 0,
+      "lapses": 1,
+      "due": 1755199894578,
+      "last": 1755199894578,
+      "streak": 0
+    },
+    "italian_basics::it_1": {
+      "EF": 2.6,
+      "intervalDays": 1,
+      "reps": 1,
+      "lapses": 0,
+      "due": 1755239714020,
+      "last": 1755153314020,
+      "streak": 1
+    },
+    "italian_basics::it_2": {
+      "EF": 2.6,
+      "intervalDays": 1,
+      "reps": 1,
+      "lapses": 0,
+      "due": 1755239720085,
+      "last": 1755153320085,
+      "streak": 1
+    },
+    "italian_basics::it_3": {
+      "EF": 2.6,
+      "intervalDays": 1,
+      "reps": 1,
+      "lapses": 0,
+      "due": 1755275271101,
+      "last": 1755188871101,
+      "streak": 1
+    },
+    "italian_basics::it_4": {
+      "EF": 2.5,
+      "intervalDays": 0,
+      "reps": 0,
+      "lapses": 0,
+      "due": 1755188871708,
+      "last": null,
+      "streak": 0
+    },
+    "portuguese_grammar_course::lesson_1::g1_1": {
+      "EF": 2.7,
+      "intervalDays": 6,
+      "reps": 2,
+      "lapses": 0,
+      "due": 1755717179656,
+      "last": 1755198779656,
+      "streak": 2
+    },
+    "portuguese_grammar_course::lesson_1::g1_2": {
+      "EF": 2.6,
+      "intervalDays": 1,
+      "reps": 1,
+      "lapses": 0,
+      "due": 1755284866250,
+      "last": 1755198466250,
+      "streak": 1
+    },
+    "portuguese_grammar_course::lesson_1::g1_3": {
+      "EF": 2.8000000000000003,
+      "intervalDays": 17,
+      "reps": 3,
+      "lapses": 0,
+      "due": 1756667564556,
+      "last": 1755198764556,
+      "streak": 3
+    },
+    "portuguese_grammar_course::lesson_1::g1_4": {
+      "EF": 2.2800000000000002,
+      "intervalDays": 0,
+      "reps": 0,
+      "lapses": 1,
+      "due": 1755198747048,
+      "last": 1755198747048,
+      "streak": 0
+    },
+    "portuguese_grammar_course::lesson_1::g1_5": {
+      "EF": 2.6,
+      "intervalDays": 1,
+      "reps": 1,
+      "lapses": 0,
+      "due": 1755285083317,
+      "last": 1755198683317,
+      "streak": 1
+    },
+    "portuguese_grammar_course::lesson_1::g1_6": {
+      "EF": 2.7,
+      "intervalDays": 6,
+      "reps": 2,
+      "lapses": 0,
+      "due": 1755717167236,
+      "last": 1755198767236,
+      "streak": 2
+    },
+    "portuguese_grammar_course::lesson_1::g1_7": {
+      "EF": 2.6,
+      "intervalDays": 1,
+      "reps": 1,
+      "lapses": 0,
+      "due": 1755285110026,
+      "last": 1755198710026,
+      "streak": 1
+    },
+    "portuguese_grammar_course::lesson_1::g1_8": {
+      "EF": 2.6,
+      "intervalDays": 1,
+      "reps": 1,
+      "lapses": 0,
+      "due": 1755285129499,
+      "last": 1755198729499,
+      "streak": 1
+    },
+    "portuguese_grammar_course::lesson_1::g1_9": {
+      "EF": 2.5,
+      "intervalDays": 0,
+      "reps": 0,
+      "lapses": 0,
+      "due": 1755198780271,
+      "last": null,
+      "streak": 0
+    },
+    "portuguese_brazil_course::lesson_2::l2_9": {
+      "EF": 2.1799999999999997,
+      "intervalDays": 0,
+      "reps": 0,
+      "lapses": 1,
+      "due": 1755199914207,
+      "last": 1755199914207,
+      "streak": 0
+    },
+    "portuguese_brazil_course::lesson_2::l2_10": {
+      "EF": 2.6,
+      "intervalDays": 1,
+      "reps": 1,
+      "lapses": 0,
+      "due": 1755286337438,
+      "last": 1755199937438,
+      "streak": 1
     }
   },
   "progress": {
     "portuguese_brazil_course::lesson_1": {
-      "correct": 23,
-      "attempts": 26
+      "correct": 31,
+      "attempts": 38
     },
     "portuguese_brazil_course::lesson_2": {
-      "correct": 2,
-      "attempts": 7
+      "correct": 3,
+      "attempts": 11
+    },
+    "italian_basics": {
+      "correct": 3,
+      "attempts": 3
+    },
+    "portuguese_grammar_course::lesson_1": {
+      "correct": 12,
+      "attempts": 13
     }
   },
   "lessonProgress": {
     "portuguese_brazil_course": {
+      "completedLessons": [
+        1
+      ],
+      "unlockedLessons": [
+        1,
+        2
+      ]
+    },
+    "portuguese_grammar_course": {
       "completedLessons": [
         1
       ],
@@ -436,6 +598,230 @@
       "itemId": "portuguese_brazil_course::lesson_2::l2_7",
       "subjectId": "portuguese_brazil_course::lesson_2",
       "correct": false
+    },
+    {
+      "ts": 1755153314020,
+      "type": "answer",
+      "itemId": "italian_basics::it_1",
+      "subjectId": "italian_basics",
+      "correct": true
+    },
+    {
+      "ts": 1755153320085,
+      "type": "answer",
+      "itemId": "italian_basics::it_2",
+      "subjectId": "italian_basics",
+      "correct": true
+    },
+    {
+      "ts": 1755188871101,
+      "type": "answer",
+      "itemId": "italian_basics::it_3",
+      "subjectId": "italian_basics",
+      "correct": true
+    },
+    {
+      "ts": 1755198459299,
+      "type": "answer",
+      "itemId": "portuguese_grammar_course::lesson_1::g1_1",
+      "subjectId": "portuguese_grammar_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755198466251,
+      "type": "answer",
+      "itemId": "portuguese_grammar_course::lesson_1::g1_2",
+      "subjectId": "portuguese_grammar_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755198474165,
+      "type": "answer",
+      "itemId": "portuguese_grammar_course::lesson_1::g1_3",
+      "subjectId": "portuguese_grammar_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755198484715,
+      "type": "answer",
+      "itemId": "portuguese_grammar_course::lesson_1::g1_4",
+      "subjectId": "portuguese_grammar_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755198683317,
+      "type": "answer",
+      "itemId": "portuguese_grammar_course::lesson_1::g1_5",
+      "subjectId": "portuguese_grammar_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755198690156,
+      "type": "answer",
+      "itemId": "portuguese_grammar_course::lesson_1::g1_6",
+      "subjectId": "portuguese_grammar_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755198710026,
+      "type": "answer",
+      "itemId": "portuguese_grammar_course::lesson_1::g1_7",
+      "subjectId": "portuguese_grammar_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755198729499,
+      "type": "answer",
+      "itemId": "portuguese_grammar_course::lesson_1::g1_8",
+      "subjectId": "portuguese_grammar_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755198747049,
+      "type": "answer",
+      "itemId": "portuguese_grammar_course::lesson_1::g1_4",
+      "subjectId": "portuguese_grammar_course::lesson_1",
+      "correct": false
+    },
+    {
+      "ts": 1755198754177,
+      "type": "answer",
+      "itemId": "portuguese_grammar_course::lesson_1::g1_3",
+      "subjectId": "portuguese_grammar_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755198764556,
+      "type": "answer",
+      "itemId": "portuguese_grammar_course::lesson_1::g1_3",
+      "subjectId": "portuguese_grammar_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755198767236,
+      "type": "answer",
+      "itemId": "portuguese_grammar_course::lesson_1::g1_6",
+      "subjectId": "portuguese_grammar_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755198779656,
+      "type": "answer",
+      "itemId": "portuguese_grammar_course::lesson_1::g1_1",
+      "subjectId": "portuguese_grammar_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755199788719,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_9",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": false
+    },
+    {
+      "ts": 1755199803251,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_4",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755199812869,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_4",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": false
+    },
+    {
+      "ts": 1755199819242,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_5",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755199830982,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_8",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755199837262,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_3",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755199894578,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_2::l2_8",
+      "subjectId": "portuguese_brazil_course::lesson_2",
+      "correct": false
+    },
+    {
+      "ts": 1755199914207,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_2::l2_9",
+      "subjectId": "portuguese_brazil_course::lesson_2",
+      "correct": false
+    },
+    {
+      "ts": 1755199937439,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_2::l2_10",
+      "subjectId": "portuguese_brazil_course::lesson_2",
+      "correct": true
+    },
+    {
+      "ts": 1755199952626,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_2::l2_2",
+      "subjectId": "portuguese_brazil_course::lesson_2",
+      "correct": false
+    },
+    {
+      "ts": 1755200342961,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_6",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": false
+    },
+    {
+      "ts": 1755200350232,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_3",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755200356768,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_7",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755200363144,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_10",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
+    },
+    {
+      "ts": 1755200377642,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_10",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": false
+    },
+    {
+      "ts": 1755200391303,
+      "type": "answer",
+      "itemId": "portuguese_brazil_course::lesson_1::l1_10",
+      "subjectId": "portuguese_brazil_course::lesson_1",
+      "correct": true
     }
   ],
   "assessmentState": {
@@ -443,7 +829,13 @@
       "isInAssessment": false,
       "assessmentAttempts": 5,
       "assessmentCorrect": 4,
-      "startTime": 1755152849535
+      "startTime": 1755200342961
+    },
+    "portuguese_grammar_course::lesson_1": {
+      "isInAssessment": false,
+      "assessmentAttempts": 5,
+      "assessmentCorrect": 4,
+      "startTime": 1755198729499
     }
   }
 }

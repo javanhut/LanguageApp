@@ -1,0 +1,51 @@
+{
+  "id": "portuguese_personalized_test",
+  "title": "Portuguese - Personalized Learning Test",
+  "track": "spoken",
+  "langFrom": "en",
+  "langTo": "pt",
+  "description": "Test personalized questions and learning from mistakes",
+  "grammar": "This lesson tests dynamic user name integration and improved learning flow for incorrect answers.",
+  "items": [
+    { 
+      "id": "p1", 
+      "type": "input", 
+      "prompt": "My name is (use your name)", 
+      "answer": ["meu nome é {{user.displayName}}", "me chamo {{user.displayName}}", "eu me chamo {{user.displayName}}", "sou {{user.displayName}}"], 
+      "hints": ["'Meu nome é' + your name"], 
+      "explanation": "In Portuguese, 'meu nome é' means 'my name is'. This answer adapts to your actual name!" 
+    },
+    { 
+      "id": "p2", 
+      "type": "input", 
+      "prompt": "Hello, I am (your name)", 
+      "answer": ["olá, eu sou {{user.displayName}}", "oi, sou {{user.displayName}}", "olá, sou {{user.displayName}}"], 
+      "hints": ["Greeting + 'eu sou' + your name"], 
+      "explanation": "Olá (hello) + eu sou (I am) + your name. Notice how the system uses your actual name!" 
+    },
+    { 
+      "id": "p3", 
+      "type": "input", 
+      "prompt": "I like coffee", 
+      "answer": ["eu gosto de café", "gosto de café", "eu gosto de cafe"], 
+      "hints": ["'gostar de' + item"], 
+      "explanation": "'Gostar de' means 'to like' - always use 'de' after gostar. The preposition is mandatory!" 
+    },
+    { 
+      "id": "p4", 
+      "type": "input", 
+      "prompt": "The house is blue", 
+      "answer": ["a casa é azul", "a casa e azul"], 
+      "hints": ["article + noun + ser + color"], 
+      "explanation": "SER (é) for permanent characteristics like color. A casa É azul (permanent state)." 
+    },
+    { 
+      "id": "p5", 
+      "type": "mcq", 
+      "prompt": "Which means 'Where are you from?'", 
+      "choices": ["De onde você é?", "Como você está?", "Qual é seu nome?", "Você gosta de café?"], 
+      "answer": "De onde você é?", 
+      "explanation": "'De onde você é?' asks about origin/nationality. 'De onde' = from where." 
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "id": "portuguese_grammar_course",
+  "title": "Brazilian Portuguese - Complete Grammar & Structure",
+  "track": "spoken",
+  "langFrom": "en",
+  "langTo": "pt",
+  "description": "Comprehensive Brazilian Portuguese with grammar rules, verb conjugations, and sentence structure",
+  "lessons": [
+    {
+      "id": "lesson_1",
+      "title": "Foundations: Articles, Gender & Number",
+      "grammar": "Portuguese nouns have gender (masculine/feminine) and number (singular/plural). Articles must agree: o/os (masc), a/as (fem), um/uns (masc indef), uma/umas (fem indef). Most words ending in -o are masculine, -a are feminine. Plurals add -s (vowel ending) or -es (consonant ending).",
+      "vocabulary": ["o", "a", "os", "as", "um", "uma", "uns", "umas", "livro", "mesa", "homem", "mulher"],
+      "items": [
+        { "id": "g1_1", "type": "input", "prompt": "the book (with article)", "answer": ["o livro"], "hints": ["masculine singular"], "explanation": "Livro is masculine, so we use 'o'" },
+        { "id": "g1_2", "type": "input", "prompt": "the table (with article)", "answer": ["a mesa"], "hints": ["feminine singular"], "explanation": "Mesa is feminine, so we use 'a'" },
+        { "id": "g1_3", "type": "input", "prompt": "the books (plural with article)", "answer": ["os livros"], "hints": ["masculine plural"], "explanation": "Plural of 'o livro' - both article and noun become plural" },
+        { "id": "g1_4", "type": "input", "prompt": "a woman (indefinite article)", "answer": ["uma mulher"], "hints": ["feminine indefinite"], "explanation": "Mulher is feminine, so we use 'uma' for indefinite" },
+        { "id": "g1_5", "type": "input", "prompt": "some men (plural indefinite)", "answer": ["uns homens"], "hints": ["masculine plural indefinite"], "explanation": "Homens is masculine plural, use 'uns'" },
+        { "id": "g1_6", "type": "mcq", "prompt": "Which article for 'casa' (house)?", "choices": ["o", "a", "os", "as"], "answer": "a", "explanation": "Casa ends in -a and is feminine" },
+        { "id": "g1_7", "type": "input", "prompt": "the cities (plural)", "answer": ["as cidades"], "hints": ["feminine plural"], "explanation": "Cidade is feminine, plural adds -s" },
+        { "id": "g1_8", "type": "input", "prompt": "Make plural: o professor", "answer": ["os professores"], "hints": ["teacher becomes teachers"], "explanation": "Words ending in -r add -es for plural" },
+        { "id": "g1_9", "type": "input", "prompt": "Make plural: a canção (song)", "answer": ["as canções", "as cancoes"], "hints": ["words ending in -ão"], "explanation": "Words ending in -ão become -ões in plural" },
+        { "id": "g1_10", "type": "input", "prompt": "the Brazilian women", "answer": ["as mulheres brasileiras", "as brasileiras"], "hints": ["adjective must agree"], "explanation": "Both noun and adjective must be feminine plural" }
+      ]
+    },
+    {
+      "id": "lesson_2",
+      "title": "Personal Pronouns & Subject-Verb Agreement",
+      "grammar": "Subject pronouns: eu (I), você/tu (you), ele/ela (he/she), nós (we), vocês (you all), eles/elas (they). In Brazil, 'você' is standard, 'tu' is regional. Verbs conjugate differently for each person. Object pronouns: me, te, o/a, nos, os/as.",
+      "vocabulary": ["eu", "você", "ele", "ela", "nós", "vocês", "eles", "elas", "me", "te", "nos"],
+      "items": [
+        { "id": "g2_1", "type": "input", "prompt": "I speak", "answer": ["eu falo"], "hints": ["1st person singular"], "explanation": "Eu always takes the -o ending for regular -ar verbs" },
+        { "id": "g2_2", "type": "input", "prompt": "you speak (Brazilian standard)", "answer": ["você fala", "voce fala"], "hints": ["2nd person with você"], "explanation": "Você uses 3rd person conjugation (same as ele/ela)" },
+        { "id": "g2_3", "type": "input", "prompt": "we speak", "answer": ["nós falamos", "nos falamos", "a gente fala"], "hints": ["1st person plural"], "explanation": "Nós takes -amos; 'a gente' (informal) uses 3rd person" },
+        { "id": "g2_4", "type": "input", "prompt": "they speak (masculine)", "answer": ["eles falam"], "hints": ["3rd person plural"], "explanation": "Eles (masc) and elas (fem) both use -am ending" },
+        { "id": "g2_5", "type": "input", "prompt": "She sees me", "answer": ["ela me vê", "ela me ve"], "hints": ["object pronoun placement"], "explanation": "Object pronoun 'me' comes before the verb" },
+        { "id": "g2_6", "type": "input", "prompt": "I love you", "answer": ["eu te amo", "eu amo você", "eu amo voce"], "hints": ["object pronoun"], "explanation": "Can use 'te' (object pronoun) or 'você' (subject as object)" },
+        { "id": "g2_7", "type": "mcq", "prompt": "Which is correct for 'we' in informal Brazilian?", "choices": ["nós", "a gente", "vocês", "both nós and a gente"], "answer": "both nós and a gente", "explanation": "'A gente' is very common in spoken Brazilian Portuguese" },
+        { "id": "g2_8", "type": "input", "prompt": "you all eat", "answer": ["vocês comem", "voces comem"], "hints": ["2nd person plural"], "explanation": "Vocês always uses 3rd person plural conjugation" },
+        { "id": "g2_9", "type": "input", "prompt": "Give it to me", "answer": ["me dá", "me da", "dá para mim", "da para mim"], "hints": ["imperative with pronoun"], "explanation": "Pronouns can come before verb or use 'para mim' after" },
+        { "id": "g2_10", "type": "input", "prompt": "between me and you", "answer": ["entre mim e você", "entre mim e voce", "entre mim e ti"], "hints": ["prepositional pronouns"], "explanation": "After prepositions, use 'mim' not 'eu', 'ti' not 'tu'" }
+      ]
+    },
+    {
+      "id": "lesson_3",
+      "title": "Present Tense: Regular Verbs (-AR, -ER, -IR)",
+      "grammar": "Three verb groups: -AR (falar), -ER (comer), -IR (partir). Present tense endings: -AR: o/a/amos/am; -ER: o/e/emos/em; -IR: o/e/imos/em. The verb stem is what remains after removing -ar/-er/-ir.",
+      "vocabulary": ["falar", "comer", "partir", "amar", "beber", "abrir", "trabalhar", "vender", "decidir"],
+      "items": [
+        { "id": "g3_1", "type": "input", "prompt": "I work (trabalhar)", "answer": ["eu trabalho", "trabalho"], "hints": ["-AR verb, 1st person"], "explanation": "Remove -ar, add -o for eu form" },
+        { "id": "g3_2", "type": "input", "prompt": "she eats (comer)", "answer": ["ela come"], "hints": ["-ER verb, 3rd person"], "explanation": "Remove -er, add -e for ela form" },
+        { "id": "g3_3", "type": "input", "prompt": "we leave (partir)", "answer": ["nós partimos", "nos partimos", "a gente parte"], "hints": ["-IR verb, 1st plural"], "explanation": "Remove -ir, add -imos for nós form" },
+        { "id": "g3_4", "type": "input", "prompt": "they love (amar)", "answer": ["eles amam", "elas amam"], "hints": ["-AR verb, 3rd plural"], "explanation": "Remove -ar, add -am for eles/elas form" },
+        { "id": "g3_5", "type": "input", "prompt": "you drink (beber)", "answer": ["você bebe", "voce bebe"], "hints": ["-ER verb, você form"], "explanation": "Você uses 3rd person: remove -er, add -e" },
+        { "id": "g3_6", "type": "input", "prompt": "I open the door", "answer": ["eu abro a porta", "abro a porta"], "hints": ["abrir - irregular eu form"], "explanation": "Abrir is irregular in eu form: abro (not abri)" },
+        { "id": "g3_7", "type": "input", "prompt": "we sell cars", "answer": ["nós vendemos carros", "nos vendemos carros", "a gente vende carros"], "hints": ["vender + object"], "explanation": "-ER verb: vendemos (nós) or vende (a gente)" },
+        { "id": "g3_8", "type": "input", "prompt": "Do you speak Portuguese?", "answer": ["você fala português", "voce fala portugues", "fala português"], "hints": ["question form"], "explanation": "Questions use same form, just intonation changes" },
+        { "id": "g3_9", "type": "input", "prompt": "they don't work", "answer": ["eles não trabalham", "elas não trabalham", "eles nao trabalham"], "hints": ["negative form"], "explanation": "Negative: não comes before the verb" },
+        { "id": "g3_10", "type": "input", "prompt": "she decides everything", "answer": ["ela decide tudo"], "hints": ["-IR verb + object"], "explanation": "-IR verbs: 3rd person singular ends in -e" }
+      ]
+    },
+    {
+      "id": "lesson_4",
+      "title": "SER vs ESTAR: The Two Verbs 'To Be'",
+      "grammar": "SER (permanent/essential): sou/é/somos/são. Used for: identity, origin, possession, time, characteristics. ESTAR (temporary/location): estou/está/estamos/estão. Used for: location, temporary states, ongoing actions. Some adjectives change meaning: ser bom (be a good person) vs estar bom (taste good/feel well).",
+      "vocabulary": ["ser", "estar", "sou", "estou", "feliz", "brasileiro", "cansado", "médico", "doente", "bonito"],
+      "items": [
+        { "id": "g4_1", "type": "input", "prompt": "I am Brazilian (permanent)", "answer": ["eu sou brasileiro", "sou brasileiro", "eu sou brasileira", "sou brasileira"], "hints": ["nationality uses SER"], "explanation": "Nationality is permanent characteristic, use SER" },
+        { "id": "g4_2", "type": "input", "prompt": "I am tired (temporary)", "answer": ["eu estou cansado", "estou cansado", "estou cansada", "tô cansado", "to cansado"], "hints": ["temporary state"], "explanation": "Being tired is temporary, use ESTAR" },
+        { "id": "g4_3", "type": "input", "prompt": "she is a doctor (profession)", "answer": ["ela é médica", "ela e medica", "ela é doutora"], "hints": ["profession uses SER"], "explanation": "Professions use SER (permanent role)" },
+        { "id": "g4_4", "type": "input", "prompt": "the book is on the table", "answer": ["o livro está na mesa", "o livro esta na mesa"], "hints": ["location uses ESTAR"], "explanation": "Location always uses ESTAR" },
+        { "id": "g4_5", "type": "input", "prompt": "it is 3 o'clock", "answer": ["são três horas", "sao tres horas", "são 3 horas"], "hints": ["time uses SER"], "explanation": "Time expressions use SER (são for plural hours)" },
+        { "id": "g4_6", "type": "input", "prompt": "the food is good (tastes good)", "answer": ["a comida está boa", "a comida esta boa", "a comida tá boa"], "hints": ["temporary quality"], "explanation": "Taste/current state uses ESTAR" },
+        { "id": "g4_7", "type": "input", "prompt": "he is tall (characteristic)", "answer": ["ele é alto", "ele e alto"], "hints": ["physical trait"], "explanation": "Permanent physical characteristics use SER" },
+        { "id": "g4_8", "type": "input", "prompt": "we are at home", "answer": ["nós estamos em casa", "nos estamos em casa", "estamos em casa", "a gente está em casa", "a gente tá em casa"], "hints": ["location"], "explanation": "Being at a location uses ESTAR" },
+        { "id": "g4_9", "type": "input", "prompt": "they are happy (right now)", "answer": ["eles estão felizes", "elas estão felizes", "eles estao felizes", "eles tão felizes"], "hints": ["current emotion"], "explanation": "Current emotional state uses ESTAR" },
+        { "id": "g4_10", "type": "input", "prompt": "the party is tomorrow", "answer": ["a festa é amanhã", "a festa e amanha"], "hints": ["event time"], "explanation": "Event dates/times use SER" }
+      ]
+    },
+    {
+      "id": "lesson_5",
+      "title": "Possessives & Demonstratives",
+      "grammar": "Possessives agree with the thing possessed: meu/minha/meus/minhas (my), seu/sua/seus/suas (your/his/her), nosso/nossa/nossos/nossas (our). Demonstratives: este/esta (this-near me), esse/essa (that-near you), aquele/aquela (that-far). Contractions: de+ele=dele, de+este=deste, em+aquele=naquele.",
+      "vocabulary": ["meu", "minha", "seu", "sua", "nosso", "dele", "dela", "este", "esse", "aquele"],
+      "items": [
+        { "id": "g5_1", "type": "input", "prompt": "my car (masculine)", "answer": ["meu carro"], "hints": ["masculine possession"], "explanation": "Carro is masculine, so use meu (not minha)" },
+        { "id": "g5_2", "type": "input", "prompt": "her house", "answer": ["a casa dela"], "hints": ["3rd person feminine owner"], "explanation": "For clarity, use dela (not sua which is ambiguous)" },
+        { "id": "g5_3", "type": "input", "prompt": "our friends (female friends)", "answer": ["nossas amigas"], "hints": ["plural feminine possession"], "explanation": "Amigas is feminine plural, so nossas agrees" },
+        { "id": "g5_4", "type": "input", "prompt": "this book (near me)", "answer": ["este livro"], "hints": ["demonstrative near speaker"], "explanation": "Este/esta for things near the speaker" },
+        { "id": "g5_5", "type": "input", "prompt": "that woman (over there)", "answer": ["aquela mulher"], "hints": ["demonstrative far"], "explanation": "Aquele/aquela for things far from both speaker and listener" },
+        { "id": "g5_6", "type": "input", "prompt": "his name", "answer": ["o nome dele"], "hints": ["3rd person masculine owner"], "explanation": "Use dele for clarity (seu nome could mean your/his/her)" },
+        { "id": "g5_7", "type": "input", "prompt": "in that house (far)", "answer": ["naquela casa"], "hints": ["preposition + demonstrative"], "explanation": "em + aquela = naquela (contraction)" },
+        { "id": "g5_8", "type": "input", "prompt": "your books (plural)", "answer": ["seus livros"], "hints": ["plural masculine possession"], "explanation": "Livros is masculine plural, so seus (not suas)" },
+        { "id": "g5_9", "type": "input", "prompt": "of this city", "answer": ["desta cidade"], "hints": ["de + demonstrative"], "explanation": "de + esta = desta (contraction)" },
+        { "id": "g5_10", "type": "input", "prompt": "their car", "answer": ["o carro deles", "o carro delas"], "hints": ["3rd person plural possession"], "explanation": "Use deles (masc) or delas (fem) depending on owners" }
+      ]
+    },
+    {
+      "id": "lesson_6",
+      "title": "Past Tense: Preterite (Simple Past)",
+      "grammar": "Preterite for completed actions. Regular endings: -AR: ei/ou/amos/aram; -ER: i/eu/emos/eram; -IR: i/iu/imos/iram. Irregular: ser/ir (fui/foi/fomos/foram), ter (tive/teve/tivemos/tiveram), fazer (fiz/fez/fizemos/fizeram), estar (estive/esteve/estivemos/estiveram).",
+      "vocabulary": ["falei", "comeu", "partimos", "fui", "teve", "fiz", "estive", "comprei", "vendeu", "abriu"],
+      "items": [
+        { "id": "g6_1", "type": "input", "prompt": "I spoke yesterday", "answer": ["eu falei ontem", "falei ontem"], "hints": ["falar in preterite"], "explanation": "-AR verbs: -ei for eu form in preterite" },
+        { "id": "g6_2", "type": "input", "prompt": "she ate", "answer": ["ela comeu"], "hints": ["comer in preterite"], "explanation": "-ER verbs: -eu for ele/ela form in preterite" },
+        { "id": "g6_3", "type": "input", "prompt": "we left", "answer": ["nós partimos", "nos partimos", "a gente partiu"], "hints": ["partir in preterite"], "explanation": "-IR verbs: -imos (nós) looks same as present!" },
+        { "id": "g6_4", "type": "input", "prompt": "I was/went (both use same form)", "answer": ["eu fui", "fui"], "hints": ["ser/ir irregular"], "explanation": "Ser and ir have identical preterite forms!" },
+        { "id": "g6_5", "type": "input", "prompt": "they had", "answer": ["eles tiveram", "elas tiveram"], "hints": ["ter irregular"], "explanation": "Ter is irregular: tive, teve, tivemos, tiveram" },
+        { "id": "g6_6", "type": "input", "prompt": "you did/made", "answer": ["você fez", "voce fez"], "hints": ["fazer irregular"], "explanation": "Fazer is irregular: fiz, fez, fizemos, fizeram" },
+        { "id": "g6_7", "type": "input", "prompt": "I bought a car", "answer": ["eu comprei um carro", "comprei um carro"], "hints": ["comprar in preterite"], "explanation": "Regular -AR: comprei (completed action)" },
+        { "id": "g6_8", "type": "input", "prompt": "he was here", "answer": ["ele esteve aqui"], "hints": ["estar irregular preterite"], "explanation": "Estar irregular: estive, esteve, estivemos, estiveram" },
+        { "id": "g6_9", "type": "input", "prompt": "they didn't see", "answer": ["eles não viram", "elas não viram", "eles nao viram"], "hints": ["ver in negative"], "explanation": "Ver is irregular: vi, viu, vimos, viram" },
+        { "id": "g6_10", "type": "input", "prompt": "did you go?", "answer": ["você foi", "voce foi"], "hints": ["ir as question"], "explanation": "Questions use same form, just intonation" }
+      ]
+    },
+    {
+      "id": "lesson_7",
+      "title": "Past Tense: Imperfect (Ongoing Past)",
+      "grammar": "Imperfect for habitual/ongoing past actions, descriptions, time/age in past. Regular endings: -AR: ava/ava/ávamos/avam; -ER/-IR: ia/ia/íamos/iam. Only 4 irregulars: ser (era), ter (tinha), vir (vinha), pôr (punha). Often translates as 'used to' or 'was doing'.",
+      "vocabulary": ["falava", "comia", "morava", "era", "tinha", "estava", "brincava", "estudava", "vivia"],
+      "items": [
+        { "id": "g7_1", "type": "input", "prompt": "I used to speak", "answer": ["eu falava", "falava"], "hints": ["habitual past"], "explanation": "Imperfect -ava shows habitual action" },
+        { "id": "g7_2", "type": "input", "prompt": "she was eating (ongoing)", "answer": ["ela comia", "ela estava comendo"], "hints": ["ongoing past action"], "explanation": "Imperfect -ia or estar + gerund for ongoing" },
+        { "id": "g7_3", "type": "input", "prompt": "we lived in Brazil", "answer": ["nós morávamos no Brasil", "nos moravamos no Brasil", "a gente morava no Brasil"], "hints": ["continuous past"], "explanation": "Living somewhere = continuous state, use imperfect" },
+        { "id": "g7_4", "type": "input", "prompt": "it was raining", "answer": ["estava chovendo", "chovia"], "hints": ["weather in past"], "explanation": "Weather descriptions use imperfect" },
+        { "id": "g7_5", "type": "input", "prompt": "I was 10 years old", "answer": ["eu tinha 10 anos", "eu tinha dez anos", "tinha 10 anos"], "hints": ["age in past"], "explanation": "Age in past uses ter in imperfect" },
+        { "id": "g7_6", "type": "input", "prompt": "he was tall (description)", "answer": ["ele era alto"], "hints": ["past description"], "explanation": "Descriptions in past use ser imperfect" },
+        { "id": "g7_7", "type": "input", "prompt": "they always studied", "answer": ["eles sempre estudavam", "elas sempre estudavam"], "hints": ["habitual with sempre"], "explanation": "Sempre (always) signals imperfect" },
+        { "id": "g7_8", "type": "input", "prompt": "when I was a child", "answer": ["quando eu era criança", "quando era criança", "quando eu era crianca"], "hints": ["time period"], "explanation": "Past time periods use imperfect" },
+        { "id": "g7_9", "type": "input", "prompt": "she had long hair", "answer": ["ela tinha cabelo comprido", "ela tinha cabelo longo"], "hints": ["past possession"], "explanation": "Past descriptions/possessions use imperfect" },
+        { "id": "g7_10", "type": "input", "prompt": "we used to play", "answer": ["nós brincávamos", "nos brincavamos", "a gente brincava"], "hints": ["habitual past action"], "explanation": "'Used to' = imperfect tense" }
+      ]
+    },
+    {
+      "id": "lesson_8",
+      "title": "Future Tense & Conditional",
+      "grammar": "Simple future: ir + infinitive (vou falar = I will speak). Formal future: infinitive + ei/á/emos/ão (falarei/falará). Conditional (would): infinitive + ia/ia/íamos/iam (falaria = would speak). Future subjunctive with quando/se: quando eu falar (when I speak-future).",
+      "vocabulary": ["vou", "vai", "vamos", "falarei", "falará", "falaria", "seria", "teria", "quando", "se"],
+      "items": [
+        { "id": "g8_1", "type": "input", "prompt": "I will speak (common form)", "answer": ["eu vou falar", "vou falar"], "hints": ["ir + infinitive"], "explanation": "Ir + infinitive is most common future" },
+        { "id": "g8_2", "type": "input", "prompt": "she will eat", "answer": ["ela vai comer"], "hints": ["ir + infinitive"], "explanation": "Vai (3rd person ir) + infinitive" },
+        { "id": "g8_3", "type": "input", "prompt": "we will travel", "answer": ["nós vamos viajar", "nos vamos viajar", "a gente vai viajar"], "hints": ["ir + infinitive"], "explanation": "Vamos/vai + infinitive for future" },
+        { "id": "g8_4", "type": "input", "prompt": "I will speak (formal)", "answer": ["eu falarei", "falarei"], "hints": ["formal future"], "explanation": "Formal: infinitive + ei (more written than spoken)" },
+        { "id": "g8_5", "type": "input", "prompt": "I would like", "answer": ["eu gostaria", "gostaria"], "hints": ["conditional"], "explanation": "Conditional: infinitive + ia" },
+        { "id": "g8_6", "type": "input", "prompt": "it would be good", "answer": ["seria bom"], "hints": ["ser conditional"], "explanation": "Ser conditional: seria (would be)" },
+        { "id": "g8_7", "type": "input", "prompt": "when you arrive (future)", "answer": ["quando você chegar", "quando voce chegar"], "hints": ["future subjunctive"], "explanation": "Quando + future subjunctive for future events" },
+        { "id": "g8_8", "type": "input", "prompt": "if I have time", "answer": ["se eu tiver tempo", "se tiver tempo"], "hints": ["conditional se"], "explanation": "Se + future subjunctive for conditions" },
+        { "id": "g8_9", "type": "input", "prompt": "they will do", "answer": ["eles vão fazer", "elas vão fazer", "eles vao fazer"], "hints": ["irregular infinitive"], "explanation": "Vão + fazer (infinitive unchanged)" },
+        { "id": "g8_10", "type": "input", "prompt": "could you help? (polite)", "answer": ["você poderia ajudar", "voce poderia ajudar", "poderia ajudar"], "hints": ["polite request"], "explanation": "Poderia (conditional) for polite requests" }
+      ]
+    },
+    {
+      "id": "lesson_9",
+      "title": "Imperative & Commands",
+      "grammar": "Formal imperative uses subjunctive: fale (speak), coma (eat), parta (leave). Informal uses 3rd person: fala, come, parte. Negative always uses subjunctive: não fale. With pronouns: me diga (tell me) or diga-me. Polite: por favor, poderia, será que pode.",
+      "vocabulary": ["fale", "fala", "venha", "vem", "faça", "faz", "seja", "vá", "diga", "pare"],
+      "items": [
+        { "id": "g9_1", "type": "input", "prompt": "Speak! (formal command)", "answer": ["fale"], "hints": ["formal imperative"], "explanation": "Formal uses subjunctive form: fale" },
+        { "id": "g9_2", "type": "input", "prompt": "Speak! (informal)", "answer": ["fala"], "hints": ["informal imperative"], "explanation": "Informal drops the -r: falar → fala" },
+        { "id": "g9_3", "type": "input", "prompt": "Don't speak!", "answer": ["não fale", "nao fale"], "hints": ["negative command"], "explanation": "Negative always uses subjunctive" },
+        { "id": "g9_4", "type": "input", "prompt": "Come here!", "answer": ["venha aqui", "venha cá", "vem aqui", "vem cá", "vem ca"], "hints": ["movement command"], "explanation": "Venha (formal) or vem (informal)" },
+        { "id": "g9_5", "type": "input", "prompt": "Do it!", "answer": ["faça", "faca", "faça isso", "faz"], "hints": ["fazer command"], "explanation": "Faça (formal) or faz (informal)" },
+        { "id": "g9_6", "type": "input", "prompt": "Be patient! (formal)", "answer": ["seja paciente"], "hints": ["ser imperative"], "explanation": "Ser imperative: seja (formal subjunctive)" },
+        { "id": "g9_7", "type": "input", "prompt": "Tell me", "answer": ["me diga", "diga-me", "me fala", "fala comigo"], "hints": ["with pronoun"], "explanation": "Pronoun can come before or after (with hyphen)" },
+        { "id": "g9_8", "type": "input", "prompt": "Let's go!", "answer": ["vamos"], "hints": ["1st person plural"], "explanation": "Vamos = let's go (inclusive command)" },
+        { "id": "g9_9", "type": "input", "prompt": "Please sit down", "answer": ["sente-se por favor", "por favor sente-se", "senta por favor"], "hints": ["polite command"], "explanation": "Por favor makes commands polite" },
+        { "id": "g9_10", "type": "input", "prompt": "Stop! (urgent)", "answer": ["pare", "para"], "hints": ["immediate command"], "explanation": "Pare (formal) or para (informal)" }
+      ]
+    },
+    {
+      "id": "lesson_10",
+      "title": "Subjunctive Mood: Doubt, Emotion, Desire",
+      "grammar": "Subjunctive expresses doubt, emotion, desire, possibility. Triggered by: espero que (I hope that), duvido que (I doubt that), é possível que (it's possible that), talvez (maybe), quero que (I want that). Present subjunctive: -AR: e/e/emos/em; -ER/-IR: a/a/amos/am.",
+      "vocabulary": ["espero", "duvido", "talvez", "tomara", "quero", "seja", "tenha", "possa", "faça", "venha"],
+      "items": [
+        { "id": "g10_1", "type": "input", "prompt": "I hope he speaks", "answer": ["espero que ele fale"], "hints": ["esperar que + subjunctive"], "explanation": "Espero que triggers subjunctive: fale (not fala)" },
+        { "id": "g10_2", "type": "input", "prompt": "I want you to eat", "answer": ["quero que você coma", "quero que voce coma"], "hints": ["querer que"], "explanation": "Quero que + subjunctive: coma" },
+        { "id": "g10_3", "type": "input", "prompt": "maybe she comes", "answer": ["talvez ela venha"], "hints": ["talvez + subjunctive"], "explanation": "Talvez (maybe) triggers subjunctive" },
+        { "id": "g10_4", "type": "input", "prompt": "I doubt they know", "answer": ["duvido que eles saibam", "duvido que elas saibam"], "hints": ["duvidar que"], "explanation": "Doubt triggers subjunctive: saibam" },
+        { "id": "g10_5", "type": "input", "prompt": "it's good that you are here", "answer": ["é bom que você esteja aqui", "e bom que voce esteja aqui"], "hints": ["emotion + que"], "explanation": "Emotional judgment triggers subjunctive" },
+        { "id": "g10_6", "type": "input", "prompt": "I hope it is", "answer": ["espero que seja", "tomara que seja"], "hints": ["ser subjunctive"], "explanation": "Ser subjunctive: seja" },
+        { "id": "g10_7", "type": "input", "prompt": "may you have luck", "answer": ["que você tenha sorte", "que voce tenha sorte", "que tenha sorte"], "hints": ["wish/blessing"], "explanation": "Wishes use subjunctive: tenha" },
+        { "id": "g10_8", "type": "input", "prompt": "although he is", "answer": ["embora ele seja", "ainda que ele seja"], "hints": ["concession"], "explanation": "Embora/ainda que trigger subjunctive" },
+        { "id": "g10_9", "type": "input", "prompt": "wherever you go", "answer": ["onde quer que você vá", "onde quer que voce va", "aonde você for"], "hints": ["indefinite place"], "explanation": "Indefinite expressions use subjunctive" },
+        { "id": "g10_10", "type": "input", "prompt": "God willing (hopefully)", "answer": ["tomara", "oxalá", "oxala", "Deus queira"], "hints": ["expressing hope"], "explanation": "Fixed expressions of hope/desire" }
+      ]
+    },
+    {
+      "id": "lesson_11",
+      "title": "Prepositions & Contractions",
+      "grammar": "Common prepositions: de (of/from), em (in/on), para (to/for), por (by/through), com (with), sem (without), sobre (about/on), entre (between). Contractions: de+o=do, de+a=da, em+o=no, em+a=na, por+o=pelo, por+a=pela, de+ele=dele, de+este=deste.",
+      "vocabulary": ["de", "em", "para", "por", "com", "sem", "sobre", "entre", "desde", "até"],
+      "items": [
+        { "id": "g11_1", "type": "input", "prompt": "of the man", "answer": ["do homem"], "hints": ["de + o = do"], "explanation": "de + o = do (mandatory contraction)" },
+        { "id": "g11_2", "type": "input", "prompt": "in the house", "answer": ["na casa"], "hints": ["em + a = na"], "explanation": "em + a = na (mandatory contraction)" },
+        { "id": "g11_3", "type": "input", "prompt": "by the teacher (fem)", "answer": ["pela professora"], "hints": ["por + a = pela"], "explanation": "por + a = pela (contraction)" },
+        { "id": "g11_4", "type": "input", "prompt": "to/for me", "answer": ["para mim", "pra mim"], "hints": ["preposition + pronoun"], "explanation": "After para, use mim (not eu)" },
+        { "id": "g11_5", "type": "input", "prompt": "with you", "answer": ["com você", "com voce", "contigo"], "hints": ["com + pronoun"], "explanation": "Com você or contigo (formal)" },
+        { "id": "g11_6", "type": "input", "prompt": "from São Paulo", "answer": ["de São Paulo", "de Sao Paulo"], "hints": ["origin"], "explanation": "De for origin (no contraction with proper nouns)" },
+        { "id": "g11_7", "type": "input", "prompt": "about this", "answer": ["sobre isso", "sobre isto"], "hints": ["topic preposition"], "explanation": "Sobre = about/concerning" },
+        { "id": "g11_8", "type": "input", "prompt": "between us", "answer": ["entre nós", "entre nos"], "hints": ["between + pronoun"], "explanation": "Entre nós (between us)" },
+        { "id": "g11_9", "type": "input", "prompt": "since yesterday", "answer": ["desde ontem"], "hints": ["time preposition"], "explanation": "Desde = since (time)" },
+        { "id": "g11_10", "type": "input", "prompt": "for him (intended for)", "answer": ["para ele", "pra ele"], "hints": ["beneficiary"], "explanation": "Para = intended for/directed to" }
+      ]
+    },
+    {
+      "id": "lesson_12",
+      "title": "Question Words & Interrogatives",
+      "grammar": "Question words: o que/que (what), quem (who), onde (where), quando (when), por que (why), como (how), quanto/a (how much/many), qual (which). Word order often stays same, just add question word. Por que (why) vs porque (because) vs por quê (why-end) vs porquê (the reason).",
+      "vocabulary": ["que", "quem", "onde", "quando", "porque", "como", "quanto", "qual", "cadê", "será"],
+      "items": [
+        { "id": "g12_1", "type": "input", "prompt": "What is this?", "answer": ["o que é isso", "o que e isso", "que é isso"], "hints": ["what + ser"], "explanation": "O que or just que for 'what'" },
+        { "id": "g12_2", "type": "input", "prompt": "Who are you?", "answer": ["quem é você", "quem e voce", "quem és tu"], "hints": ["who + ser"], "explanation": "Quem = who (invariable)" },
+        { "id": "g12_3", "type": "input", "prompt": "Where is it?", "answer": ["onde está", "onde esta", "onde é", "cadê"], "hints": ["location question"], "explanation": "Onde or cadê (informal) for where" },
+        { "id": "g12_4", "type": "input", "prompt": "When do you work?", "answer": ["quando você trabalha", "quando voce trabalha"], "hints": ["time question"], "explanation": "Quando = when (time)" },
+        { "id": "g12_5", "type": "input", "prompt": "Why? (at end of sentence)", "answer": ["por quê", "por que"], "hints": ["why at end"], "explanation": "Por quê with accent at sentence end" },
+        { "id": "g12_6", "type": "input", "prompt": "How are you?", "answer": ["como você está", "como voce esta", "como vai", "como está"], "hints": ["how + estar"], "explanation": "Como = how (manner/state)" },
+        { "id": "g12_7", "type": "input", "prompt": "How much is it?", "answer": ["quanto é", "quanto e", "quanto custa"], "hints": ["price question"], "explanation": "Quanto = how much (quantity/price)" },
+        { "id": "g12_8", "type": "input", "prompt": "Which one do you want?", "answer": ["qual você quer", "qual voce quer", "qual quer"], "hints": ["selection question"], "explanation": "Qual = which (selection from options)" },
+        { "id": "g12_9", "type": "input", "prompt": "Whose is this?", "answer": ["de quem é isso", "de quem e isso", "de quem é"], "hints": ["possession question"], "explanation": "De quem = whose (of whom)" },
+        { "id": "g12_10", "type": "input", "prompt": "I wonder if... (will it be that)", "answer": ["será que", "sera que"], "hints": ["wondering expression"], "explanation": "Será que = I wonder if/whether" }
+      ]
+    },
+    {
+      "id": "lesson_13",
+      "title": "Gerund, Participle & Continuous Tenses",
+      "grammar": "Gerund: -ando (AR), -endo (ER), -indo (IR). Used with estar for continuous: estou falando (I am speaking). Past participle: -ado (AR), -ido (ER/IR). Used with ter/haver for perfect tenses: tenho falado (I have spoken). Some irregular: feito (fazer), dito (dizer), visto (ver), posto (pôr).",
+      "vocabulary": ["falando", "comendo", "partindo", "falado", "comido", "partido", "feito", "dito", "visto", "escrito"],
+      "items": [
+        { "id": "g13_1", "type": "input", "prompt": "I am speaking", "answer": ["estou falando", "tô falando", "to falando"], "hints": ["present continuous"], "explanation": "Estar + gerund (-ando) for ongoing action" },
+        { "id": "g13_2", "type": "input", "prompt": "she was eating", "answer": ["ela estava comendo", "ela tava comendo"], "hints": ["past continuous"], "explanation": "Estava + gerund (-endo) for past ongoing" },
+        { "id": "g13_3", "type": "input", "prompt": "they are leaving", "answer": ["eles estão partindo", "elas estão partindo", "eles tão partindo"], "hints": ["present continuous -IR"], "explanation": "-IR verbs: gerund ends in -indo" },
+        { "id": "g13_4", "type": "input", "prompt": "I have spoken", "answer": ["eu tenho falado", "tenho falado"], "hints": ["present perfect"], "explanation": "Ter + participle for present perfect" },
+        { "id": "g13_5", "type": "input", "prompt": "it is done/made", "answer": ["está feito", "esta feito", "tá feito"], "hints": ["fazer participle"], "explanation": "Feito is irregular participle of fazer" },
+        { "id": "g13_6", "type": "input", "prompt": "the book is written", "answer": ["o livro está escrito", "o livro esta escrito"], "hints": ["passive with estar"], "explanation": "Escrito is irregular participle of escrever" },
+        { "id": "g13_7", "type": "input", "prompt": "walking down the street", "answer": ["andando pela rua", "caminhando pela rua"], "hints": ["gerund alone"], "explanation": "Gerund can be used alone for simultaneous action" },
+        { "id": "g13_8", "type": "input", "prompt": "having said that", "answer": ["tendo dito isso", "dito isso"], "hints": ["perfect gerund"], "explanation": "Tendo + participle for completed prior action" },
+        { "id": "g13_9", "type": "input", "prompt": "I had seen", "answer": ["eu tinha visto", "tinha visto"], "hints": ["past perfect"], "explanation": "Tinha + participle for past perfect" },
+        { "id": "g13_10", "type": "input", "prompt": "being tired (while being)", "answer": ["estando cansado", "estando cansada"], "hints": ["gerund of estar"], "explanation": "Estando = being (gerund of estar)" }
+      ]
+    },
+    {
+      "id": "lesson_14",
+      "title": "Reflexive Verbs & Pronouns",
+      "grammar": "Reflexive pronouns: me, te, se, nos, vos, se. Common reflexives: levantar-se (get up), sentar-se (sit down), chamar-se (be called), sentir-se (feel). Position: before verb (me levanto) or after with hyphen (levanto-me). In Brazil, often dropped in speech: 'como (você) chama?' instead of 'como se chama?'",
+      "vocabulary": ["me", "se", "nos", "levantar-se", "sentar-se", "chamar-se", "sentir-se", "lembrar-se", "esquecer-se", "vestir-se"],
+      "items": [
+        { "id": "g14_1", "type": "input", "prompt": "I get up at 7", "answer": ["eu me levanto às 7", "me levanto às 7", "levanto às 7"], "hints": ["reflexive morning routine"], "explanation": "Levantar-se: me before or after verb" },
+        { "id": "g14_2", "type": "input", "prompt": "What's your name? (lit: how do you call yourself)", "answer": ["como você se chama", "como voce se chama", "como se chama"], "hints": ["chamar-se"], "explanation": "Chamar-se = to be called (reflexive)" },
+        { "id": "g14_3", "type": "input", "prompt": "sit down please", "answer": ["sente-se por favor", "por favor sente-se", "senta por favor"], "hints": ["imperative reflexive"], "explanation": "Imperative: pronoun after with hyphen" },
+        { "id": "g14_4", "type": "input", "prompt": "I feel good", "answer": ["eu me sinto bem", "me sinto bem"], "hints": ["sentir-se"], "explanation": "Sentir-se = to feel (reflexive for emotions)" },
+        { "id": "g14_5", "type": "input", "prompt": "they got married", "answer": ["eles se casaram", "elas se casaram"], "hints": ["reciprocal action"], "explanation": "Casar-se = to get married (reflexive/reciprocal)" },
+        { "id": "g14_6", "type": "input", "prompt": "I remember", "answer": ["eu me lembro", "me lembro", "lembro"], "hints": ["lembrar-se"], "explanation": "Lembrar-se = to remember (often drops -se in Brazil)" },
+        { "id": "g14_7", "type": "input", "prompt": "don't forget!", "answer": ["não se esqueça", "nao se esqueca", "não esquece"], "hints": ["negative imperative"], "explanation": "Negative imperative: não + se + subjunctive" },
+        { "id": "g14_8", "type": "input", "prompt": "we see each other", "answer": ["nós nos vemos", "nos nos vemos", "a gente se vê"], "hints": ["reciprocal"], "explanation": "Reciprocal: we see each other" },
+        { "id": "g14_9", "type": "input", "prompt": "getting dressed", "answer": ["se vestindo", "vestindo-se"], "hints": ["reflexive gerund"], "explanation": "Vestir-se in gerund form" },
+        { "id": "g14_10", "type": "input", "prompt": "one should rest (impersonal)", "answer": ["deve-se descansar", "se deve descansar"], "hints": ["impersonal se"], "explanation": "Se for impersonal 'one/people' statements" }
+      ]
+    },
+    {
+      "id": "lesson_15",
+      "title": "Comparatives & Superlatives",
+      "grammar": "Comparatives: mais...que (more than), menos...que (less than), tão...quanto (as...as). Superlatives: o/a mais (the most), o/a menos (the least). Irregular: melhor (better), pior (worse), maior (bigger), menor (smaller). Absolute superlative: -íssimo/a (very/extremely).",
+      "vocabulary": ["mais", "menos", "tão", "quanto", "melhor", "pior", "maior", "menor", "íssimo", "demais"],
+      "items": [
+        { "id": "g15_1", "type": "input", "prompt": "taller than", "answer": ["mais alto que", "mais alta que"], "hints": ["more...than"], "explanation": "Mais + adjective + que for comparisons" },
+        { "id": "g15_2", "type": "input", "prompt": "as beautiful as", "answer": ["tão bonito quanto", "tão bonita quanto", "tao bonito quanto"], "hints": ["as...as"], "explanation": "Tão + adjective + quanto for equality" },
+        { "id": "g15_3", "type": "input", "prompt": "less expensive than", "answer": ["menos caro que", "menos cara que"], "hints": ["less...than"], "explanation": "Menos + adjective + que" },
+        { "id": "g15_4", "type": "input", "prompt": "the best", "answer": ["o melhor", "a melhor"], "hints": ["superlative of bom"], "explanation": "Melhor is irregular (not mais bom)" },
+        { "id": "g15_5", "type": "input", "prompt": "the worst", "answer": ["o pior", "a pior"], "hints": ["superlative of mau"], "explanation": "Pior is irregular (not mais mau)" },
+        { "id": "g15_6", "type": "input", "prompt": "bigger than", "answer": ["maior que", "maior do que"], "hints": ["comparative of grande"], "explanation": "Maior is irregular (not mais grande)" },
+        { "id": "g15_7", "type": "input", "prompt": "the smallest", "answer": ["o menor", "a menor"], "hints": ["superlative of pequeno"], "explanation": "Menor is irregular (not mais pequeno)" },
+        { "id": "g15_8", "type": "input", "prompt": "very beautiful", "answer": ["belíssimo", "belissimo", "belíssima", "muito bonito", "lindo demais"], "hints": ["absolute superlative"], "explanation": "-íssimo or muito/demais for emphasis" },
+        { "id": "g15_9", "type": "input", "prompt": "more than 10", "answer": ["mais de 10", "mais de dez", "mais que 10"], "hints": ["more than number"], "explanation": "Mais de + number" },
+        { "id": "g15_10", "type": "input", "prompt": "the most important thing", "answer": ["a coisa mais importante", "o mais importante"], "hints": ["superlative phrase"], "explanation": "Article + noun + mais + adjective" }
+      ]
+    }
+  ]
+}

@@ -291,3 +291,234 @@ body.dev .tab.active { box-shadow: 0 0 0 2px rgba(22,212,170,0.35) inset; }
   font-weight: 700;
   color: var(--accent-2);
 }
+
+/* Grammar and Explanation Sections */
+.grammar-info {
+  background: linear-gradient(135deg, rgba(124, 92, 255, 0.1) 0%, rgba(22, 212, 170, 0.05) 100%);
+  border: 1px solid rgba(124, 92, 255, 0.3);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.grammar-info h4 {
+  margin: 0 0 8px 0;
+  color: var(--accent-2);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.explanation {
+  background: rgba(22, 212, 170, 0.1);
+  border: 1px solid rgba(22, 212, 170, 0.3);
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.explanation::before {
+  content: "💡 ";
+  font-size: 16px;
+}
+
+.grammar-toggle {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.grammar-toggle:hover {
+  background: rgba(124, 92, 255, 0.1);
+}
+
+/* Vocabulary Progress */
+.vocabulary-progress {
+  background: linear-gradient(135deg, rgba(22, 212, 170, 0.1) 0%, rgba(124, 92, 255, 0.05) 100%);
+  border: 1px solid rgba(22, 212, 170, 0.3);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.vocabulary-progress h4 {
+  margin: 0 0 12px 0;
+  color: var(--accent-2);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.vocab-stats {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.vocab-stat {
+  text-align: center;
+}
+
+.vocab-stat .number {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent-2);
+}
+
+.vocab-stat .label {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.vocab-progress-bar {
+  background: #14172c;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.vocab-progress-fill {
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.vocab-message {
+  font-size: 13px;
+  color: var(--text);
+}
+
+.vocab-ready {
+  color: var(--accent-2);
+  font-weight: 600;
+}
+
+.vocab-not-ready {
+  color: var(--muted);
+}
+
+/* Script Helpers for Multi-Script Languages */
+.script-helpers {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+  padding: 8px;
+  background: rgba(124, 92, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(124, 92, 255, 0.2);
+}
+
+.script-helpers button {
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+.script-helpers .ghost {
+  border-color: rgba(124, 92, 255, 0.3);
+}
+
+.script-helpers .ghost:hover {
+  background: rgba(124, 92, 255, 0.1);
+  border-color: var(--accent);
+}
+
+/* Learning Mode Styles */
+.hints.correct {
+  color: var(--accent-2);
+  font-weight: 600;
+}
+
+.hints.incorrect {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.learning-mode {
+  background: linear-gradient(135deg, rgba(255, 92, 124, 0.1) 0%, rgba(124, 92, 255, 0.05) 100%);
+  border: 1px solid rgba(255, 92, 124, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.correct-answer-display {
+  margin-bottom: 16px;
+}
+
+.correct-answer-display h4 {
+  margin: 0 0 8px 0;
+  color: var(--danger);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.correct-answer {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text);
+  background: rgba(22, 212, 170, 0.1);
+  border: 1px solid rgba(22, 212, 170, 0.3);
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px 0;
+}
+
+.learning-explanation {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 16px 0;
+  line-height: 1.5;
+}
+
+.learning-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.learning-actions button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.learning-actions .primary-btn {
+  background: var(--accent-2);
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+.learning-actions .primary-btn:hover {
+  background: #1bc49a;
+  transform: translateY(-1px);
+}
+
+.learning-actions .ghost {
+  background: transparent;
+  border: 1px solid var(--muted);
+  color: var(--muted);
+}
+
+.learning-actions .ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}

@@ -1,0 +1,173 @@
+{
+  "id": "portuguese_level_1",
+  "title": "Portuguese - Level 1: Foundation",
+  "track": "spoken",
+  "langFrom": "en",
+  "langTo": "pt",
+  "description": "Complete beginner course - start here! Learn basic articles, essential nouns, and simple greetings. Master 8/10 new words per lesson to advance.",
+  "level": 1,
+  "totalLessons": 8,
+  "vocabularyGoal": 64,
+  "lessons": [
+    {
+      "id": "lesson_1",
+      "title": "Lesson 1: Articles & Gender (The/A)",
+      "newWords": ["o", "a", "os", "as", "um", "uma", "uns", "umas", "livro", "mesa"],
+      "masteryRequired": 8,
+      "practicalGoal": "Identify gender of objects and use correct articles",
+      "grammar": "Portuguese nouns have gender (masculine/feminine). Articles must agree: o/os (masc), a/as (fem), um/uma (a/an). Most -o words are masculine, -a words are feminine.",
+      "items": [
+        { "id": "l1_1", "type": "mcq", "prompt": "Select the correct article: ___ livro (book)", "choices": ["o", "a", "os", "as"], "answer": "o", "newWord": "o", "explanation": "Livro (book) is masculine, so we use 'o'" },
+        { "id": "l1_2", "type": "mcq", "prompt": "Select the correct article: ___ mesa (table)", "choices": ["o", "a", "os", "as"], "answer": "a", "newWord": "a", "explanation": "Mesa (table) is feminine, so we use 'a'" },
+        { "id": "l1_3", "type": "input", "prompt": "the books (plural)", "answer": ["os livros"], "newWord": "os", "explanation": "Plural masculine: os livros (the books)" },
+        { "id": "l1_4", "type": "input", "prompt": "the tables (plural)", "answer": ["as mesas"], "newWord": "as", "explanation": "Plural feminine: as mesas (the tables)" },
+        { "id": "l1_5", "type": "input", "prompt": "a book (indefinite)", "answer": ["um livro"], "newWord": "um", "explanation": "Indefinite masculine: um livro (a book)" },
+        { "id": "l1_6", "type": "input", "prompt": "a table (indefinite)", "answer": ["uma mesa"], "newWord": "uma", "explanation": "Indefinite feminine: uma mesa (a table)" },
+        { "id": "l1_7", "type": "input", "prompt": "some books (plural indefinite)", "answer": ["uns livros"], "newWord": "uns", "explanation": "Plural indefinite masculine: uns livros" },
+        { "id": "l1_8", "type": "input", "prompt": "some tables (plural indefinite)", "answer": ["umas mesas"], "newWord": "umas", "explanation": "Plural indefinite feminine: umas mesas" },
+        { "id": "l1_9", "type": "input", "prompt": "book", "answer": ["livro"], "newWord": "livro", "explanation": "livro = book (masculine noun)" },
+        { "id": "l1_10", "type": "input", "prompt": "table", "answer": ["mesa"], "newWord": "mesa", "explanation": "mesa = table (feminine noun)" }
+      ]
+    },
+    {
+      "id": "lesson_2", 
+      "title": "Lesson 2: People & Family",
+      "newWords": ["homem", "mulher", "pai", "mãe", "filho", "filha", "irmão", "irmã", "família", "pessoa"],
+      "masteryRequired": 8,
+      "practicalGoal": "Talk about family members and people",
+      "grammar": "Family words have gender. Some change endings: filho/filha (son/daughter), irmão/irmã (brother/sister). Others are completely different: pai/mãe (father/mother).",
+      "items": [
+        { "id": "l2_1", "type": "input", "prompt": "man", "answer": ["homem"], "newWord": "homem", "explanation": "homem = man (masculine)" },
+        { "id": "l2_2", "type": "input", "prompt": "woman", "answer": ["mulher"], "newWord": "mulher", "explanation": "mulher = woman (feminine)" },
+        { "id": "l2_3", "type": "input", "prompt": "father", "answer": ["pai"], "newWord": "pai", "explanation": "pai = father" },
+        { "id": "l2_4", "type": "input", "prompt": "mother", "answer": ["mãe", "mae"], "newWord": "mãe", "explanation": "mãe = mother" },
+        { "id": "l2_5", "type": "input", "prompt": "son", "answer": ["filho"], "newWord": "filho", "explanation": "filho = son" },
+        { "id": "l2_6", "type": "input", "prompt": "daughter", "answer": ["filha"], "newWord": "filha", "explanation": "filha = daughter" },
+        { "id": "l2_7", "type": "input", "prompt": "brother", "answer": ["irmão", "irmao"], "newWord": "irmão", "explanation": "irmão = brother" },
+        { "id": "l2_8", "type": "input", "prompt": "sister", "answer": ["irmã", "irma"], "newWord": "irmã", "explanation": "irmã = sister" },
+        { "id": "l2_9", "type": "input", "prompt": "family", "answer": ["família", "familia"], "newWord": "família", "explanation": "família = family" },
+        { "id": "l2_10", "type": "input", "prompt": "person", "answer": ["pessoa"], "newWord": "pessoa", "explanation": "pessoa = person (always feminine, even for men)" }
+      ]
+    },
+    {
+      "id": "lesson_3",
+      "title": "Lesson 3: Home & Objects",
+      "newWords": ["casa", "porta", "janela", "cama", "cadeira", "carro", "água", "comida", "café", "pão"],
+      "masteryRequired": 8,
+      "practicalGoal": "Name common objects and parts of house",
+      "grammar": "Common household words. Note: água (water) is feminine despite ending in -a. Most concrete nouns are easy to remember with their articles.",
+      "items": [
+        { "id": "l3_1", "type": "input", "prompt": "house", "answer": ["casa"], "newWord": "casa", "explanation": "casa = house (feminine)" },
+        { "id": "l3_2", "type": "input", "prompt": "door", "answer": ["porta"], "newWord": "porta", "explanation": "porta = door (feminine)" },
+        { "id": "l3_3", "type": "input", "prompt": "window", "answer": ["janela"], "newWord": "janela", "explanation": "janela = window (feminine)" },
+        { "id": "l3_4", "type": "input", "prompt": "bed", "answer": ["cama"], "newWord": "cama", "explanation": "cama = bed (feminine)" },
+        { "id": "l3_5", "type": "input", "prompt": "chair", "answer": ["cadeira"], "newWord": "cadeira", "explanation": "cadeira = chair (feminine)" },
+        { "id": "l3_6", "type": "input", "prompt": "car", "answer": ["carro"], "newWord": "carro", "explanation": "carro = car (masculine)" },
+        { "id": "l3_7", "type": "input", "prompt": "water", "answer": ["água", "agua"], "newWord": "água", "explanation": "água = water (feminine, despite ending)" },
+        { "id": "l3_8", "type": "input", "prompt": "food", "answer": ["comida"], "newWord": "comida", "explanation": "comida = food (feminine)" },
+        { "id": "l3_9", "type": "input", "prompt": "coffee", "answer": ["café", "cafe"], "newWord": "café", "explanation": "café = coffee (masculine)" },
+        { "id": "l3_10", "type": "input", "prompt": "bread", "answer": ["pão", "pao"], "newWord": "pão", "explanation": "pão = bread (masculine)" }
+      ]
+    },
+    {
+      "id": "lesson_4",
+      "title": "Lesson 4: Essential Verbs - TO BE",
+      "newWords": ["ser", "estar", "sou", "é", "está", "estou", "sim", "não", "aqui", "ali"],
+      "masteryRequired": 8,
+      "practicalGoal": "Use 'I am' and 'it is' in simple statements",
+      "grammar": "Portuguese has two verbs for 'to be': SER (permanent) and ESTAR (temporary/location). Learn: eu sou (I am permanent), eu estou (I am temporary), é (is permanent), está (is temporary).",
+      "items": [
+        { "id": "l4_1", "type": "input", "prompt": "to be (permanent)", "answer": ["ser"], "newWord": "ser", "explanation": "ser = to be (for permanent things)" },
+        { "id": "l4_2", "type": "input", "prompt": "to be (temporary/location)", "answer": ["estar"], "newWord": "estar", "explanation": "estar = to be (for temporary states/location)" },
+        { "id": "l4_3", "type": "input", "prompt": "I am (permanent)", "answer": ["eu sou", "sou"], "newWord": "sou", "explanation": "sou = I am (permanent characteristics)" },
+        { "id": "l4_4", "type": "input", "prompt": "he/she/it is (permanent)", "answer": ["é", "ele é", "ela é"], "newWord": "é", "explanation": "é = is (permanent characteristics)" },
+        { "id": "l4_5", "type": "input", "prompt": "he/she/it is (temporary)", "answer": ["está", "ele está", "ela está"], "newWord": "está", "explanation": "está = is (temporary state/location)" },
+        { "id": "l4_6", "type": "input", "prompt": "I am (temporary)", "answer": ["eu estou", "estou"], "newWord": "estou", "explanation": "estou = I am (temporary state/location)" },
+        { "id": "l4_7", "type": "input", "prompt": "yes", "answer": ["sim"], "newWord": "sim", "explanation": "sim = yes" },
+        { "id": "l4_8", "type": "input", "prompt": "no", "answer": ["não", "nao"], "newWord": "não", "explanation": "não = no/not" },
+        { "id": "l4_9", "type": "input", "prompt": "here", "answer": ["aqui"], "newWord": "aqui", "explanation": "aqui = here" },
+        { "id": "l4_10", "type": "input", "prompt": "there", "answer": ["ali", "lá", "la"], "newWord": "ali", "explanation": "ali = there (visible)" }
+      ]
+    },
+    {
+      "id": "lesson_5",
+      "title": "Lesson 5: Basic Greetings & Politeness",
+      "newWords": ["olá", "oi", "bom", "dia", "tarde", "noite", "obrigado", "obrigada", "por favor", "tchau"],
+      "masteryRequired": 8,
+      "practicalGoal": "Greet people appropriately and be polite",
+      "grammar": "Greetings often use 'bom/boa' (good) + time period. 'Obrigado' changes with YOUR gender: men say 'obrigado', women say 'obrigada'.",
+      "items": [
+        { "id": "l5_1", "type": "input", "prompt": "hello (formal)", "answer": ["olá", "ola"], "newWord": "olá", "explanation": "olá = hello (formal greeting)" },
+        { "id": "l5_2", "type": "input", "prompt": "hi (informal)", "answer": ["oi"], "newWord": "oi", "explanation": "oi = hi (informal greeting)" },
+        { "id": "l5_3", "type": "input", "prompt": "good (masculine)", "answer": ["bom"], "newWord": "bom", "explanation": "bom = good (masculine form)" },
+        { "id": "l5_4", "type": "input", "prompt": "day", "answer": ["dia"], "newWord": "dia", "explanation": "dia = day" },
+        { "id": "l5_5", "type": "input", "prompt": "afternoon", "answer": ["tarde"], "newWord": "tarde", "explanation": "tarde = afternoon/evening" },
+        { "id": "l5_6", "type": "input", "prompt": "night", "answer": ["noite"], "newWord": "noite", "explanation": "noite = night" },
+        { "id": "l5_7", "type": "input", "prompt": "thank you (said by man)", "answer": ["obrigado"], "newWord": "obrigado", "explanation": "obrigado = thank you (said by males)" },
+        { "id": "l5_8", "type": "input", "prompt": "thank you (said by woman)", "answer": ["obrigada"], "newWord": "obrigada", "explanation": "obrigada = thank you (said by females)" },
+        { "id": "l5_9", "type": "input", "prompt": "please", "answer": ["por favor"], "newWord": "por favor", "explanation": "por favor = please" },
+        { "id": "l5_10", "type": "input", "prompt": "bye (informal)", "answer": ["tchau"], "newWord": "tchau", "explanation": "tchau = bye (informal)" }
+      ]
+    },
+    {
+      "id": "lesson_6",
+      "title": "Lesson 6: Numbers 1-10",
+      "newWords": ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"],
+      "masteryRequired": 8,
+      "practicalGoal": "Count objects and express quantities",
+      "grammar": "Numbers 1 and 2 change with gender: um/uma (one), dois/duas (two). Others stay the same for both genders.",
+      "items": [
+        { "id": "l6_1", "type": "input", "prompt": "one (masculine)", "answer": ["um"], "newWord": "um", "explanation": "um = one (with masculine nouns)" },
+        { "id": "l6_2", "type": "input", "prompt": "two (masculine)", "answer": ["dois"], "newWord": "dois", "explanation": "dois = two (with masculine nouns)" },
+        { "id": "l6_3", "type": "input", "prompt": "three", "answer": ["três", "tres"], "newWord": "três", "explanation": "três = three" },
+        { "id": "l6_4", "type": "input", "prompt": "four", "answer": ["quatro"], "newWord": "quatro", "explanation": "quatro = four" },
+        { "id": "l6_5", "type": "input", "prompt": "five", "answer": ["cinco"], "newWord": "cinco", "explanation": "cinco = five" },
+        { "id": "l6_6", "type": "input", "prompt": "six", "answer": ["seis"], "newWord": "seis", "explanation": "seis = six" },
+        { "id": "l6_7", "type": "input", "prompt": "seven", "answer": ["sete"], "newWord": "sete", "explanation": "sete = seven" },
+        { "id": "l6_8", "type": "input", "prompt": "eight", "answer": ["oito"], "newWord": "oito", "explanation": "oito = eight" },
+        { "id": "l6_9", "type": "input", "prompt": "nine", "answer": ["nove"], "newWord": "nove", "explanation": "nove = nine" },
+        { "id": "l6_10", "type": "input", "prompt": "ten", "answer": ["dez"], "newWord": "dez", "explanation": "dez = ten" }
+      ]
+    },
+    {
+      "id": "lesson_7",
+      "title": "Lesson 7: Colors & Descriptions",
+      "newWords": ["cor", "branco", "preto", "azul", "verde", "vermelho", "amarelo", "grande", "pequeno", "bonito"],
+      "masteryRequired": 8,
+      "practicalGoal": "Describe objects with colors and basic adjectives",
+      "grammar": "Adjectives must agree with noun gender. Most add -a for feminine: branco/branca, pequeno/pequena. Some don't change: azul, verde.",
+      "items": [
+        { "id": "l7_1", "type": "input", "prompt": "color", "answer": ["cor"], "newWord": "cor", "explanation": "cor = color (feminine)" },
+        { "id": "l7_2", "type": "input", "prompt": "white", "answer": ["branco"], "newWord": "branco", "explanation": "branco = white (branca for feminine)" },
+        { "id": "l7_3", "type": "input", "prompt": "black", "answer": ["preto"], "newWord": "preto", "explanation": "preto = black (preta for feminine)" },
+        { "id": "l7_4", "type": "input", "prompt": "blue", "answer": ["azul"], "newWord": "azul", "explanation": "azul = blue (same for both genders)" },
+        { "id": "l7_5", "type": "input", "prompt": "green", "answer": ["verde"], "newWord": "verde", "explanation": "verde = green (same for both genders)" },
+        { "id": "l7_6", "type": "input", "prompt": "red", "answer": ["vermelho"], "newWord": "vermelho", "explanation": "vermelho = red (vermelha for feminine)" },
+        { "id": "l7_7", "type": "input", "prompt": "yellow", "answer": ["amarelo"], "newWord": "amarelo", "explanation": "amarelo = yellow (amarela for feminine)" },
+        { "id": "l7_8", "type": "input", "prompt": "big", "answer": ["grande"], "newWord": "grande", "explanation": "grande = big (same for both genders)" },
+        { "id": "l7_9", "type": "input", "prompt": "small", "answer": ["pequeno"], "newWord": "pequeno", "explanation": "pequeno = small (pequena for feminine)" },
+        { "id": "l7_10", "type": "input", "prompt": "beautiful", "answer": ["bonito"], "newWord": "bonito", "explanation": "bonito = beautiful (bonita for feminine)" }
+      ]
+    },
+    {
+      "id": "lesson_8",
+      "title": "Lesson 8: Simple Conversations",
+      "newWords": ["como", "você", "eu", "me", "chamo", "nome", "tudo", "bem", "muito", "prazer"],
+      "masteryRequired": 8,
+      "practicalGoal": "Have basic introduction conversations",
+      "grammar": "Basic conversation patterns: 'Como você se chama?' (What's your name?), 'Eu me chamo...' (I'm called...), 'Tudo bem?' (Everything good?). These are essential patterns.",
+      "items": [
+        { "id": "l8_1", "type": "input", "prompt": "how", "answer": ["como"], "newWord": "como", "explanation": "como = how" },
+        { "id": "l8_2", "type": "input", "prompt": "you", "answer": ["você", "voce"], "newWord": "você", "explanation": "você = you (standard in Brazil)" },
+        { "id": "l8_3", "type": "input", "prompt": "I", "answer": ["eu"], "newWord": "eu", "explanation": "eu = I" },
+        { "id": "l8_4", "type": "input", "prompt": "me/myself", "answer": ["me"], "newWord": "me", "explanation": "me = me/myself" },
+        { "id": "l8_5", "type": "input", "prompt": "I call/am called", "answer": ["chamo"], "newWord": "chamo", "explanation": "chamo = I call (me chamo = I'm called)" },
+        { "id": "l8_6", "type": "input", "prompt": "name", "answer": ["nome"], "newWord": "nome", "explanation": "nome = name" },
+        { "id": "l8_7", "type": "input", "prompt": "everything", "answer": ["tudo"], "newWord": "tudo", "explanation": "tudo = everything" },
+        { "id": "l8_8", "type": "input", "prompt": "well/good", "answer": ["bem"], "newWord": "bem", "explanation": "bem = well/good" },
+        { "id": "l8_9", "type": "input", "prompt": "very/much", "answer": ["muito"], "newWord": "muito", "explanation": "muito = very/much" },
+        { "id": "l8_10", "type": "input", "prompt": "pleasure", "answer": ["prazer"], "newWord": "prazer", "explanation": "prazer = pleasure (nice to meet you)" }
+      ]
+    }
+  ]
+}
