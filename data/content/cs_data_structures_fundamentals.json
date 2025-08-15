@@ -1,0 +1,296 @@
+{
+  "id": "cs_data_structures_fundamentals",
+  "title": "🏗️ Computer Science: Data Structures - Building Blocks of Efficient Programs",
+  "track": "misc",
+  "description": "Understand data structures as the foundation of all software - from simple arrays to complex trees, learn how to organize data efficiently",
+  "courseType": "conceptual",
+  "difficultyLevels": ["beginner", "intermediate", "advanced", "expert"],
+  "significance": "Data structures are like the architecture of software. Just as architects choose different materials and designs based on what they're building (house vs skyscraper), programmers choose different data structures based on what the program needs to do efficiently. Understanding data structures is the difference between a program that works and a program that works well at scale.",
+  "realWorldApplications": [
+    "Social media feeds use arrays and linked lists to manage posts efficiently",
+    "GPS navigation systems use graphs to represent roads and find shortest paths",
+    "Databases use B-trees to store and quickly retrieve millions of records", 
+    "Web browsers use stacks to implement the back button functionality",
+    "Priority queues manage tasks in operating systems and hospital triage systems",
+    "Hash tables power instant search in contacts apps and autocomplete features"
+  ],
+  "chapters": [
+    {
+      "id": "chapter_1_foundations",
+      "title": "Chapter 1: Data Organization in the Real World",
+      "description": "Discover how data organization patterns from everyday life translate to computer programming",
+      "significance": "Before diving into code, it's crucial to understand that data structures solve real organizational problems. The patterns we use to organize physical objects mirror the patterns we use to organize digital data. This foundation will help you intuitively understand when and why to use different data structures.",
+      "realWorldApplications": [
+        "Libraries organize books using structured systems for quick retrieval",
+        "Hospitals use priority systems to manage patient care",
+        "Cities use hierarchical address systems (country → state → city → street)",
+        "Restaurants use FIFO (first-in, first-out) for fair customer service"
+      ],
+      "lessons": [
+        {
+          "id": "lesson_1_1",
+          "title": "The Great Organization Challenge",
+          "type": "interactive_exploration",
+          "explanation": "Imagine you're organizing a massive library with millions of books. How would you arrange them so that any visitor can quickly find exactly what they need? This isn't just a hypothetical problem - it's the core challenge that data structures solve in computing.",
+          "interactive_examples": [
+            {
+              "type": "organization_simulator",
+              "scenario": "Library Organization Challenge",
+              "problem": "You have 10,000 books to organize. Visitors need to find books quickly by title, author, or subject.",
+              "approaches": [
+                {
+                  "name": "Random Placement",
+                  "description": "Just put books wherever there's space",
+                  "search_time": "Could take hours",
+                  "pros": ["Easy to add new books"],
+                  "cons": ["Finding anything is nearly impossible", "Visitors get frustrated"],
+                  "real_world_equivalent": "Unsorted array - data with no organization"
+                },
+                {
+                  "name": "Alphabetical by Title",
+                  "description": "Arrange all books alphabetically by title",
+                  "search_time": "Few minutes using systematic search",
+                  "pros": ["Predictable organization", "Can use binary search technique"],
+                  "cons": ["Hard to find books by author", "No subject grouping"],
+                  "real_world_equivalent": "Sorted array - data in order"
+                },
+                {
+                  "name": "Dewey Decimal System",
+                  "description": "Hierarchical classification: Subject → Topic → Subtopic",
+                  "search_time": "Very fast for subject-based searches",
+                  "pros": ["Multiple ways to find books", "Related books are grouped together"],
+                  "cons": ["More complex to maintain", "Need to understand the system"],
+                  "real_world_equivalent": "Tree structure - hierarchical data organization"
+                },
+                {
+                  "name": "Card Catalog System",
+                  "description": "Multiple index systems (title, author, subject) pointing to book locations",
+                  "search_time": "Instant lookup",
+                  "pros": ["Multiple access methods", "Very fast searches"],
+                  "cons": ["Requires maintaining multiple indexes"],
+                  "real_world_equivalent": "Hash table with multiple indexes"
+                }
+              ],
+              "guided_questions": [
+                "What happens when you need to find a book by a different criteria than how they're organized?",
+                "How does the organization method affect adding new books?",
+                "Which method would work best for 10 books vs 10 million books?"
+              ]
+            }
+          ],
+          "key_insights": [
+            "Organization method drastically affects search efficiency",
+            "Different tasks may require different organization strategies",
+            "There's often a trade-off between ease of insertion and ease of searching",
+            "The best organization depends on how the data will be used"
+          ],
+          "progress_check": {
+            "type": "scenario_analysis",
+            "question": "You're designing a contact list app. Users need to quickly find contacts by name and frequently add new contacts. Which organization approach would work best?",
+            "options": [
+              "Random order - just add contacts anywhere",
+              "Alphabetical by first name", 
+              "Alphabetical by last name",
+              "Multiple sorted lists (by first name, last name, company)"
+            ],
+            "correct_answer": "Alphabetical by last name",
+            "explanation": "Most people think of contacts by last name first, and alphabetical organization allows both efficient searching and reasonable insertion speed. Multiple lists would be overkill for a simple contact app."
+          }
+        },
+        {
+          "id": "lesson_1_2",
+          "title": "From Physical to Digital: Understanding Arrays",
+          "type": "conceptual_building",
+          "explanation": "Arrays are like apartment buildings - a series of identical units (memory locations) arranged in a straight line, each with a unique address (index). Just like apartment 5B is always in the same place, array[5] is always in the same memory location.",
+          "interactive_examples": [
+            {
+              "type": "apartment_building_simulator",
+              "scenario": "Managing an Apartment Building",
+              "setup": "You manage a 10-unit apartment building. Each unit has a number (0-9) and can hold one tenant's information.",
+              "operations": [
+                {
+                  "name": "Direct Access",
+                  "description": "Find tenant in unit 5",
+                  "steps": "Go directly to unit 5 - takes the same time regardless of building size",
+                  "time_complexity": "O(1) - Constant time",
+                  "analogy": "Like having the exact address - you don't need to search"
+                },
+                {
+                  "name": "Search by Name", 
+                  "description": "Find which unit John Smith lives in",
+                  "steps": "Check each unit starting from 0 until you find John Smith",
+                  "time_complexity": "O(n) - Linear time",
+                  "analogy": "Like going door-to-door asking 'Does John Smith live here?'"
+                },
+                {
+                  "name": "Insert New Tenant",
+                  "description": "Add a tenant to a specific unit",
+                  "steps": "If unit is empty: instant. If full: need to move existing tenant somewhere else",
+                  "time_complexity": "O(1) if empty, O(n) if need to shift others",
+                  "analogy": "Easy if there's space, complicated if you need to shuffle everyone"
+                }
+              ],
+              "interactive_controls": {
+                "add_tenant": true,
+                "search_tenant": true,
+                "remove_tenant": true,
+                "visualize_operations": true
+              }
+            }
+          ],
+          "concepts": [
+            {
+              "name": "Index-Based Access",
+              "explanation": "Each position has a unique number (index), allowing direct access to any element",
+              "analogy": "Like apartment numbers - you can go directly to apartment 5 without visiting 1, 2, 3, 4 first",
+              "example": "array[5] instantly gives you the element at position 5"
+            },
+            {
+              "name": "Contiguous Memory",
+              "explanation": "Array elements are stored next to each other in memory, like apartments in a building",
+              "analogy": "All apartments share the same building infrastructure, making navigation predictable",
+              "example": "If array[0] is at memory location 1000, then array[1] is at 1004, array[2] is at 1008, etc."
+            },
+            {
+              "name": "Fixed Size (in most languages)",
+              "explanation": "Like a building with a fixed number of apartments - you decide the size when you build it",
+              "analogy": "You can't suddenly add a 11th apartment to a 10-apartment building without major renovation",
+              "example": "int array[10] creates space for exactly 10 integers"
+            }
+          ],
+          "hands_on_activity": {
+            "type": "array_playground",
+            "prompt": "Let's build and manipulate an array step by step. You'll see exactly how each operation works.",
+            "stages": [
+              {
+                "title": "Create Your Array",
+                "task": "Create an array to store 5 favorite movies",
+                "code_example": "movies = ['', '', '', '', '']  # 5 empty slots",
+                "explanation": "We've reserved 5 consecutive memory slots for movie titles"
+              },
+              {
+                "title": "Add Movies",
+                "task": "Fill in your favorite movies",
+                "interactive": true,
+                "visual_feedback": "See the array update in real-time as you add movies"
+              },
+              {
+                "title": "Access Movies",
+                "task": "Get the movie at position 2 (remember, positions start at 0!)",
+                "explanation": "Direct access - we can jump straight to position 2 without checking positions 0 and 1"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "chapter_2_dynamic_structures", 
+      "title": "Chapter 2: Dynamic Data - Linked Lists and Growing Structures",
+      "description": "Learn how to build data structures that can grow and shrink during runtime, like a chain that can add or remove links anywhere",
+      "significance": "Unlike arrays with fixed addresses, linked lists are like treasure hunts where each clue points to the next location. This flexibility allows for dynamic sizing but requires different strategies for accessing data. Understanding this trade-off is crucial for choosing the right data structure.",
+      "realWorldApplications": [
+        "Music playlists where you can easily add/remove songs anywhere in the list",
+        "Browser history - each page remembers what came before it",
+        "Undo functionality in editors - each action points to the previous state",
+        "Social media timelines that load more content as you scroll"
+      ],
+      "lessons": [
+        {
+          "id": "lesson_2_1",
+          "title": "The Treasure Hunt Model: Understanding Linked Lists",
+          "type": "interactive_exploration",
+          "explanation": "Imagine a treasure hunt where each clue not only gives you treasure but also tells you where to find the next clue. That's exactly how linked lists work - each piece of data knows where to find the next piece.",
+          "interactive_examples": [
+            {
+              "type": "treasure_hunt_simulator",
+              "scenario": "Digital Treasure Hunt",
+              "setup": "You have 5 treasures hidden around a virtual island. Each treasure contains a value and directions to the next treasure.",
+              "treasure_locations": [
+                {"id": 1, "treasure": "Golden Coin", "next_clue": "Go to the old oak tree"},
+                {"id": 2, "treasure": "Silver Ring", "next_clue": "Check under the wooden bridge"},
+                {"id": 3, "treasure": "Ruby Gem", "next_clue": "Look behind the waterfall"},
+                {"id": 4, "treasure": "Diamond", "next_clue": "Search near the mountain cave"},
+                {"id": 5, "treasure": "Ancient Map", "next_clue": "End of treasure hunt"}
+              ],
+              "operations": [
+                {
+                  "name": "Find Specific Treasure",
+                  "description": "Find the Ruby Gem",
+                  "steps": "Start at first treasure → Follow clues one by one until you find Ruby Gem",
+                  "time": "Could be instant (if it's first) or take several steps",
+                  "linked_list_equivalent": "Searching requires traversing from head to target node"
+                },
+                {
+                  "name": "Add New Treasure",
+                  "description": "Insert a new treasure between Golden Coin and Silver Ring", 
+                  "steps": "Change Golden Coin's clue to point to new treasure → Make new treasure point to Silver Ring",
+                  "time": "Quick once you're at the right location",
+                  "linked_list_equivalent": "Insertion is O(1) if you have reference to the node"
+                },
+                {
+                  "name": "Remove Treasure",
+                  "description": "Remove Silver Ring from the hunt",
+                  "steps": "Change the previous treasure's clue to skip Silver Ring and point directly to Ruby Gem",
+                  "time": "Quick operation",
+                  "linked_list_equivalent": "Deletion is O(1) if you have reference to the node"
+                }
+              ]
+            }
+          ],
+          "concepts": [
+            {
+              "name": "Node Structure",
+              "explanation": "Each element (node) contains data and a pointer to the next element",
+              "analogy": "Like a treasure that contains both the treasure itself and directions to the next treasure",
+              "example": "Node: {data: 'Golden Coin', next: pointer_to_silver_ring_node}"
+            },
+            {
+              "name": "Sequential Access",
+              "explanation": "To reach any element, you must follow the chain from the beginning",
+              "analogy": "You can't skip ahead in a treasure hunt - you must follow each clue in order",
+              "example": "To get to element 5, you must visit elements 1, 2, 3, 4 first"
+            },
+            {
+              "name": "Dynamic Size",
+              "explanation": "The list can grow or shrink during runtime by adding/removing nodes",
+              "analogy": "You can add new treasures to the hunt or remove existing ones without affecting the rest",
+              "example": "Can easily insert a new node between any two existing nodes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter_3_hierarchical_data",
+      "title": "Chapter 3: Trees - Organizing Data in Hierarchies",
+      "description": "Explore how tree structures mirror natural hierarchies and enable incredibly efficient data organization and searching",
+      "significance": "Trees are everywhere in computing because they mirror how we naturally organize information - from family trees to company org charts to decision-making processes. Understanding trees unlocks efficient searching, sorting, and hierarchical data management.",
+      "lessons": [
+        {
+          "id": "lesson_3_1", 
+          "title": "Family Trees to Binary Search Trees",
+          "type": "conceptual_building",
+          "explanation": "Just as family trees show relationships between generations, binary search trees show relationships between data values. The key insight: smaller values go left, larger values go right, creating a naturally sorted structure.",
+          "interactive_examples": [
+            {
+              "type": "family_tree_to_bst",
+              "scenario": "Building a Family Archive",
+              "explanation": "You're creating a digital family tree, but instead of organizing by generation, you organize by age to quickly find people in specific age ranges.",
+              "demo_data": [50, 30, 70, 20, 40, 60, 80],
+              "build_process": "interactive",
+              "search_demonstration": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "assessment_philosophy": "Understanding through exploration and application",
+  "assessment_types": {
+    "scenario_application": "Apply data structure concepts to real-world scenarios",
+    "efficiency_analysis": "Understand when and why to use specific structures", 
+    "interactive_building": "Build and manipulate data structures hands-on",
+    "pattern_recognition": "Recognize which data structure fits different problems"
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "id": "cs_dynamic_programming_fundamentals",
+  "title": "🧩 Computer Science: Dynamic Programming - Smart Problem Solving Through Pattern Recognition",
+  "track": "misc", 
+  "description": "Master the art of breaking down complex problems into simpler subproblems, and learn how remembering solutions can dramatically improve efficiency",
+  "courseType": "conceptual",
+  "difficultyLevels": ["beginner", "intermediate", "advanced", "expert"],
+  "significance": "Dynamic Programming is like having a perfect memory for problem-solving. Instead of solving the same subproblems over and over, you remember the solutions and reuse them. This technique powers everything from GPS route optimization to DNA sequence analysis to financial modeling. It's the difference between a solution that takes years to compute and one that finishes in seconds.",
+  "realWorldApplications": [
+    "GPS systems optimize routes by remembering the best path to intermediate waypoints",
+    "Video compression algorithms avoid recalculating similar pixel patterns", 
+    "Financial software models optimal investment strategies by caching intermediate calculations",
+    "DNA sequence analysis finds similarities by remembering partial matches",
+    "Game AI makes decisions by remembering the value of different game states",
+    "Resource allocation systems optimize schedules by storing solutions to subproblems"
+  ],
+  "chapters": [
+    {
+      "id": "chapter_1_pattern_recognition",
+      "title": "Chapter 1: The Power of Memory - From Brute Force to Smart Solutions",
+      "description": "Discover how remembering solutions to smaller problems can exponentially improve performance on complex challenges",
+      "significance": "The key insight behind dynamic programming is recognizing when a big problem contains repeated smaller problems. Once you see this pattern, you can avoid redundant work by remembering solutions. This shift in thinking - from 'solve everything from scratch' to 'remember and reuse' - is fundamental to efficient algorithm design.",
+      "realWorldApplications": [
+        "Manufacturing optimization: remembering the cost of producing different quantities",
+        "Project planning: caching the time needed for different combinations of tasks", 
+        "Inventory management: storing optimal reorder quantities for different scenarios",
+        "Network routing: remembering the best path through different network segments"
+      ],
+      "lessons": [
+        {
+          "id": "lesson_1_1",
+          "title": "The Fibonacci Revelation: Why Memory Matters",
+          "type": "performance_comparison",
+          "explanation": "The Fibonacci sequence seems simple: each number is the sum of the two before it (1, 1, 2, 3, 5, 8, 13...). But calculating the 50th Fibonacci number the 'obvious' way would take your computer longer than the age of the universe! Let's discover why, and how memory can make it instant.",
+          "interactive_examples": [
+            {
+              "type": "fibonacci_calculator_race",
+              "scenario": "The Great Fibonacci Race",
+              "description": "Watch three different approaches race to calculate Fibonacci numbers. See how the winner changes dramatically as the numbers get larger.",
+              "approaches": [
+                {
+                  "name": "Naive Recursive Approach",
+                  "description": "Calculate F(n) = F(n-1) + F(n-2) from scratch every time",
+                  "pseudocode": [
+                    "function fib(n):",
+                    "  if n <= 1: return n",
+                    "  return fib(n-1) + fib(n-2)"
+                  ],
+                  "problems": "Recalculates the same values thousands of times",
+                  "time_complexity": "O(2^n) - exponential!",
+                  "performance": {
+                    "fib_10": "0.001 seconds",
+                    "fib_20": "0.01 seconds", 
+                    "fib_30": "1 second",
+                    "fib_40": "60 seconds",
+                    "fib_50": "13 days",
+                    "fib_60": "150 years"
+                  }
+                },
+                {
+                  "name": "Memoized Approach", 
+                  "description": "Remember each result the first time you calculate it",
+                  "pseudocode": [
+                    "cache = {}",
+                    "function fib(n):",
+                    "  if n in cache: return cache[n]",
+                    "  if n <= 1: return n", 
+                    "  result = fib(n-1) + fib(n-2)",
+                    "  cache[n] = result",
+                    "  return result"
+                  ],
+                  "improvement": "Each subproblem is solved exactly once",
+                  "time_complexity": "O(n) - linear!",
+                  "performance": {
+                    "fib_10": "0.001 seconds",
+                    "fib_20": "0.001 seconds",
+                    "fib_30": "0.001 seconds", 
+                    "fib_40": "0.001 seconds",
+                    "fib_50": "0.001 seconds",
+                    "fib_60": "0.001 seconds"
+                  }
+                },
+                {
+                  "name": "Bottom-Up Approach",
+                  "description": "Build up from the smallest problems to larger ones",
+                  "pseudocode": [
+                    "function fib(n):",
+                    "  if n <= 1: return n",
+                    "  prev2, prev1 = 0, 1",
+                    "  for i = 2 to n:",
+                    "    current = prev1 + prev2",
+                    "    prev2, prev1 = prev1, current",
+                    "  return prev1"
+                  ],
+                  "improvement": "No recursion overhead, minimal memory usage",
+                  "time_complexity": "O(n) - linear, with O(1) space!",
+                  "performance": "Consistently fastest for all inputs"
+                }
+              ],
+              "interactive_visualization": {
+                "show_call_tree": true,
+                "highlight_repeated_work": true,
+                "step_through_execution": true,
+                "performance_timer": true
+              }
+            }
+          ],
+          "key_insights": [
+            {
+              "insight": "Overlapping Subproblems",
+              "explanation": "The same smaller problems appear multiple times in the solution",
+              "example": "Calculating F(5) requires F(4) and F(3). But F(4) also requires F(3). We're calculating F(3) twice!"
+            },
+            {
+              "insight": "Memoization Magic",
+              "explanation": "Store the result of each subproblem the first time you solve it",
+              "example": "Once we calculate F(3) = 2, we remember it. Next time we need F(3), instant lookup!"
+            },
+            {
+              "insight": "Exponential to Linear",
+              "explanation": "Remembering solutions transforms exponential time complexity to linear",
+              "example": "The difference between 150 years and 0.001 seconds for the same problem!"
+            }
+          ],
+          "hands_on_activity": {
+            "type": "subproblem_detective",
+            "prompt": "Let's practice identifying overlapping subproblems in other scenarios. Can you spot the repeated work?",
+            "scenarios": [
+              {
+                "title": "Climbing Stairs Problem",
+                "description": "You can climb 1 or 2 steps at a time. How many ways are there to climb n steps?",
+                "example": "For 4 steps: 1+1+1+1, 1+1+2, 1+2+1, 2+1+1, 2+2 = 5 ways",
+                "question": "What smaller problems do we solve repeatedly?",
+                "answer": "To find ways(4), we need ways(3) and ways(2). To find ways(3), we need ways(2) and ways(1). So ways(2) gets calculated multiple times."
+              },
+              {
+                "title": "Making Change Problem", 
+                "description": "Given coins [1,5,10,25], what's the minimum coins needed to make $0.67?",
+                "question": "What subproblems might we solve multiple times?",
+                "answer": "Finding change for $0.42 might be calculated when trying both $0.67-$0.25 and when finding change for $0.52 (from $0.67-$0.15)."
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_1_2",
+          "title": "The Knapsack Dilemma: Optimal Choices with Constraints",
+          "type": "decision_optimization",
+          "explanation": "Imagine you're packing for a trip with a weight limit. You have items with different values and weights. How do you choose which items to pack to maximize value while staying under the weight limit? This 'knapsack problem' appears everywhere from resource allocation to investment portfolios.",
+          "interactive_examples": [
+            {
+              "type": "knapsack_packer", 
+              "scenario": "Packing for Adventure",
+              "setup": {
+                "backpack_capacity": 15,
+                "available_items": [
+                  {"name": "Water Bottle", "weight": 2, "value": 10, "description": "Essential for survival"},
+                  {"name": "Energy Bars", "weight": 1, "value": 4, "description": "Lightweight nutrition"},
+                  {"name": "First Aid Kit", "weight": 3, "value": 9, "description": "Safety equipment"},
+                  {"name": "Camera", "weight": 4, "value": 7, "description": "Capture memories"},
+                  {"name": "Sleeping Bag", "weight": 8, "value": 12, "description": "Comfort and warmth"},
+                  {"name": "Flashlight", "weight": 2, "value": 6, "description": "Navigate in dark"},
+                  {"name": "Map", "weight": 1, "value": 3, "description": "Find your way"}
+                ]
+              },
+              "approaches_to_compare": [
+                {
+                  "name": "Greedy by Value",
+                  "description": "Take the most valuable items first",
+                  "strategy": "Sort by value descending, take items until bag is full",
+                  "result_analysis": "Often leaves space unused, might miss optimal combinations"
+                },
+                {
+                  "name": "Greedy by Weight", 
+                  "description": "Take the lightest items first",
+                  "strategy": "Sort by weight ascending, pack until full",
+                  "result_analysis": "Maximizes quantity but may sacrifice high-value items"
+                },
+                {
+                  "name": "Greedy by Value-to-Weight Ratio",
+                  "description": "Take the most efficient items first (value per unit weight)",
+                  "strategy": "Sort by value/weight ratio descending",
+                  "result_analysis": "Often good, but still may miss global optimum"
+                },
+                {
+                  "name": "Dynamic Programming Solution",
+                  "description": "Consider all possible combinations systematically using memory",
+                  "strategy": "For each item and weight capacity, remember: what's the maximum value possible?",
+                  "result_analysis": "Guaranteed to find the optimal solution"
+                }
+              ],
+              "dp_visualization": {
+                "show_decision_table": true,
+                "highlight_subproblems": true,
+                "trace_optimal_solution": true,
+                "compare_with_greedy": true
+              }
+            }
+          ],
+          "dp_building_blocks": [
+            {
+              "concept": "State Definition",
+              "explanation": "What information do we need to remember about each subproblem?",
+              "example": "For knapsack: 'What's the maximum value achievable with the first i items and weight limit w?'"
+            },
+            {
+              "concept": "Recurrence Relation", 
+              "explanation": "How do we build the solution to a larger problem from solutions to smaller problems?",
+              "example": "For each item, we can either include it or not. Take the better of these two choices."
+            },
+            {
+              "concept": "Base Cases",
+              "explanation": "What are the simplest problems we can solve directly?",
+              "example": "With 0 items or 0 weight capacity, the maximum value is 0"
+            },
+            {
+              "concept": "Optimal Substructure",
+              "explanation": "The optimal solution contains optimal solutions to subproblems",
+              "example": "If including item X is optimal, then the rest of the solution must be optimal for the remaining capacity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter_2_pattern_mastery",
+      "title": "Chapter 2: Recognizing DP Patterns - When and How to Apply Dynamic Programming", 
+      "description": "Learn to identify the common patterns where dynamic programming excels and develop intuition for approaching new DP problems",
+      "significance": "Dynamic programming isn't just about memorization - it's about recognizing fundamental patterns in problem structure. Once you learn to spot these patterns, you can apply DP thinking to novel problems across many domains.",
+      "lessons": [
+        {
+          "id": "lesson_2_1",
+          "title": "The Pattern Detective: Common DP Problem Types",
+          "type": "pattern_recognition",
+          "explanation": "Just as doctors learn to recognize symptoms that indicate specific conditions, programmers learn to recognize problem characteristics that suggest dynamic programming solutions. Let's develop this diagnostic skill.",
+          "pattern_gallery": [
+            {
+              "pattern_name": "Counting Paths",
+              "signature": "How many ways can you...?",
+              "examples": [
+                "How many ways to climb n stairs (1 or 2 steps at a time)?",
+                "How many paths through a grid (only right/down moves)?",
+                "How many ways to arrange coins to make a target sum?"
+              ],
+              "key_insight": "Total ways = sum of ways through each possible first choice",
+              "template": "ways(n) = ways(n-choice1) + ways(n-choice2) + ..."
+            },
+            {
+              "pattern_name": "Optimization",
+              "signature": "What's the minimum/maximum...?",
+              "examples": [
+                "Minimum coins to make change",
+                "Maximum value in knapsack",
+                "Shortest path with obstacles"
+              ],
+              "key_insight": "Optimal solution = best among all possible first choices",
+              "template": "optimal(n) = min/max(cost + optimal(remaining_after_choice)) for all choices"
+            },
+            {
+              "pattern_name": "Yes/No Questions",
+              "signature": "Is it possible to...?",
+              "examples": [
+                "Can you make exact change with given coins?",
+                "Can you partition array into equal sum subsets?",
+                "Can you reach the end of the array with jumps?"
+              ],
+              "key_insight": "Possible if ANY valid first choice leads to success",
+              "template": "possible(n) = OR(possible(remaining_after_choice)) for all choices"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "assessment_philosophy": "Pattern recognition and systematic problem-solving approach",
+  "assessment_types": {
+    "pattern_identification": "Recognize which DP pattern applies to new problems",
+    "subproblem_design": "Define appropriate state and recurrence relations",
+    "optimization_analysis": "Understand when DP provides significant performance improvements",
+    "real_world_application": "Apply DP thinking to practical scenarios"
+  }
+}

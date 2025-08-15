@@ -3,23 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LanguageApp — Learn Anything</title>
+  <title>Learning App — Master Any Skill</title>
   <link rel="stylesheet" href="/styles.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="/app.js" as="script">
 </head>
 <body>
   <header class="topbar">
-    <div class="brand" id="logo" style="cursor: pointer;">🌟 LanguageApp <span id="env-badge" class="env-badge hidden">DEV</span></div>
+    <div class="brand" id="logo" style="cursor: pointer;">🎓 Learning App <span id="env-badge" class="env-badge hidden">DEV</span></div>
+    
+    <!-- Main Navigation -->
     <div class="nav-section">
-      <button class="nav active" data-nav="onboarding">Learn</button>
-      <button class="nav" data-nav="stats">Stats</button>
-      <button id="reset" class="nav danger">Reset</button>
+      <button class="nav-item active" data-track="spoken">🌍 Languages</button>
+      <button class="nav-item" data-track="programming">💻 Programming</button>
+      <button class="nav-item" data-track="misc">📚 CS</button>
+      <button class="nav-item" data-track="math">📐 Math</button>
+      <button class="nav-item" data-track="physics">⚛️ Physics</button>
+      <button class="nav-item" data-track="chemistry">🧪 Chemistry</button>
+      <button class="nav-item" data-track="biology">🧬 Biology</button>
     </div>
-    <div class="stats">
-      <span id="level">Lvl 1</span>
-      <span id="xp">0 XP</span>
-      <span id="streak">🔥 0</span>
+    
+    <!-- User Stats & Settings -->
+    <div class="user-section">
+      <div class="user-stats">
+        <span id="level">Lvl 1</span>
+        <span id="xp">0 XP</span>
+        <span id="streak">🔥 0</span>
+      </div>
+      
+      <!-- Settings Dropdown -->
+      <div class="settings-dropdown">
+        <button class="settings-btn" id="settings-toggle">⚙️</button>
+        <div class="dropdown-menu hidden" id="settings-menu">
+          <button class="dropdown-item" data-nav="stats">📊 View Stats</button>
+          <button class="dropdown-item" data-nav="profile">👤 Profile</button>
+          <div class="dropdown-divider"></div>
+          <button class="dropdown-item danger" id="reset">🔄 Reset Progress</button>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -27,7 +48,7 @@
     <!-- Welcome/Setup Modal -->
     <div id="welcome-modal" class="modal-overlay hidden">
       <div class="modal">
-        <h2>🌟 Welcome to LanguageApp!</h2>
+        <h2>🎓 Welcome to Learning App!</h2>
         <p>Let's personalize your learning experience</p>
         
         <div class="form-group">
@@ -52,7 +73,7 @@
     </div>
 
     <section id="view-onboarding" class="view">
-      <h1 id="welcome-title">Choose a Language</h1>
+      <h1 id="welcome-title">Choose a Subject</h1>
       <div id="language-grid" class="language-grid"></div>
     </section>
 

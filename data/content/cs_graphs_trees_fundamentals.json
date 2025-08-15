@@ -1,0 +1,249 @@
+{
+  "id": "cs_graphs_trees_fundamentals", 
+  "title": "🌐 Computer Science: Graphs & Trees - Modeling Connections and Relationships",
+  "track": "misc",
+  "description": "Master the art of representing relationships between data - from social networks to navigation systems, learn how graphs and trees power connected systems",
+  "courseType": "conceptual",
+  "difficultyLevels": ["beginner", "intermediate", "advanced", "expert"],
+  "significance": "Graphs and trees model relationships - the connections between people, places, ideas, and data. Every social network, GPS system, recommendation engine, and decision tree relies on these structures. Understanding graphs means understanding how the connected world actually works under the hood.",
+  "realWorldApplications": [
+    "Social networks map friendships and connections between people",
+    "GPS and mapping services use graphs to represent roads and find optimal routes",
+    "Internet routing protocols use graphs to find paths between servers",
+    "Recommendation systems model user preferences and item relationships",
+    "Family trees, organizational charts, and decision trees structure hierarchical information",
+    "Computer file systems organize directories and files in tree structures"
+  ],
+  "chapters": [
+    {
+      "id": "chapter_1_understanding_connections",
+      "title": "Chapter 1: The World is Connected - Introduction to Graph Thinking",
+      "description": "Discover how everything around us can be modeled as connections between entities, and why this perspective is so powerful in computing",
+      "significance": "Before we dive into the technical aspects, we need to develop 'graph thinking' - the ability to see relationships and connections everywhere. Once you start thinking in graphs, you'll recognize these patterns in social networks, transportation systems, dependencies between tasks, and countless other scenarios.",
+      "realWorldApplications": [
+        "Social media platforms analyzing who influences whom",
+        "Epidemiologists tracking disease spread through contact networks", 
+        "Supply chain managers optimizing shipping routes and dependencies",
+        "Project managers handling task dependencies and critical paths"
+      ],
+      "lessons": [
+        {
+          "id": "lesson_1_1",
+          "title": "Six Degrees of Separation: Understanding Graph Fundamentals",
+          "type": "interactive_exploration",
+          "explanation": "The famous 'six degrees of separation' theory suggests that everyone in the world is connected to everyone else by no more than 6 intermediate relationships. This isn't just a fun fact - it reveals fundamental properties of how networks work, whether they're social networks, computer networks, or transportation networks.",
+          "interactive_examples": [
+            {
+              "type": "social_network_explorer",
+              "scenario": "Movie Actor Connections",
+              "description": "Explore how actors are connected through the movies they've appeared in together. This demonstrates core graph concepts through a familiar domain.",
+              "sample_data": {
+                "actors": ["Alice", "Bob", "Carol", "David", "Eve", "Frank"],
+                "movies": [
+                  {"title": "Space Adventure", "cast": ["Alice", "Bob"]},
+                  {"title": "Ocean Mystery", "cast": ["Bob", "Carol", "David"]},  
+                  {"title": "Mountain Climbing", "cast": ["Carol", "Eve"]},
+                  {"title": "City Lights", "cast": ["David", "Frank"]},
+                  {"title": "Time Travel", "cast": ["Eve", "Frank", "Alice"]}
+                ]
+              },
+              "interactive_questions": [
+                {
+                  "question": "How many steps does it take to connect Alice to Frank?",
+                  "exploration": "Click on Alice, then explore different paths to Frank",
+                  "learning_objective": "Understand path length in graphs"
+                },
+                {
+                  "question": "Which actor is most connected to others?", 
+                  "exploration": "Count direct connections for each actor",
+                  "learning_objective": "Understand node degree/centrality"
+                },
+                {
+                  "question": "If Carol becomes unavailable, how does this affect connections?",
+                  "exploration": "Remove Carol and see which actors become disconnected",
+                  "learning_objective": "Understand critical nodes and graph connectivity"
+                }
+              ]
+            }
+          ],
+          "concepts": [
+            {
+              "name": "Nodes (Vertices)",
+              "explanation": "The entities in your network - people, places, things that can be connected",
+              "analogy": "Like people at a party - each person is a node",
+              "example": "In a social network: users. In a road network: intersections. In a family tree: family members."
+            },
+            {
+              "name": "Edges (Connections)",
+              "explanation": "The relationships between nodes - how they're connected",
+              "analogy": "Like conversations between people at a party - each conversation is an edge", 
+              "example": "In a social network: friendships. In a road network: roads. In a family tree: parent-child relationships."
+            },
+            {
+              "name": "Path",
+              "explanation": "A series of connections that link one node to another",
+              "analogy": "Like a chain of conversations that connects two strangers at a party",
+              "example": "Alice knows Bob, Bob knows Carol, Carol knows David - that's a path from Alice to David"
+            },
+            {
+              "name": "Degree",
+              "explanation": "How many direct connections a node has",
+              "analogy": "Like how many people someone is directly talking to at a party",
+              "example": "If Alice is friends with 5 people, Alice's degree is 5"
+            }
+          ],
+          "progress_check": {
+            "type": "network_analysis",
+            "scenario": "You're analyzing a small company's communication network. Here's who regularly talks to whom:",
+            "connections": [
+              "CEO talks to: VP1, VP2, Secretary",
+              "VP1 talks to: CEO, Manager1, Manager2", 
+              "VP2 talks to: CEO, Manager3, Manager4",
+              "Manager1 talks to: VP1, Employee1, Employee2",
+              "Secretary talks to: CEO, Employee1"
+            ],
+            "questions": [
+              {
+                "question": "Who has the highest degree (most direct connections)?",
+                "correct_answer": "CEO",
+                "explanation": "The CEO directly communicates with 3 people (VP1, VP2, Secretary)"
+              },
+              {
+                "question": "What's the shortest path from Employee2 to Manager3?", 
+                "correct_answer": "Employee2 → Manager1 → VP1 → CEO → VP2 → Manager3",
+                "explanation": "This path shows how information might flow between different departments"
+              }
+            ]
+          }
+        },
+        {
+          "id": "lesson_1_2",
+          "title": "From Webs to Trees: When Connections Form Hierarchies",
+          "type": "conceptual_transition",
+          "explanation": "Sometimes our connected data naturally forms hierarchies - like family trees, company org charts, or computer file systems. Trees are special types of graphs where there's exactly one path between any two nodes, creating a clear hierarchical structure.",
+          "interactive_examples": [
+            {
+              "type": "hierarchy_builder",
+              "scenario": "Organizing a Digital Library",
+              "problem": "You need to organize thousands of digital books so that users can easily browse by category and find related books.",
+              "approaches": [
+                {
+                  "name": "Flat Organization",
+                  "description": "All books in one big list, organized alphabetically",
+                  "visualization": "Linear list of thousands of books",
+                  "pros": ["Simple to understand", "Easy to search if you know the title"],
+                  "cons": ["No way to browse by topic", "Hard to discover related books"],
+                  "efficiency": "Finding a book: O(log n) with binary search, but no topic browsing"
+                },
+                {
+                  "name": "Tag-Based System", 
+                  "description": "Each book can have multiple tags (Science, History, Biography, etc.)",
+                  "visualization": "Books connected to multiple category nodes",
+                  "pros": ["Books can belong to multiple categories", "Flexible categorization"],
+                  "cons": ["Can be overwhelming with too many connections", "No clear hierarchy"],
+                  "efficiency": "Great for multi-faceted searches, but can be complex to navigate"
+                },
+                {
+                  "name": "Hierarchical Tree Structure",
+                  "description": "Categories → Subcategories → Sub-subcategories → Books",
+                  "visualization": "Tree structure: Science → Physics → Quantum Physics → specific books",
+                  "pros": ["Clear browsing path", "Natural drill-down navigation", "Related books are grouped"],
+                  "cons": ["Books can only be in one category", "Tree structure might not fit all content"],
+                  "efficiency": "Finding books by category: O(log n), very intuitive browsing"
+                }
+              ],
+              "guided_exploration": {
+                "task": "Build a tree structure for organizing 1000 computer science books",
+                "sample_categories": ["Algorithms", "Data Structures", "Machine Learning", "Web Development", "Mobile Development"],
+                "interactive_building": true,
+                "show_trade_offs": true
+              }
+            }
+          ],
+          "tree_fundamentals": [
+            {
+              "concept": "Root Node",
+              "explanation": "The top node that has no parent - like the CEO in an org chart",
+              "example": "In a file system, the root directory (/ or C:) is the root node"
+            },
+            {
+              "concept": "Parent-Child Relationship",
+              "explanation": "Each node (except root) has exactly one parent, but can have multiple children",
+              "example": "A folder can contain multiple files and subfolders (children), but each file belongs to exactly one folder (parent)"
+            },
+            {
+              "concept": "Leaf Nodes",
+              "explanation": "Nodes with no children - the endpoints of the tree",
+              "example": "Individual files in a file system, or employees with no subordinates in an org chart"
+            },
+            {
+              "concept": "Height and Depth",
+              "explanation": "Height: distance from a node to its deepest leaf. Depth: distance from root to a node",
+              "example": "In a 3-level org chart: CEO (depth 0), VPs (depth 1), Managers (depth 2)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter_2_graph_algorithms",
+      "title": "Chapter 2: Finding Paths - Graph Traversal and Search Algorithms",
+      "description": "Learn the fundamental algorithms that power GPS navigation, social network analysis, and web crawling",
+      "significance": "Graph algorithms are the engines behind many everyday technologies. Every time GPS finds you the fastest route, or a social network suggests friends, or a web crawler indexes the internet, graph algorithms are working behind the scenes. These algorithms transform the abstract concept of 'connections' into practical solutions.",
+      "lessons": [
+        {
+          "id": "lesson_2_1",
+          "title": "The GPS Algorithm: Understanding Shortest Path Finding",
+          "type": "algorithm_exploration",
+          "explanation": "When GPS calculates your route, it's solving a graph problem: finding the shortest path between two points in a network of roads. Let's explore how this actually works by building our own mini GPS system.",
+          "interactive_examples": [
+            {
+              "type": "gps_simulator",
+              "scenario": "Building a Mini GPS System",
+              "city_map": {
+                "intersections": ["Home", "School", "Mall", "Park", "Work", "Hospital"],
+                "roads": [
+                  {"from": "Home", "to": "School", "distance": 2, "traffic": "light"},
+                  {"from": "Home", "to": "Mall", "distance": 5, "traffic": "heavy"},
+                  {"from": "School", "to": "Park", "distance": 3, "traffic": "light"}, 
+                  {"from": "Mall", "to": "Work", "distance": 4, "traffic": "medium"},
+                  {"from": "Park", "to": "Work", "distance": 2, "traffic": "light"},
+                  {"from": "Work", "to": "Hospital", "distance": 6, "traffic": "heavy"}
+                ]
+              },
+              "algorithms_to_compare": [
+                {
+                  "name": "Breadth-First Search (BFS)",
+                  "description": "Explore all nearby intersections first, then gradually expand outward",
+                  "visualization": "Wave-like expansion from starting point",
+                  "finds": "Path with fewest intersections (not necessarily shortest distance)",
+                  "good_for": "Finding any path quickly, analyzing network connectivity"
+                },
+                {
+                  "name": "Dijkstra's Algorithm",
+                  "description": "Always explore the closest unvisited intersection first",
+                  "visualization": "Expanding to closest nodes first, considering actual distances",
+                  "finds": "Shortest distance path",
+                  "good_for": "GPS navigation, network routing, finding optimal paths"
+                }
+              ],
+              "interactive_controls": {
+                "select_start_end": true,
+                "adjust_traffic": true,
+                "step_through_algorithm": true,
+                "compare_results": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "assessment_philosophy": "Understanding through problem-solving and pattern recognition",
+  "assessment_types": {
+    "network_modeling": "Model real-world scenarios as graphs or trees",
+    "algorithm_application": "Choose and apply appropriate graph algorithms",
+    "efficiency_analysis": "Understand time/space trade-offs of different approaches",
+    "pattern_recognition": "Recognize when problems have graph-based solutions"
+  }
+}

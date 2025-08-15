@@ -1,0 +1,118 @@
+{
+  "id": "portuguese_unified_course",
+  "title": "🇧🇷 Portuguese (Brazilian) - Complete Course",
+  "track": "spoken",
+  "langFrom": "en",
+  "langTo": "pt",
+  "description": "Complete Brazilian Portuguese course from absolute beginner to advanced. Master grammar, vocabulary, and conversation skills with structured progression.",
+  "level": 1,
+  "categories": [
+    {
+      "id": "beginner",
+      "title": "🌱 Beginner (A1-A2)",
+      "description": "Start your Portuguese journey with basics",
+      "courses": [
+        {
+          "id": "portuguese_foundations",
+          "title": "Level 1: Foundations",
+          "description": "Essential greetings, basic vocabulary, and pronunciation",
+          "totalLessons": 8,
+          "vocabularyGoal": 80,
+          "prerequisite": null
+        },
+        {
+          "id": "portuguese_grammar_basics",
+          "title": "Level 2: Grammar Basics",
+          "description": "Articles, noun genders, basic verb conjugations",
+          "totalLessons": 10,
+          "vocabularyGoal": 120,
+          "prerequisite": "portuguese_foundations"
+        },
+        {
+          "id": "portuguese_conversation_starter",
+          "title": "Level 3: First Conversations",
+          "description": "Simple dialogues and everyday situations",
+          "totalLessons": 8,
+          "vocabularyGoal": 100,
+          "prerequisite": "portuguese_grammar_basics"
+        }
+      ]
+    },
+    {
+      "id": "intermediate",
+      "title": "🌿 Intermediate (B1-B2)",
+      "description": "Build fluency and complex grammar",
+      "courses": [
+        {
+          "id": "portuguese_grammar_intermediate",
+          "title": "Level 4: Advanced Grammar",
+          "description": "Complex tenses, subjunctive, conditional",
+          "totalLessons": 15,
+          "vocabularyGoal": 200,
+          "prerequisite": "portuguese_conversation_starter"
+        },
+        {
+          "id": "portuguese_verbs_mastery",
+          "title": "Level 5: Verb Mastery",
+          "description": "All verb tenses and irregular verbs",
+          "totalLessons": 12,
+          "vocabularyGoal": 150,
+          "prerequisite": "portuguese_grammar_intermediate"
+        },
+        {
+          "id": "portuguese_conversation_intermediate",
+          "title": "Level 6: Fluent Conversations",
+          "description": "Express opinions, discuss topics, storytelling",
+          "totalLessons": 10,
+          "vocabularyGoal": 180,
+          "prerequisite": "portuguese_verbs_mastery"
+        }
+      ]
+    },
+    {
+      "id": "advanced",
+      "title": "🌳 Advanced (C1-C2)",
+      "description": "Master native-level Portuguese",
+      "courses": [
+        {
+          "id": "portuguese_advanced_topics",
+          "title": "Level 7: Advanced Topics",
+          "description": "Business, literature, cultural nuances",
+          "totalLessons": 12,
+          "vocabularyGoal": 250,
+          "prerequisite": "portuguese_conversation_intermediate"
+        },
+        {
+          "id": "portuguese_specialization",
+          "title": "Level 8: Specialization",
+          "description": "Professional Portuguese and regional variants",
+          "totalLessons": 10,
+          "vocabularyGoal": 200,
+          "prerequisite": "portuguese_advanced_topics"
+        }
+      ]
+    }
+  ],
+  "practiceModules": [
+    {
+      "id": "portuguese_verb_drills",
+      "title": "🎯 Verb Practice Drills",
+      "description": "Intensive verb conjugation practice",
+      "type": "practice",
+      "unlockAfter": "portuguese_grammar_basics"
+    },
+    {
+      "id": "portuguese_personalized_test",
+      "title": "📝 Personalized Assessment",
+      "description": "Custom tests based on your progress",
+      "type": "assessment",
+      "unlockAfter": "portuguese_foundations"
+    }
+  ],
+  "navigation": {
+    "currentLevel": 1,
+    "unlockedCourses": ["portuguese_foundations"],
+    "completedCourses": [],
+    "nextRecommendation": "portuguese_foundations"
+  }
+}

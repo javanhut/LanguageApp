@@ -1,0 +1,215 @@
+{
+  "id": "portuguese_grammar_basics",
+  "title": "🇧🇷 Portuguese - Level 2: Grammar Basics",
+  "track": "spoken",
+  "langFrom": "en",
+  "langTo": "pt",
+  "description": "Master Portuguese articles, gender system, basic verb conjugations, and sentence structure. Build on Level 1 vocabulary.",
+  "level": 2,
+  "category": "beginner",
+  "totalLessons": 10,
+  "vocabularyGoal": 120,
+  "prerequisite": "portuguese_foundations",
+  "lessons": [
+    {
+      "id": "lesson_9",
+      "title": "Lesson 9: Articles and Gender",
+      "newWords": ["o", "a", "os", "as", "um", "uma", "uns", "umas", "artigo", "gênero"],
+      "masteryRequired": 8,
+      "practicalGoal": "Use correct articles with nouns and understand gender agreement",
+      "grammar": "Portuguese has definite articles (o, a, os, as) and indefinite articles (um, uma, uns, umas). All nouns have gender (masculine/feminine) and number (singular/plural). Articles must agree with the noun.",
+      "items": [
+        { "id": "g1_1", "type": "input", "prompt": "The (masculine singular)", "answer": ["o"], "newWord": "o", "explanation": "O - definite article for masculine singular nouns" },
+        { "id": "g1_2", "type": "input", "prompt": "The (feminine singular)", "answer": ["a"], "newWord": "a", "explanation": "A - definite article for feminine singular nouns" },
+        { "id": "g1_3", "type": "input", "prompt": "The (masculine plural)", "answer": ["os"], "newWord": "os", "explanation": "Os - definite article for masculine plural nouns" },
+        { "id": "g1_4", "type": "input", "prompt": "The (feminine plural)", "answer": ["as"], "newWord": "as", "explanation": "As - definite article for feminine plural nouns" },
+        { "id": "g1_5", "type": "input", "prompt": "A/An (masculine)", "answer": ["um"], "newWord": "um", "explanation": "Um - indefinite article for masculine nouns" },
+        { "id": "g1_6", "type": "input", "prompt": "A/An (feminine)", "answer": ["uma"], "newWord": "uma", "explanation": "Uma - indefinite article for feminine nouns" },
+        { "id": "g1_7", "type": "input", "prompt": "Some (masculine plural)", "answer": ["uns"], "newWord": "uns", "explanation": "Uns - indefinite article for masculine plural" },
+        { "id": "g1_8", "type": "input", "prompt": "Some (feminine plural)", "answer": ["umas"], "newWord": "umas", "explanation": "Umas - indefinite article for feminine plural" },
+        { "id": "g1_9", "type": "input", "prompt": "Article", "answer": ["artigo"], "newWord": "artigo", "explanation": "O artigo - article (grammar term)" },
+        { "id": "g1_10", "type": "input", "prompt": "Gender", "answer": ["gênero"], "newWord": "gênero", "explanation": "O gênero - gender (grammar concept)" }
+      ]
+    },
+    {
+      "id": "lesson_10",
+      "title": "Lesson 10: Present Tense - Regular Verbs",
+      "newWords": ["falo", "falas", "fala", "falamos", "falam", "presente", "verbo", "conjugação", "terminação", "pessoa"],
+      "masteryRequired": 8,
+      "practicalGoal": "Conjugate regular verbs in present tense",
+      "grammar": "Regular verbs in Portuguese follow patterns based on their endings: -ar (falar), -er (comer), -ir (dormir). Each person (I, you, he/she, we, they) has a specific ending.",
+      "items": [
+        { "id": "g2_1", "type": "input", "prompt": "I speak", "answer": ["falo"], "newWord": "falo", "explanation": "Eu falo - I speak (first person singular)" },
+        { "id": "g2_2", "type": "input", "prompt": "You speak", "answer": ["falas"], "newWord": "falas", "explanation": "Tu falas - you speak (second person singular, informal)" },
+        { "id": "g2_3", "type": "input", "prompt": "He/She speaks", "answer": ["fala"], "newWord": "fala", "explanation": "Ele/ela fala - he/she speaks (third person singular)" },
+        { "id": "g2_4", "type": "input", "prompt": "We speak", "answer": ["falamos"], "newWord": "falamos", "explanation": "Nós falamos - we speak (first person plural)" },
+        { "id": "g2_5", "type": "input", "prompt": "They speak", "answer": ["falam"], "newWord": "falam", "explanation": "Eles/elas falam - they speak (third person plural)" },
+        { "id": "g2_6", "type": "input", "prompt": "Present (tense)", "answer": ["presente"], "newWord": "presente", "explanation": "O presente - present tense" },
+        { "id": "g2_7", "type": "input", "prompt": "Verb", "answer": ["verbo"], "newWord": "verbo", "explanation": "O verbo - verb" },
+        { "id": "g2_8", "type": "input", "prompt": "Conjugation", "answer": ["conjugação"], "newWord": "conjugação", "explanation": "A conjugação - conjugation" },
+        { "id": "g2_9", "type": "input", "prompt": "Ending", "answer": ["terminação"], "newWord": "terminação", "explanation": "A terminação - ending (of verbs)" },
+        { "id": "g2_10", "type": "input", "prompt": "Person", "answer": ["pessoa"], "newWord": "pessoa", "explanation": "A pessoa - person (grammatical concept)" }
+      ]
+    },
+    {
+      "id": "lesson_11",
+      "title": "Lesson 11: Plural Formation",
+      "newWords": ["casas", "carros", "livros", "irmãos", "animais", "plural", "singular", "regra", "exceção", "forma"],
+      "masteryRequired": 8,
+      "practicalGoal": "Form plurals correctly for different noun types",
+      "grammar": "Portuguese plural rules: add -s to words ending in vowels (casa→casas), add -es to words ending in consonants (animal→animais). Some irregular plurals exist.",
+      "items": [
+        { "id": "g3_1", "type": "input", "prompt": "Houses", "answer": ["casas"], "newWord": "casas", "explanation": "As casas - houses (casa + s)" },
+        { "id": "g3_2", "type": "input", "prompt": "Cars", "answer": ["carros"], "newWord": "carros", "explanation": "Os carros - cars (carro + s)" },
+        { "id": "g3_3", "type": "input", "prompt": "Books", "answer": ["livros"], "newWord": "livros", "explanation": "Os livros - books (livro + s)" },
+        { "id": "g3_4", "type": "input", "prompt": "Brothers", "answer": ["irmãos"], "newWord": "irmãos", "explanation": "Os irmãos - brothers (irmão → irmãos)" },
+        { "id": "g3_5", "type": "input", "prompt": "Animals", "answer": ["animais"], "newWord": "animais", "explanation": "Os animais - animals (animal → animais)" },
+        { "id": "g3_6", "type": "input", "prompt": "Plural", "answer": ["plural"], "newWord": "plural", "explanation": "O plural - plural form" },
+        { "id": "g3_7", "type": "input", "prompt": "Singular", "answer": ["singular"], "newWord": "singular", "explanation": "O singular - singular form" },
+        { "id": "g3_8", "type": "input", "prompt": "Rule", "answer": ["regra"], "newWord": "regra", "explanation": "A regra - rule" },
+        { "id": "g3_9", "type": "input", "prompt": "Exception", "answer": ["exceção"], "newWord": "exceção", "explanation": "A exceção - exception" },
+        { "id": "g3_10", "type": "input", "prompt": "Form", "answer": ["forma"], "newWord": "forma", "explanation": "A forma - form/shape" }
+      ]
+    },
+    {
+      "id": "lesson_12", 
+      "title": "Lesson 12: Question Words",
+      "newWords": ["quem", "qual", "quanto", "por que", "porque", "pergunta", "resposta", "questão", "informação", "detalhe"],
+      "masteryRequired": 8,
+      "practicalGoal": "Ask and answer basic questions",
+      "grammar": "Question words: quem (who), qual (which), quanto (how much/many), por que (why), porque (because). Note: 'por que' (why) vs 'porque' (because).",
+      "items": [
+        { "id": "g4_1", "type": "input", "prompt": "Who", "answer": ["quem"], "newWord": "quem", "explanation": "Quem - who (question word)" },
+        { "id": "g4_2", "type": "input", "prompt": "Which", "answer": ["qual"], "newWord": "qual", "explanation": "Qual - which (quais for plural)" },
+        { "id": "g4_3", "type": "input", "prompt": "How much/many", "answer": ["quanto"], "newWord": "quanto", "explanation": "Quanto - how much/many (quanta for feminine)" },
+        { "id": "g4_4", "type": "input", "prompt": "Why", "answer": ["por que"], "newWord": "por que", "explanation": "Por que - why (two words when asking)" },
+        { "id": "g4_5", "type": "input", "prompt": "Because", "answer": ["porque"], "newWord": "porque", "explanation": "Porque - because (one word when answering)" },
+        { "id": "g4_6", "type": "input", "prompt": "Question", "answer": ["pergunta"], "newWord": "pergunta", "explanation": "A pergunta - question" },
+        { "id": "g4_7", "type": "input", "prompt": "Answer", "answer": ["resposta"], "newWord": "resposta", "explanation": "A resposta - answer" },
+        { "id": "g4_8", "type": "input", "prompt": "Question/Issue", "answer": ["questão"], "newWord": "questão", "explanation": "A questão - question/issue" },
+        { "id": "g4_9", "type": "input", "prompt": "Information", "answer": ["informação"], "newWord": "informação", "explanation": "A informação - information" },
+        { "id": "g4_10", "type": "input", "prompt": "Detail", "answer": ["detalhe"], "newWord": "detalhe", "explanation": "O detalhe - detail" }
+      ]
+    },
+    {
+      "id": "lesson_13",
+      "title": "Lesson 13: Adjectives and Agreement",
+      "newWords": ["grande", "pequeno", "novo", "velho", "jovem", "alto", "baixo", "gordo", "magro", "forte"],
+      "masteryRequired": 8,
+      "practicalGoal": "Describe people and objects using adjectives",
+      "grammar": "Portuguese adjectives agree with nouns in gender and number: grande (same for all), pequeno/pequena, novos/novas. Most adjectives come after the noun: casa grande.",
+      "items": [
+        { "id": "g5_1", "type": "input", "prompt": "Big/Large", "answer": ["grande"], "newWord": "grande", "explanation": "Grande - big/large (same for masculine and feminine)" },
+        { "id": "g5_2", "type": "input", "prompt": "Small", "answer": ["pequeno"], "newWord": "pequeno", "explanation": "Pequeno - small (pequena for feminine)" },
+        { "id": "g5_3", "type": "input", "prompt": "New", "answer": ["novo"], "newWord": "novo", "explanation": "Novo - new (nova for feminine)" },
+        { "id": "g5_4", "type": "input", "prompt": "Old", "answer": ["velho"], "newWord": "velho", "explanation": "Velho - old (velha for feminine)" },
+        { "id": "g5_5", "type": "input", "prompt": "Young", "answer": ["jovem"], "newWord": "jovem", "explanation": "Jovem - young (same for masculine and feminine)" },
+        { "id": "g5_6", "type": "input", "prompt": "Tall", "answer": ["alto"], "newWord": "alto", "explanation": "Alto - tall (alta for feminine)" },
+        { "id": "g5_7", "type": "input", "prompt": "Short", "answer": ["baixo"], "newWord": "baixo", "explanation": "Baixo - short (baixa for feminine)" },
+        { "id": "g5_8", "type": "input", "prompt": "Fat", "answer": ["gordo"], "newWord": "gordo", "explanation": "Gordo - fat (gorda for feminine)" },
+        { "id": "g5_9", "type": "input", "prompt": "Thin", "answer": ["magro"], "newWord": "magro", "explanation": "Magro - thin (magra for feminine)" },
+        { "id": "g5_10", "type": "input", "prompt": "Strong", "answer": ["forte"], "newWord": "forte", "explanation": "Forte - strong (same for masculine and feminine)" }
+      ]
+    },
+    {
+      "id": "lesson_14",
+      "title": "Lesson 14: Time Expressions",
+      "newWords": ["hoje", "ontem", "amanhã", "agora", "depois", "antes", "sempre", "nunca", "às vezes", "tempo"],
+      "masteryRequired": 8,
+      "practicalGoal": "Express when things happen",
+      "grammar": "Time expressions: hoje (today), ontem (yesterday), amanhã (tomorrow). Frequency: sempre (always), nunca (never), às vezes (sometimes). These don't change form.",
+      "items": [
+        { "id": "g6_1", "type": "input", "prompt": "Today", "answer": ["hoje"], "newWord": "hoje", "explanation": "Hoje - today" },
+        { "id": "g6_2", "type": "input", "prompt": "Yesterday", "answer": ["ontem"], "newWord": "ontem", "explanation": "Ontem - yesterday" },
+        { "id": "g6_3", "type": "input", "prompt": "Tomorrow", "answer": ["amanhã"], "newWord": "amanhã", "explanation": "Amanhã - tomorrow" },
+        { "id": "g6_4", "type": "input", "prompt": "Now", "answer": ["agora"], "newWord": "agora", "explanation": "Agora - now" },
+        { "id": "g6_5", "type": "input", "prompt": "After/Later", "answer": ["depois"], "newWord": "depois", "explanation": "Depois - after/later" },
+        { "id": "g6_6", "type": "input", "prompt": "Before", "answer": ["antes"], "newWord": "antes", "explanation": "Antes - before" },
+        { "id": "g6_7", "type": "input", "prompt": "Always", "answer": ["sempre"], "newWord": "sempre", "explanation": "Sempre - always" },
+        { "id": "g6_8", "type": "input", "prompt": "Never", "answer": ["nunca"], "newWord": "nunca", "explanation": "Nunca - never" },
+        { "id": "g6_9", "type": "input", "prompt": "Sometimes", "answer": ["às vezes"], "newWord": "às vezes", "explanation": "Às vezes - sometimes" },
+        { "id": "g6_10", "type": "input", "prompt": "Time", "answer": ["tempo"], "newWord": "tempo", "explanation": "O tempo - time/weather" }
+      ]
+    },
+    {
+      "id": "lesson_15",
+      "title": "Lesson 15: Prepositions",
+      "newWords": ["em", "para", "de", "com", "sem", "sobre", "entre", "contra", "durante", "através"],
+      "masteryRequired": 8,
+      "practicalGoal": "Connect words and express relationships",
+      "grammar": "Prepositions show relationships between words: em (in/on), para (to/for), de (of/from), com (with), sem (without). Some contract with articles: de + o = do.",
+      "items": [
+        { "id": "g7_1", "type": "input", "prompt": "In/On", "answer": ["em"], "newWord": "em", "explanation": "Em - in/on (em casa = at home)" },
+        { "id": "g7_2", "type": "input", "prompt": "To/For", "answer": ["para"], "newWord": "para", "explanation": "Para - to/for (direction and purpose)" },
+        { "id": "g7_3", "type": "input", "prompt": "Of/From", "answer": ["de"], "newWord": "de", "explanation": "De - of/from (possession and origin)" },
+        { "id": "g7_4", "type": "input", "prompt": "With", "answer": ["com"], "newWord": "com", "explanation": "Com - with (accompaniment)" },
+        { "id": "g7_5", "type": "input", "prompt": "Without", "answer": ["sem"], "newWord": "sem", "explanation": "Sem - without" },
+        { "id": "g7_6", "type": "input", "prompt": "About/On top of", "answer": ["sobre"], "newWord": "sobre", "explanation": "Sobre - about/on top of" },
+        { "id": "g7_7", "type": "input", "prompt": "Between", "answer": ["entre"], "newWord": "entre", "explanation": "Entre - between" },
+        { "id": "g7_8", "type": "input", "prompt": "Against", "answer": ["contra"], "newWord": "contra", "explanation": "Contra - against" },
+        { "id": "g7_9", "type": "input", "prompt": "During", "answer": ["durante"], "newWord": "durante", "explanation": "Durante - during" },
+        { "id": "g7_10", "type": "input", "prompt": "Through", "answer": ["através"], "newWord": "através", "explanation": "Através - through (através de = through)" }
+      ]
+    },
+    {
+      "id": "lesson_16",
+      "title": "Lesson 16: Irregular Verbs - Ser and Estar",
+      "newWords": ["sou", "é", "somos", "são", "estou", "está", "estamos", "estão", "sendo", "estado"],
+      "masteryRequired": 8,
+      "practicalGoal": "Master the two 'to be' verbs correctly",
+      "grammar": "Ser vs Estar: both mean 'to be'. Ser for permanent characteristics (Eu sou médico), Estar for temporary states (Eu estou cansado). Different conjugations for each.",
+      "items": [
+        { "id": "g8_1", "type": "input", "prompt": "I am (permanent)", "answer": ["sou"], "newWord": "sou", "explanation": "Eu sou - I am (permanent characteristic)" },
+        { "id": "g8_2", "type": "input", "prompt": "He/She is (permanent)", "answer": ["é"], "newWord": "é", "explanation": "Ele/ela é - he/she is (permanent)" },
+        { "id": "g8_3", "type": "input", "prompt": "We are (permanent)", "answer": ["somos"], "newWord": "somos", "explanation": "Nós somos - we are (permanent)" },
+        { "id": "g8_4", "type": "input", "prompt": "They are (permanent)", "answer": ["são"], "newWord": "são", "explanation": "Eles/elas são - they are (permanent)" },
+        { "id": "g8_5", "type": "input", "prompt": "I am (temporary)", "answer": ["estou"], "newWord": "estou", "explanation": "Eu estou - I am (temporary state)" },
+        { "id": "g8_6", "type": "input", "prompt": "He/She is (temporary)", "answer": ["está"], "newWord": "está", "explanation": "Ele/ela está - he/she is (temporary)" },
+        { "id": "g8_7", "type": "input", "prompt": "We are (temporary)", "answer": ["estamos"], "newWord": "estamos", "explanation": "Nós estamos - we are (temporary)" },
+        { "id": "g8_8", "type": "input", "prompt": "They are (temporary)", "answer": ["estão"], "newWord": "estão", "explanation": "Eles/elas estão - they are (temporary)" },
+        { "id": "g8_9", "type": "input", "prompt": "Being (permanent)", "answer": ["sendo"], "newWord": "sendo", "explanation": "Sendo - being (gerund of ser)" },
+        { "id": "g8_10", "type": "input", "prompt": "Been/State", "answer": ["estado"], "newWord": "estado", "explanation": "Estado - state/been (past participle of estar)" }
+      ]
+    },
+    {
+      "id": "lesson_17",
+      "title": "Lesson 17: Irregular Verbs - Ter and Fazer",
+      "newWords": ["tenho", "tem", "temos", "têm", "faço", "faz", "fazemos", "fazem", "tendo", "feito"],
+      "masteryRequired": 8,
+      "practicalGoal": "Use essential irregular verbs confidently",
+      "grammar": "Ter (to have) and Fazer (to do/make) are essential irregular verbs. Note: tem (he/she has) vs têm (they have) - the accent makes the difference!",
+      "items": [
+        { "id": "g9_1", "type": "input", "prompt": "I have", "answer": ["tenho"], "newWord": "tenho", "explanation": "Eu tenho - I have" },
+        { "id": "g9_2", "type": "input", "prompt": "He/She has", "answer": ["tem"], "newWord": "tem", "explanation": "Ele/ela tem - he/she has (no accent)" },
+        { "id": "g9_3", "type": "input", "prompt": "We have", "answer": ["temos"], "newWord": "temos", "explanation": "Nós temos - we have" },
+        { "id": "g9_4", "type": "input", "prompt": "They have", "answer": ["têm"], "newWord": "têm", "explanation": "Eles/elas têm - they have (with accent)" },
+        { "id": "g9_5", "type": "input", "prompt": "I do/make", "answer": ["faço"], "newWord": "faço", "explanation": "Eu faço - I do/make" },
+        { "id": "g9_6", "type": "input", "prompt": "He/She does/makes", "answer": ["faz"], "newWord": "faz", "explanation": "Ele/ela faz - he/she does/makes" },
+        { "id": "g9_7", "type": "input", "prompt": "We do/make", "answer": ["fazemos"], "newWord": "fazemos", "explanation": "Nós fazemos - we do/make" },
+        { "id": "g9_8", "type": "input", "prompt": "They do/make", "answer": ["fazem"], "newWord": "fazem", "explanation": "Eles/elas fazem - they do/make" },
+        { "id": "g9_9", "type": "input", "prompt": "Having", "answer": ["tendo"], "newWord": "tendo", "explanation": "Tendo - having (gerund of ter)" },
+        { "id": "g9_10", "type": "input", "prompt": "Done/Made", "answer": ["feito"], "newWord": "feito", "explanation": "Feito - done/made (past participle of fazer)" }
+      ]
+    },
+    {
+      "id": "lesson_18",
+      "title": "Lesson 18: Building Sentences",
+      "newWords": ["frase", "sujeito", "predicado", "objeto", "complemento", "ordem", "estrutura", "exemplo", "prática", "exercício"],
+      "masteryRequired": 8,
+      "practicalGoal": "Construct complete, grammatically correct sentences",
+      "grammar": "Portuguese sentence structure: Subject + Verb + Object (Eu como maçã). The subject can be omitted when clear from context (Como maçã = I eat an apple).",
+      "items": [
+        { "id": "g10_1", "type": "input", "prompt": "Sentence", "answer": ["frase"], "newWord": "frase", "explanation": "A frase - sentence" },
+        { "id": "g10_2", "type": "input", "prompt": "Subject", "answer": ["sujeito"], "newWord": "sujeito", "explanation": "O sujeito - subject (who does the action)" },
+        { "id": "g10_3", "type": "input", "prompt": "Predicate", "answer": ["predicado"], "newWord": "predicado", "explanation": "O predicado - predicate (verb + rest)" },
+        { "id": "g10_4", "type": "input", "prompt": "Object", "answer": ["objeto"], "newWord": "objeto", "explanation": "O objeto - object (receives the action)" },
+        { "id": "g10_5", "type": "input", "prompt": "Complement", "answer": ["complemento"], "newWord": "complemento", "explanation": "O complemento - complement" },
+        { "id": "g10_6", "type": "input", "prompt": "Order", "answer": ["ordem"], "newWord": "ordem", "explanation": "A ordem - order (sequence)" },
+        { "id": "g10_7", "type": "input", "prompt": "Structure", "answer": ["estrutura"], "newWord": "estrutura", "explanation": "A estrutura - structure" },
+        { "id": "g10_8", "type": "input", "prompt": "Example", "answer": ["exemplo"], "newWord": "exemplo", "explanation": "O exemplo - example" },
+        { "id": "g10_9", "type": "input", "prompt": "Practice", "answer": ["prática"], "newWord": "prática", "explanation": "A prática - practice" },
+        { "id": "g10_10", "type": "input", "prompt": "Exercise", "answer": ["exercício"], "newWord": "exercício", "explanation": "O exercício - exercise" }
+      ]
+    }
+  ]
+}

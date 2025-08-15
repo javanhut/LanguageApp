@@ -1,0 +1,190 @@
+{
+  "id": "italian_structured_course",
+  "title": "Italian Complete Course (10 Lessons)",
+  "track": "spoken",
+  "langFrom": "en",
+  "langTo": "it",
+  "description": "Complete Italian course with grammar, vocabulary, and conversations",
+  "lessons": [
+    {
+      "id": "lesson_1",
+      "title": "Lesson 1: Greetings & Politeness",
+      "grammar": "Italian has formal (Lei) and informal (tu) forms. Use 'Lei' with strangers, elders, or in professional settings. Pronunciation is very consistent - every letter is pronounced.",
+      "vocabulary": ["ciao", "buongiorno", "buonasera", "arrivederci", "grazie", "prego", "scusi", "salve"],
+      "items": [
+        { "id": "l1_1", "type": "input", "prompt": "Hello/Bye (informal)", "answer": ["ciao"], "hints": ["Very casual greeting"] },
+        { "id": "l1_2", "type": "input", "prompt": "Good morning", "answer": ["buongiorno"], "hints": ["Until afternoon"] },
+        { "id": "l1_3", "type": "input", "prompt": "Good evening", "answer": ["buonasera"], "hints": ["After 6 PM"] },
+        { "id": "l1_4", "type": "input", "prompt": "Goodbye (formal)", "answer": ["arrivederci"], "hints": ["Formal farewell"] },
+        { "id": "l1_5", "type": "input", "prompt": "Thank you", "answer": ["grazie"], "hints": ["Gratitude"] },
+        { "id": "l1_6", "type": "input", "prompt": "You're welcome/Please", "answer": ["prego"], "hints": ["Multi-purpose polite word"] },
+        { "id": "l1_7", "type": "input", "prompt": "Excuse me", "answer": ["scusi", "scusa"], "hints": ["Scusi (formal), scusa (informal)"] },
+        { "id": "l1_8", "type": "input", "prompt": "Hello (neutral)", "answer": ["salve"], "hints": ["Neither formal nor informal"] },
+        { "id": "l1_9", "type": "input", "prompt": "How are you? (informal)", "answer": ["come stai"], "hints": ["With friends"] },
+        { "id": "l1_10", "type": "input", "prompt": "How are you? (formal)", "answer": ["come sta"], "hints": ["With strangers"] }
+      ]
+    },
+    {
+      "id": "lesson_2",
+      "title": "Lesson 2: Basic Questions & Answers",
+      "grammar": "Question words in Italian: Chi (who), Che/Cosa (what), Dove (where), Quando (when), Perché (why), Come (how). Questions can be formed by intonation alone.",
+      "vocabulary": ["sì", "no", "forse", "chi", "che", "cosa", "dove", "quando", "perché", "come"],
+      "items": [
+        { "id": "l2_1", "type": "input", "prompt": "Yes", "answer": ["sì", "si"], "hints": ["Affirmative"] },
+        { "id": "l2_2", "type": "input", "prompt": "No", "answer": ["no"], "hints": ["Negative"] },
+        { "id": "l2_3", "type": "input", "prompt": "Maybe", "answer": ["forse"], "hints": ["Uncertainty"] },
+        { "id": "l2_4", "type": "input", "prompt": "Who?", "answer": ["chi"], "hints": ["Person question"] },
+        { "id": "l2_5", "type": "input", "prompt": "What? (before verb)", "answer": ["che"], "hints": ["Before verbs"] },
+        { "id": "l2_6", "type": "input", "prompt": "What? (as object)", "answer": ["cosa"], "hints": ["As direct object"] },
+        { "id": "l2_7", "type": "input", "prompt": "Where?", "answer": ["dove"], "hints": ["Location question"] },
+        { "id": "l2_8", "type": "input", "prompt": "When?", "answer": ["quando"], "hints": ["Time question"] },
+        { "id": "l2_9", "type": "input", "prompt": "Why?", "answer": ["perché", "perche"], "hints": ["Reason question"] },
+        { "id": "l2_10", "type": "input", "prompt": "How?", "answer": ["come"], "hints": ["Method question"] }
+      ]
+    },
+    {
+      "id": "lesson_3",
+      "title": "Lesson 3: Numbers 1-20",
+      "grammar": "Numbers 1-10 have unique forms. Compound numbers (11-19) end in -dici except 11 (undici). Number 20 is 'venti'. 'Un/uno/una' changes by gender and position.",
+      "vocabulary": ["uno", "due", "tre", "quattro", "cinque", "sei", "sette", "otto", "nove", "dieci"],
+      "items": [
+        { "id": "l3_1", "type": "input", "prompt": "One", "answer": ["uno", "una", "un"], "hints": ["Uno (m), una (f), un (before consonant)"] },
+        { "id": "l3_2", "type": "input", "prompt": "Two", "answer": ["due"], "hints": ["Same for all genders"] },
+        { "id": "l3_3", "type": "input", "prompt": "Three", "answer": ["tre"], "hints": ["Without accent"] },
+        { "id": "l3_4", "type": "input", "prompt": "Four", "answer": ["quattro"], "hints": ["Double t"] },
+        { "id": "l3_5", "type": "input", "prompt": "Five", "answer": ["cinque"], "hints": ["Like 'cheen-kway'"] },
+        { "id": "l3_6", "type": "input", "prompt": "Six", "answer": ["sei"], "hints": ["Like 'say'"] },
+        { "id": "l3_7", "type": "input", "prompt": "Seven", "answer": ["sette"], "hints": ["Double t"] },
+        { "id": "l3_8", "type": "input", "prompt": "Eight", "answer": ["otto"], "hints": ["Double t"] },
+        { "id": "l3_9", "type": "input", "prompt": "Nine", "answer": ["nove"], "hints": ["Like 'no-vay'"] },
+        { "id": "l3_10", "type": "input", "prompt": "Ten", "answer": ["dieci"], "hints": ["Like 'dee-ay-chee'"] }
+      ]
+    },
+    {
+      "id": "lesson_4",
+      "title": "Lesson 4: Days & Time",
+      "grammar": "Days of the week are masculine except domenica (Sunday). Use 'di' before days for 'on Monday' (di lunedì). Months are not capitalized in Italian.",
+      "vocabulary": ["lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica", "oggi", "domani", "ieri"],
+      "items": [
+        { "id": "l4_1", "type": "input", "prompt": "Monday", "answer": ["lunedì", "lunedi"], "hints": ["Moon day"] },
+        { "id": "l4_2", "type": "input", "prompt": "Tuesday", "answer": ["martedì", "martedi"], "hints": ["Mars day"] },
+        { "id": "l4_3", "type": "input", "prompt": "Wednesday", "answer": ["mercoledì", "mercoledi"], "hints": ["Mercury day"] },
+        { "id": "l4_4", "type": "input", "prompt": "Thursday", "answer": ["giovedì", "giovedi"], "hints": ["Jupiter day"] },
+        { "id": "l4_5", "type": "input", "prompt": "Friday", "answer": ["venerdì", "venerdi"], "hints": ["Venus day"] },
+        { "id": "l4_6", "type": "input", "prompt": "Saturday", "answer": ["sabato"], "hints": ["No accent"] },
+        { "id": "l4_7", "type": "input", "prompt": "Sunday", "answer": ["domenica"], "hints": ["Only feminine day"] },
+        { "id": "l4_8", "type": "input", "prompt": "Today", "answer": ["oggi"], "hints": ["This day"] },
+        { "id": "l4_9", "type": "input", "prompt": "Tomorrow", "answer": ["domani"], "hints": ["Next day"] },
+        { "id": "l4_10", "type": "input", "prompt": "Yesterday", "answer": ["ieri"], "hints": ["Previous day"] }
+      ]
+    },
+    {
+      "id": "lesson_5",
+      "title": "Lesson 5: Family & People",
+      "grammar": "Family nouns often have masculine/feminine pairs. Possessives agree with the noun: mio/mia (my), tuo/tua (your), suo/sua (his/her). Use definite articles with family members in plural.",
+      "vocabulary": ["famiglia", "padre", "madre", "fratello", "sorella", "figlio", "figlia", "marito", "moglie"],
+      "items": [
+        { "id": "l5_1", "type": "input", "prompt": "Family", "answer": ["famiglia"], "hints": ["Group of relatives"] },
+        { "id": "l5_2", "type": "input", "prompt": "Father", "answer": ["padre", "papà", "papa"], "hints": ["Male parent"] },
+        { "id": "l5_3", "type": "input", "prompt": "Mother", "answer": ["madre", "mamma"], "hints": ["Female parent"] },
+        { "id": "l5_4", "type": "input", "prompt": "Brother", "answer": ["fratello"], "hints": ["Male sibling"] },
+        { "id": "l5_5", "type": "input", "prompt": "Sister", "answer": ["sorella"], "hints": ["Female sibling"] },
+        { "id": "l5_6", "type": "input", "prompt": "Son", "answer": ["figlio"], "hints": ["Male child"] },
+        { "id": "l5_7", "type": "input", "prompt": "Daughter", "answer": ["figlia"], "hints": ["Female child"] },
+        { "id": "l5_8", "type": "input", "prompt": "Husband", "answer": ["marito"], "hints": ["Male spouse"] },
+        { "id": "l5_9", "type": "input", "prompt": "Wife", "answer": ["moglie"], "hints": ["Female spouse"] },
+        { "id": "l5_10", "type": "input", "prompt": "My family", "answer": ["la mia famiglia"], "hints": ["Article + possessive + noun"] }
+      ]
+    },
+    {
+      "id": "lesson_6",
+      "title": "Lesson 6: Food & Drink",
+      "grammar": "Food vocabulary uses articles: il pane (bread), la carne (meat). Use 'ho fame' (I'm hungry), 'ho sete' (I'm thirsty). 'Vorrei' (I would like) is polite for ordering.",
+      "vocabulary": ["pane", "acqua", "latte", "caffè", "tè", "vino", "birra", "formaggio", "carne", "pesce"],
+      "items": [
+        { "id": "l6_1", "type": "input", "prompt": "Bread", "answer": ["pane"], "hints": ["Basic food"] },
+        { "id": "l6_2", "type": "input", "prompt": "Water", "answer": ["acqua"], "hints": ["Double c"] },
+        { "id": "l6_3", "type": "input", "prompt": "Milk", "answer": ["latte"], "hints": ["Double t"] },
+        { "id": "l6_4", "type": "input", "prompt": "Coffee", "answer": ["caffè", "caffe"], "hints": ["Very important in Italy!"] },
+        { "id": "l6_5", "type": "input", "prompt": "Tea", "answer": ["tè", "te"], "hints": ["Less common than coffee"] },
+        { "id": "l6_6", "type": "input", "prompt": "Wine", "answer": ["vino"], "hints": ["Italian specialty"] },
+        { "id": "l6_7", "type": "input", "prompt": "Beer", "answer": ["birra"], "hints": ["Double r"] },
+        { "id": "l6_8", "type": "input", "prompt": "Cheese", "answer": ["formaggio"], "hints": ["Double g"] },
+        { "id": "l6_9", "type": "input", "prompt": "Meat", "answer": ["carne"], "hints": ["Protein source"] },
+        { "id": "l6_10", "type": "input", "prompt": "Fish", "answer": ["pesce"], "hints": ["From the sea"] }
+      ]
+    },
+    {
+      "id": "lesson_7",
+      "title": "Lesson 7: Colors & Descriptions",
+      "grammar": "Most adjectives come after the noun and agree in gender/number: una macchina rossa, delle macchine rosse. Some common adjectives (bello, grande, piccolo) can come before.",
+      "vocabulary": ["rosso", "blu", "verde", "giallo", "nero", "bianco", "grande", "piccolo", "bello", "brutto"],
+      "items": [
+        { "id": "l7_1", "type": "input", "prompt": "Red", "answer": ["rosso", "rossa"], "hints": ["Rosso (m), rossa (f)"] },
+        { "id": "l7_2", "type": "input", "prompt": "Blue", "answer": ["blu"], "hints": ["Invariable - same for all"] },
+        { "id": "l7_3", "type": "input", "prompt": "Green", "answer": ["verde"], "hints": ["Same for masculine/feminine"] },
+        { "id": "l7_4", "type": "input", "prompt": "Yellow", "answer": ["giallo", "gialla"], "hints": ["Giallo (m), gialla (f)"] },
+        { "id": "l7_5", "type": "input", "prompt": "Black", "answer": ["nero", "nera"], "hints": ["Nero (m), nera (f)"] },
+        { "id": "l7_6", "type": "input", "prompt": "White", "answer": ["bianco", "bianca"], "hints": ["Bianco (m), bianca (f)"] },
+        { "id": "l7_7", "type": "input", "prompt": "Big/Large", "answer": ["grande"], "hints": ["Same for both genders"] },
+        { "id": "l7_8", "type": "input", "prompt": "Small", "answer": ["piccolo", "piccola"], "hints": ["Piccolo (m), piccola (f)"] },
+        { "id": "l7_9", "type": "input", "prompt": "Beautiful", "answer": ["bello", "bella"], "hints": ["Bello (m), bella (f)"] },
+        { "id": "l7_10", "type": "input", "prompt": "Ugly", "answer": ["brutto", "brutta"], "hints": ["Brutto (m), brutta (f)"] }
+      ]
+    },
+    {
+      "id": "lesson_8",
+      "title": "Lesson 8: Common Verbs",
+      "grammar": "Italian verbs end in -are, -ere, or -ire. Key irregular verbs: essere (to be), avere (to have), andare (to go), fare (to do/make), venire (to come). Conjugation changes by person and number.",
+      "vocabulary": ["essere", "avere", "andare", "venire", "fare", "dire", "vedere", "sapere", "volere", "potere"],
+      "items": [
+        { "id": "l8_1", "type": "input", "prompt": "To be", "answer": ["essere"], "hints": ["Most important verb"] },
+        { "id": "l8_2", "type": "input", "prompt": "To have", "answer": ["avere"], "hints": ["Essential possession"] },
+        { "id": "l8_3", "type": "input", "prompt": "To go", "answer": ["andare"], "hints": ["Movement verb"] },
+        { "id": "l8_4", "type": "input", "prompt": "To come", "answer": ["venire"], "hints": ["Approach movement"] },
+        { "id": "l8_5", "type": "input", "prompt": "To do/make", "answer": ["fare"], "hints": ["Action verb"] },
+        { "id": "l8_6", "type": "input", "prompt": "To say", "answer": ["dire"], "hints": ["Speech verb"] },
+        { "id": "l8_7", "type": "input", "prompt": "To see", "answer": ["vedere"], "hints": ["Vision verb"] },
+        { "id": "l8_8", "type": "input", "prompt": "To know (facts)", "answer": ["sapere"], "hints": ["Knowledge of facts"] },
+        { "id": "l8_9", "type": "input", "prompt": "To want", "answer": ["volere"], "hints": ["Desire verb"] },
+        { "id": "l8_10", "type": "input", "prompt": "To be able", "answer": ["potere"], "hints": ["Capability verb"] }
+      ]
+    },
+    {
+      "id": "lesson_9",
+      "title": "Lesson 9: Places & Directions",
+      "grammar": "Use prepositions with places: a (to/at), da (from/at someone's), in (in), su (on), sotto (under). Cities use 'a', countries use 'in'. 'Casa' (home) uses 'a casa' or 'a casa di...'",
+      "vocabulary": ["casa", "scuola", "negozio", "ristorante", "albergo", "stazione", "aeroporto", "strada", "città", "paese"],
+      "items": [
+        { "id": "l9_1", "type": "input", "prompt": "House/Home", "answer": ["casa"], "hints": ["Where you live"] },
+        { "id": "l9_2", "type": "input", "prompt": "School", "answer": ["scuola"], "hints": ["Place of learning"] },
+        { "id": "l9_3", "type": "input", "prompt": "Store/Shop", "answer": ["negozio"], "hints": ["Place to buy"] },
+        { "id": "l9_4", "type": "input", "prompt": "Restaurant", "answer": ["ristorante"], "hints": ["Place to eat"] },
+        { "id": "l9_5", "type": "input", "prompt": "Hotel", "answer": ["albergo"], "hints": ["Place to stay"] },
+        { "id": "l9_6", "type": "input", "prompt": "Station", "answer": ["stazione"], "hints": ["Transport hub"] },
+        { "id": "l9_7", "type": "input", "prompt": "Airport", "answer": ["aeroporto"], "hints": ["Flight hub"] },
+        { "id": "l9_8", "type": "input", "prompt": "Street", "answer": ["strada"], "hints": ["Road"] },
+        { "id": "l9_9", "type": "input", "prompt": "City", "answer": ["città", "citta"], "hints": ["Urban area"] },
+        { "id": "l9_10", "type": "input", "prompt": "Country/Village", "answer": ["paese"], "hints": ["Nation or small town"] }
+      ]
+    },
+    {
+      "id": "lesson_10",
+      "title": "Lesson 10: Practical Phrases",
+      "grammar": "Common expressions for daily situations. 'C'è/Ci sono' means 'there is/are'. 'È' means 'it is/he is/she is'. Use 'Dov'è...' for 'Where is...'",
+      "vocabulary": ["c'è", "ci sono", "è", "ecco", "quanto", "molto", "poco", "troppo", "abbastanza", "più"],
+      "items": [
+        { "id": "l10_1", "type": "input", "prompt": "There is", "answer": ["c'è", "c e"], "hints": ["Singular existence"] },
+        { "id": "l10_2", "type": "input", "prompt": "There are", "answer": ["ci sono"], "hints": ["Plural existence"] },
+        { "id": "l10_3", "type": "input", "prompt": "It is/He is/She is", "answer": ["è", "e"], "hints": ["Third person singular essere"] },
+        { "id": "l10_4", "type": "input", "prompt": "Here is/are", "answer": ["ecco"], "hints": ["Presentation"] },
+        { "id": "l10_5", "type": "input", "prompt": "How much/many", "answer": ["quanto", "quanta", "quanti", "quante"], "hints": ["Agrees with noun"] },
+        { "id": "l10_6", "type": "input", "prompt": "A lot/Much", "answer": ["molto", "molta", "molti", "molte"], "hints": ["Large quantity"] },
+        { "id": "l10_7", "type": "input", "prompt": "A little/Few", "answer": ["poco", "poca", "pochi", "poche"], "hints": ["Small quantity"] },
+        { "id": "l10_8", "type": "input", "prompt": "Too much", "answer": ["troppo", "troppa", "troppi", "troppe"], "hints": ["Excessive quantity"] },
+        { "id": "l10_9", "type": "input", "prompt": "Enough", "answer": ["abbastanza"], "hints": ["Sufficient quantity"] },
+        { "id": "l10_10", "type": "input", "prompt": "More", "answer": ["più", "piu"], "hints": ["Comparative"] }
+      ]
+    }
+  ]
+}

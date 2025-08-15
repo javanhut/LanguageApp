@@ -1,0 +1,374 @@
+{
+  "id": "cs_algorithms_complete",
+  "title": "🧠 Algorithms: From Zero to Hero",
+  "track": "misc",
+  "description": "Master algorithms through hands-on building, real-world applications, and interactive problem-solving",
+  "courseType": "conceptual",
+  "items": [
+    {
+      "id": "algo_intro_1",
+      "type": "conceptual",
+      "prompt": "What is an Algorithm?",
+      "explanation": "An algorithm is like a recipe - a step-by-step set of instructions to solve a problem. Just like a recipe tells you how to make a cake, an algorithm tells a computer how to solve a problem.\n\nExample: Finding the largest number in a list\n1. Start with the first number as your 'current largest'\n2. Look at each remaining number\n3. If you find a bigger number, make it your new 'current largest'\n4. When you've checked all numbers, you have the answer!\n\nThis same pattern works whether you have 10 numbers or 10 million numbers.",
+      "interactive_demo": {
+        "type": "find_max_demo",
+        "numbers": [3, 7, 2, 9, 1, 5],
+        "step_by_step": true
+      },
+      "real_world_connection": "This is exactly how sports tournaments work - you keep track of the 'current champion' and see if anyone can beat them!"
+    },
+    {
+      "id": "algo_efficiency_1",
+      "type": "performance_comparison",
+      "prompt": "Why Does Speed Matter?",
+      "explanation": "Imagine two friends sorting a deck of cards:\n\nAlice uses 'Selection Sort': She finds the smallest card and puts it first, then finds the next smallest, and so on.\n\nBob uses 'Bubble Sort': He goes through the deck repeatedly, swapping adjacent cards if they're in the wrong order.\n\nLet's see what happens as the deck gets bigger!",
+      "performance_demo": {
+        "algorithms": [
+          {
+            "name": "Selection Sort (Alice)",
+            "description": "Find the minimum, place it at the beginning, repeat",
+            "time_complexity": "O(n²)",
+            "performance_data": {
+              "10_cards": "0.01 seconds",
+              "100_cards": "1 second", 
+              "1000_cards": "100 seconds",
+              "10000_cards": "10,000 seconds (2.8 hours)"
+            }
+          },
+          {
+            "name": "Bubble Sort (Bob)",
+            "description": "Repeatedly swap adjacent elements if they're wrong",
+            "time_complexity": "O(n²)",
+            "performance_data": {
+              "10_cards": "0.02 seconds",
+              "100_cards": "2 seconds",
+              "1000_cards": "200 seconds", 
+              "10000_cards": "20,000 seconds (5.6 hours)"
+            }
+          },
+          {
+            "name": "Merge Sort (The Pro)",
+            "description": "Divide the deck in half, sort each half, then merge",
+            "time_complexity": "O(n log n)",
+            "performance_data": {
+              "10_cards": "0.001 seconds",
+              "100_cards": "0.01 seconds",
+              "1000_cards": "0.1 seconds",
+              "10000_cards": "1 second"
+            }
+          }
+        ]
+      },
+      "key_insight": "The difference between a good algorithm and a bad one can be the difference between 1 second and 5 hours for the same task!"
+    },
+    {
+      "id": "algo_search_linear",
+      "type": "hands_on_building",
+      "prompt": "Linear Search: The Phone Book Problem",
+      "scenario": "Your friend's phone number is in your contacts list (unsorted). How do you find it?",
+      "explanation": "Linear Search is like going through your contacts one by one until you find your friend. It's simple but can be slow for large lists.",
+      "build_together": {
+        "step1": {
+          "title": "The Plan",
+          "description": "Start at the first contact, check if it's your friend. If not, move to the next one. Keep going until you find them or reach the end.",
+          "pseudocode": [
+            "FOR each contact in the list:",
+            "  IF contact.name equals target_name:",
+            "    RETURN contact",
+            "END FOR",
+            "RETURN 'not found'"
+          ]
+        },
+        "step2": {
+          "title": "Let's Code It",
+          "language": "python",
+          "code_progression": [
+            {
+              "version": 1,
+              "title": "Basic Version",
+              "code": "def find_contact(contacts, target_name):\n    for contact in contacts:\n        if contact['name'] == target_name:\n            return contact\n    return None"
+            },
+            {
+              "version": 2, 
+              "title": "With Step Counter",
+              "code": "def find_contact(contacts, target_name):\n    steps = 0\n    for contact in contacts:\n        steps += 1\n        print(f'Step {steps}: Checking {contact[\"name\"]}')\n        if contact['name'] == target_name:\n            print(f'Found {target_name} in {steps} steps!')\n            return contact\n    print(f'Not found after {steps} steps')\n    return None"
+            }
+          ]
+        },
+        "step3": {
+          "title": "Test It Out",
+          "interactive_test": {
+            "contacts": [
+              {"name": "Alice", "phone": "123-456-7890"},
+              {"name": "Bob", "phone": "234-567-8901"},
+              {"name": "Charlie", "phone": "345-678-9012"},
+              {"name": "Diana", "phone": "456-789-0123"},
+              {"name": "Eve", "phone": "567-890-1234"}
+            ],
+            "test_searches": ["Alice", "Diana", "Frank"],
+            "show_steps": true
+          }
+        }
+      },
+      "analysis": {
+        "best_case": "Target is the first item - 1 step",
+        "worst_case": "Target is the last item or not found - n steps", 
+        "average_case": "Target is somewhere in the middle - n/2 steps",
+        "time_complexity": "O(n) - linear time"
+      }
+    },
+    {
+      "id": "algo_search_binary",
+      "type": "discovery_learning",
+      "prompt": "Binary Search: The Dictionary Strategy",
+      "scenario": "You're looking up a word in a dictionary. Do you start from page 1?",
+      "discovery_process": {
+        "question": "How do you actually find a word in a dictionary?",
+        "student_exploration": {
+          "options": [
+            "Start from page 1 and go through every page",
+            "Open to a random page and hope you're lucky",
+            "Open to the middle and see if you need to go left or right",
+            "Ask someone else to find it for you"
+          ],
+          "correct": "Open to the middle and see if you need to go left or right",
+          "follow_up": "Exactly! You use the fact that the dictionary is SORTED to eliminate half the remaining pages with each guess."
+        }
+      },
+      "explanation": "Binary Search is like the dictionary strategy. Since the data is sorted, you can eliminate half of the remaining possibilities with each comparison.",
+      "interactive_demo": {
+        "type": "number_guessing_game",
+        "setup": "I'm thinking of a number between 1 and 100. You can ask 'Is it higher or lower than X?' How quickly can you find it?",
+        "algorithm_comparison": {
+          "linear_approach": "Guess 1, 2, 3, 4, 5... (could take 100 guesses)",
+          "binary_approach": "Guess 50, then 25 or 75, then... (takes at most 7 guesses)"
+        }
+      },
+      "build_together": {
+        "requirements": "The list MUST be sorted first!",
+        "algorithm": [
+          "Set left = 0, right = length - 1",
+          "While left <= right:",
+          "  Calculate middle = (left + right) / 2",
+          "  If array[middle] == target: FOUND!",
+          "  If array[middle] < target: search right half",
+          "  If array[middle] > target: search left half",
+          "Return 'not found'"
+        ],
+        "code_example": {
+          "language": "python",
+          "code": "def binary_search(arr, target):\n    left, right = 0, len(arr) - 1\n    \n    while left <= right:\n        mid = (left + right) // 2\n        \n        if arr[mid] == target:\n            return mid  # Found it!\n        elif arr[mid] < target:\n            left = mid + 1  # Search right half\n        else:\n            right = mid - 1  # Search left half\n    \n    return -1  # Not found"
+        },
+        "step_by_step_trace": {
+          "array": [1, 3, 5, 7, 9, 11, 13, 15, 17, 19],
+          "target": 7,
+          "show_elimination": true
+        }
+      },
+      "performance_comparison": {
+        "linear_vs_binary": {
+          "1000_items": "Linear: up to 1000 steps, Binary: at most 10 steps",
+          "1_million_items": "Linear: up to 1,000,000 steps, Binary: at most 20 steps",
+          "1_billion_items": "Linear: up to 1,000,000,000 steps, Binary: at most 30 steps"
+        },
+        "real_world_impact": "This is why Google can search billions of web pages in milliseconds!"
+      }
+    },
+    {
+      "id": "algo_sorting_intro",
+      "type": "problem_motivation",
+      "prompt": "Why Do We Need to Sort Things?",
+      "real_world_examples": [
+        {
+          "scenario": "Netflix Movie List",
+          "unsorted_problems": ["Hard to find movies by rating", "Can't see what's popular", "No way to find recent releases"],
+          "sorted_benefits": ["Quickly find top-rated movies", "Browse by release date", "Use binary search to find specific titles"]
+        },
+        {
+          "scenario": "Student Grade Reports", 
+          "unsorted_problems": ["Can't identify top performers", "Hard to spot failing students", "No clear class ranking"],
+          "sorted_benefits": ["Instantly see valedictorian candidates", "Quickly identify students needing help", "Fair ranking system"]
+        },
+        {
+          "scenario": "Library Book System",
+          "unsorted_problems": ["Impossible to find books", "Can't group related topics", "Chaotic browsing experience"],
+          "sorted_benefits": ["Dewey decimal system works", "Related books are together", "Binary search for quick lookup"]
+        }
+      ],
+      "key_insight": "Sorting isn't just about putting things in order - it enables other efficient algorithms like binary search!"
+    },
+    {
+      "id": "algo_bubble_sort",
+      "type": "hands_on_building",
+      "prompt": "Bubble Sort: The Swapping Strategy",
+      "intuitive_explanation": "Imagine you're organizing a line of people by height, but you can only swap adjacent people. The tallest person will 'bubble up' to the end by swapping with each shorter person they encounter.",
+      "visual_demo": {
+        "array": [64, 34, 25, 12, 22, 11, 90],
+        "step_by_step": true,
+        "highlight_swaps": true,
+        "show_passes": true
+      },
+      "build_together": {
+        "step1": {
+          "title": "The Basic Idea",
+          "description": "Compare each pair of adjacent elements. If they're in the wrong order, swap them. Repeat until no more swaps are needed.",
+          "simple_example": [5, 2, 8, 1, 9]
+        },
+        "step2": {
+          "title": "Code It Step by Step",
+          "code_progression": [
+            {
+              "version": "basic",
+              "code": "def bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n - i - 1):\n            if arr[j] > arr[j + 1]:\n                arr[j], arr[j + 1] = arr[j + 1], arr[j]"
+            },
+            {
+              "version": "with_visualization",
+              "code": "def bubble_sort_visual(arr):\n    n = len(arr)\n    for i in range(n):\n        print(f'Pass {i + 1}: {arr}')\n        swapped = False\n        for j in range(0, n - i - 1):\n            if arr[j] > arr[j + 1]:\n                print(f'  Swapping {arr[j]} and {arr[j + 1]}')\n                arr[j], arr[j + 1] = arr[j + 1], arr[j]\n                swapped = True\n        if not swapped:\n            print('No swaps needed - array is sorted!')\n            break"
+            }
+          ]
+        }
+      },
+      "analysis": {
+        "time_complexity": "O(n²) - quadratic time",
+        "space_complexity": "O(1) - sorts in place",
+        "best_case": "O(n) if already sorted (with optimization)",
+        "worst_case": "O(n²) if reverse sorted",
+        "pros": ["Simple to understand", "Works in-place", "Can detect if already sorted"],
+        "cons": ["Very slow for large datasets", "Makes unnecessary comparisons"]
+      }
+    },
+    {
+      "id": "algo_merge_sort",
+      "type": "divide_conquer_intro",
+      "prompt": "Merge Sort: The Divide and Conquer Champion",
+      "big_picture": "What if instead of sorting 1000 items, you sorted two groups of 500 items and then merged them? And what if you sorted those 500-item groups by sorting 250-item groups and merging? This 'divide and conquer' approach is incredibly powerful!",
+      "intuitive_explanation": {
+        "scenario": "Organizing Two Sorted Piles of Papers",
+        "setup": "You have two stacks of papers, each already sorted by date. How do you combine them into one sorted stack?",
+        "strategy": "Look at the top paper of each stack. Take whichever has the earlier date and put it in your final pile. Repeat until both stacks are empty.",
+        "insight": "Merging two sorted lists is much easier than sorting from scratch!"
+      },
+      "recursive_thinking": {
+        "base_case": "A list with 1 item is already sorted",
+        "recursive_case": "Split the list in half, sort each half, then merge them",
+        "visual_breakdown": {
+          "original": [38, 27, 43, 3, 9, 82, 10],
+          "split1": [[38, 27, 43], [3, 9, 82, 10]],
+          "split2": [[[38], [27, 43]], [[3, 9], [82, 10]]],
+          "split3": [[[38], [[27], [43]]], [[[3], [9]], [[82], [10]]]],
+          "merge_back": "Now merge back up, level by level"
+        }
+      },
+      "hands_on_implementation": {
+        "step1": {
+          "title": "The Merge Function",
+          "description": "First, let's build the function that merges two sorted arrays",
+          "code": "def merge(left, right):\n    result = []\n    i = j = 0\n    \n    # Compare elements from both arrays\n    while i < len(left) and j < len(right):\n        if left[i] <= right[j]:\n            result.append(left[i])\n            i += 1\n        else:\n            result.append(right[j])\n            j += 1\n    \n    # Add remaining elements\n    result.extend(left[i:])\n    result.extend(right[j:])\n    return result"
+        },
+        "step2": {
+          "title": "The Recursive Sort Function",
+          "code": "def merge_sort(arr):\n    # Base case: arrays of length 1 are already sorted\n    if len(arr) <= 1:\n        return arr\n    \n    # Divide: split the array in half\n    mid = len(arr) // 2\n    left = merge_sort(arr[:mid])    # Sort left half\n    right = merge_sort(arr[mid:])   # Sort right half\n    \n    # Conquer: merge the sorted halves\n    return merge(left, right)"
+        },
+        "interactive_trace": {
+          "array": [38, 27, 43, 3],
+          "show_recursive_calls": true,
+          "show_merge_process": true
+        }
+      },
+      "performance_analysis": {
+        "time_complexity": "O(n log n) - much better than O(n²)!",
+        "explanation": "We divide the problem log n times (because we keep cutting in half), and each level requires n work to merge",
+        "comparison": {
+          "bubble_sort_1000": "1,000,000 operations",
+          "merge_sort_1000": "~10,000 operations (100x faster!)"
+        },
+        "trade_offs": {
+          "pros": ["Consistently fast", "Stable sort", "Predictable performance"],
+          "cons": ["Uses extra memory", "More complex to implement"]
+        }
+      }
+    },
+    {
+      "id": "algo_quick_sort", 
+      "type": "advanced_technique",
+      "prompt": "Quick Sort: The Clever Partitioning Trick",
+      "motivation": "What if we could sort without fully sorting? Quick Sort uses a clever trick: pick an element (called a 'pivot') and arrange all smaller elements to its left and larger elements to its right. Now the pivot is in its final position! Repeat this process on the left and right sides.",
+      "partition_demo": {
+        "array": [3, 6, 8, 10, 1, 2, 1],
+        "pivot": 6,
+        "process": "Move all elements < 6 to the left, all elements > 6 to the right",
+        "result": "[3, 1, 2, 1] 6 [8, 10]",
+        "insight": "Now 6 is in its final sorted position! We just need to sort the left and right parts."
+      },
+      "implementation": {
+        "partition_function": "def partition(arr, low, high):\n    pivot = arr[high]  # Choose last element as pivot\n    i = low - 1        # Index of smaller element\n    \n    for j in range(low, high):\n        if arr[j] <= pivot:\n            i += 1\n            arr[i], arr[j] = arr[j], arr[i]\n    \n    arr[i + 1], arr[high] = arr[high], arr[i + 1]\n    return i + 1",
+        "quicksort_function": "def quicksort(arr, low, high):\n    if low < high:\n        # Partition and get pivot index\n        pi = partition(arr, low, high)\n        \n        # Recursively sort elements before and after partition\n        quicksort(arr, low, pi - 1)\n        quicksort(arr, pi + 1, high)"
+      },
+      "performance_characteristics": {
+        "average_case": "O(n log n) - very fast in practice",
+        "best_case": "O(n log n) when pivot divides evenly",
+        "worst_case": "O(n²) when pivot is always smallest/largest",
+        "space_complexity": "O(log n) for recursion stack",
+        "practical_note": "Often faster than merge sort due to better cache performance and in-place sorting"
+      }
+    },
+    {
+      "id": "algo_big_o_intuition",
+      "type": "scaling_analysis",
+      "prompt": "Big-O Notation: Predicting Algorithm Performance",
+      "intuitive_introduction": "Big-O notation is like predicting how your workload scales. If you're organizing 10 books, the method doesn't matter much. But if you're organizing 10,000 books, the method makes a huge difference!",
+      "common_complexities": {
+        "O(1)": {
+          "name": "Constant Time",
+          "analogy": "Looking up a word in a dictionary when someone gives you the exact page number",
+          "examples": ["Accessing array element by index", "Hash table lookup"],
+          "scaling": "Same time regardless of input size"
+        },
+        "O(log n)": {
+          "name": "Logarithmic Time", 
+          "analogy": "Finding a word in a dictionary using the divide-and-eliminate strategy",
+          "examples": ["Binary search", "Finding element in balanced tree"],
+          "scaling": "Doubles the input, adds one more step"
+        },
+        "O(n)": {
+          "name": "Linear Time",
+          "analogy": "Reading every page of a book to find a specific sentence",
+          "examples": ["Linear search", "Finding max element"],
+          "scaling": "Double the input, double the time"
+        },
+        "O(n log n)": {
+          "name": "Linearithmic Time",
+          "analogy": "Organizing books by first grouping by topic (n work) then sorting each group (log n work)",
+          "examples": ["Merge sort", "Heap sort", "Efficient comparison sorts"],
+          "scaling": "Very manageable growth rate"
+        },
+        "O(n²)": {
+          "name": "Quadratic Time",
+          "analogy": "Comparing every book with every other book to find duplicates",
+          "examples": ["Bubble sort", "Selection sort", "Naive duplicate detection"],
+          "scaling": "Double the input, quadruple the time"
+        },
+        "O(2ⁿ)": {
+          "name": "Exponential Time",
+          "analogy": "Trying every possible combination of books to pack in your bag",
+          "examples": ["Brute force traveling salesman", "Generating all subsets"],
+          "scaling": "Add one more input, double the time (quickly becomes impossible)"
+        }
+      },
+      "scaling_visualization": {
+        "input_sizes": [10, 100, 1000, 10000],
+        "show_growth_curves": true,
+        "practical_limits": {
+          "O(n²)": "Becomes slow around 10,000 items",
+          "O(2ⁿ)": "Impossible beyond ~30 items"
+        }
+      },
+      "choosing_algorithms": {
+        "small_datasets": "Algorithm choice doesn't matter much - pick the simplest",
+        "medium_datasets": "O(n log n) algorithms start to shine",
+        "large_datasets": "Only O(n log n) or better algorithms are practical",
+        "massive_datasets": "Need O(n) or O(log n) algorithms, often with clever data structures"
+      }
+    }
+  ]
+}

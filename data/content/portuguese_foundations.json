@@ -1,0 +1,175 @@
+{
+  "id": "portuguese_foundations",
+  "title": "🇧🇷 Portuguese - Level 1: Foundations",
+  "track": "spoken",
+  "langFrom": "en",
+  "langTo": "pt",
+  "description": "Essential Brazilian Portuguese basics - greetings, numbers, family, and core vocabulary. Master 10 new words per lesson to advance.",
+  "level": 1,
+  "category": "beginner",
+  "totalLessons": 8,
+  "vocabularyGoal": 80,
+  "prerequisite": null,
+  "lessons": [
+    {
+      "id": "lesson_1",
+      "title": "Lesson 1: Greetings and Basic Phrases",
+      "newWords": ["olá", "oi", "bom dia", "boa tarde", "boa noite", "tchau", "obrigado", "obrigada", "por favor", "com licença"],
+      "masteryRequired": 8,
+      "practicalGoal": "Greet people and be polite in basic situations",
+      "grammar": "Portuguese greetings change based on time: 'bom dia' (morning), 'boa tarde' (afternoon), 'boa noite' (evening/night). 'Obrigado' (masculine) vs 'obrigada' (feminine) for thank you.",
+      "items": [
+        { "id": "f1_1", "type": "input", "prompt": "Hello (formal)", "answer": ["olá"], "newWord": "olá", "explanation": "Olá - formal hello, used any time of day" },
+        { "id": "f1_2", "type": "input", "prompt": "Hi (casual)", "answer": ["oi"], "newWord": "oi", "explanation": "Oi - casual hi, very common in Brazilian Portuguese" },
+        { "id": "f1_3", "type": "input", "prompt": "Good morning", "answer": ["bom dia"], "newWord": "bom dia", "explanation": "Bom dia - good morning (until around noon)" },
+        { "id": "f1_4", "type": "input", "prompt": "Good afternoon", "answer": ["boa tarde"], "newWord": "boa tarde", "explanation": "Boa tarde - good afternoon (noon to evening)" },
+        { "id": "f1_5", "type": "input", "prompt": "Good evening/night", "answer": ["boa noite"], "newWord": "boa noite", "explanation": "Boa noite - good evening (after 6pm) and good night" },
+        { "id": "f1_6", "type": "input", "prompt": "Bye", "answer": ["tchau"], "newWord": "tchau", "explanation": "Tchau - casual goodbye, very common" },
+        { "id": "f1_7", "type": "input", "prompt": "Thank you (said by male)", "answer": ["obrigado"], "newWord": "obrigado", "explanation": "Obrigado - thank you when spoken by a male" },
+        { "id": "f1_8", "type": "input", "prompt": "Thank you (said by female)", "answer": ["obrigada"], "newWord": "obrigada", "explanation": "Obrigada - thank you when spoken by a female" },
+        { "id": "f1_9", "type": "input", "prompt": "Please", "answer": ["por favor"], "newWord": "por favor", "explanation": "Por favor - please, literally 'as a favor'" },
+        { "id": "f1_10", "type": "input", "prompt": "Excuse me", "answer": ["com licença"], "newWord": "com licença", "explanation": "Com licença - excuse me (to get attention or pass by)" }
+      ]
+    },
+    {
+      "id": "lesson_2", 
+      "title": "Lesson 2: Numbers 1-10",
+      "newWords": ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"],
+      "masteryRequired": 8,
+      "practicalGoal": "Count objects and express basic quantities",
+      "grammar": "Portuguese numbers 1-10: um through dez. 'Um' changes to 'uma' for feminine nouns. Numbers are essential for daily communication.",
+      "items": [
+        { "id": "f2_1", "type": "input", "prompt": "One", "answer": ["um"], "newWord": "um", "explanation": "Um - one (masculine), becomes 'uma' for feminine" },
+        { "id": "f2_2", "type": "input", "prompt": "Two", "answer": ["dois"], "newWord": "dois", "explanation": "Dois - two (masculine), becomes 'duas' for feminine" },
+        { "id": "f2_3", "type": "input", "prompt": "Three", "answer": ["três"], "newWord": "três", "explanation": "Três - three (same for masculine and feminine)" },
+        { "id": "f2_4", "type": "input", "prompt": "Four", "answer": ["quatro"], "newWord": "quatro", "explanation": "Quatro - four" },
+        { "id": "f2_5", "type": "input", "prompt": "Five", "answer": ["cinco"], "newWord": "cinco", "explanation": "Cinco - five" },
+        { "id": "f2_6", "type": "input", "prompt": "Six", "answer": ["seis"], "newWord": "seis", "explanation": "Seis - six" },
+        { "id": "f2_7", "type": "input", "prompt": "Seven", "answer": ["sete"], "newWord": "sete", "explanation": "Sete - seven" },
+        { "id": "f2_8", "type": "input", "prompt": "Eight", "answer": ["oito"], "newWord": "oito", "explanation": "Oito - eight" },
+        { "id": "f2_9", "type": "input", "prompt": "Nine", "answer": ["nove"], "newWord": "nove", "explanation": "Nove - nine" },
+        { "id": "f2_10", "type": "input", "prompt": "Ten", "answer": ["dez"], "newWord": "dez", "explanation": "Dez - ten" }
+      ]
+    },
+    {
+      "id": "lesson_3",
+      "title": "Lesson 3: Family Members",
+      "newWords": ["família", "pai", "mãe", "filho", "filha", "irmão", "irmã", "avô", "avó", "primo"],
+      "masteryRequired": 8,
+      "practicalGoal": "Talk about family members and relationships",
+      "grammar": "Family words: a família. Notice gender patterns: pai/mãe (father/mother), filho/filha (son/daughter), irmão/irmã (brother/sister). Portuguese uses definite articles: o pai, a mãe.",
+      "items": [
+        { "id": "f3_1", "type": "input", "prompt": "Family", "answer": ["família"], "newWord": "família", "explanation": "A família - family (feminine noun)" },
+        { "id": "f3_2", "type": "input", "prompt": "Father", "answer": ["pai"], "newWord": "pai", "explanation": "O pai - father" },
+        { "id": "f3_3", "type": "input", "prompt": "Mother", "answer": ["mãe"], "newWord": "mãe", "explanation": "A mãe - mother" },
+        { "id": "f3_4", "type": "input", "prompt": "Son", "answer": ["filho"], "newWord": "filho", "explanation": "O filho - son" },
+        { "id": "f3_5", "type": "input", "prompt": "Daughter", "answer": ["filha"], "newWord": "filha", "explanation": "A filha - daughter" },
+        { "id": "f3_6", "type": "input", "prompt": "Brother", "answer": ["irmão"], "newWord": "irmão", "explanation": "O irmão - brother" },
+        { "id": "f3_7", "type": "input", "prompt": "Sister", "answer": ["irmã"], "newWord": "irmã", "explanation": "A irmã - sister" },
+        { "id": "f3_8", "type": "input", "prompt": "Grandfather", "answer": ["avô"], "newWord": "avô", "explanation": "O avô - grandfather" },
+        { "id": "f3_9", "type": "input", "prompt": "Grandmother", "answer": ["avó"], "newWord": "avó", "explanation": "A avó - grandmother" },
+        { "id": "f3_10", "type": "input", "prompt": "Cousin (male)", "answer": ["primo"], "newWord": "primo", "explanation": "O primo - male cousin, female is 'prima'" }
+      ]
+    },
+    {
+      "id": "lesson_4",
+      "title": "Lesson 4: Colors",
+      "newWords": ["cor", "vermelho", "azul", "verde", "amarelo", "preto", "branco", "rosa", "roxo", "laranja"],
+      "masteryRequired": 8,
+      "practicalGoal": "Describe objects using colors",
+      "grammar": "Colors in Portuguese: a cor (color). Most colors agree in gender and number with the noun they describe: vermelho/vermelha, azul (same for both), verde (same for both).",
+      "items": [
+        { "id": "f4_1", "type": "input", "prompt": "Color", "answer": ["cor"], "newWord": "cor", "explanation": "A cor - color" },
+        { "id": "f4_2", "type": "input", "prompt": "Red", "answer": ["vermelho"], "newWord": "vermelho", "explanation": "Vermelho - red (vermelha for feminine)" },
+        { "id": "f4_3", "type": "input", "prompt": "Blue", "answer": ["azul"], "newWord": "azul", "explanation": "Azul - blue (same for masculine and feminine)" },
+        { "id": "f4_4", "type": "input", "prompt": "Green", "answer": ["verde"], "newWord": "verde", "explanation": "Verde - green (same for masculine and feminine)" },
+        { "id": "f4_5", "type": "input", "prompt": "Yellow", "answer": ["amarelo"], "newWord": "amarelo", "explanation": "Amarelo - yellow (amarela for feminine)" },
+        { "id": "f4_6", "type": "input", "prompt": "Black", "answer": ["preto"], "newWord": "preto", "explanation": "Preto - black (preta for feminine)" },
+        { "id": "f4_7", "type": "input", "prompt": "White", "answer": ["branco"], "newWord": "branco", "explanation": "Branco - white (branca for feminine)" },
+        { "id": "f4_8", "type": "input", "prompt": "Pink", "answer": ["rosa"], "newWord": "rosa", "explanation": "Rosa - pink (same for masculine and feminine)" },
+        { "id": "f4_9", "type": "input", "prompt": "Purple", "answer": ["roxo"], "newWord": "roxo", "explanation": "Roxo - purple (roxa for feminine)" },
+        { "id": "f4_10", "type": "input", "prompt": "Orange", "answer": ["laranja"], "newWord": "laranja", "explanation": "Laranja - orange (same for masculine and feminine)" }
+      ]
+    },
+    {
+      "id": "lesson_5",
+      "title": "Lesson 5: Basic Verbs",
+      "newWords": ["ser", "estar", "ter", "fazer", "ir", "vir", "falar", "comer", "beber", "dormir"],
+      "masteryRequired": 8,
+      "practicalGoal": "Use essential verbs in simple sentences",
+      "grammar": "Key Portuguese verbs: ser vs estar (both mean 'to be' but used differently), ter (to have), fazer (to do/make). These are irregular verbs that change form significantly.",
+      "items": [
+        { "id": "f5_1", "type": "input", "prompt": "To be (permanent)", "answer": ["ser"], "newWord": "ser", "explanation": "Ser - to be (permanent characteristics: eu sou, você é)" },
+        { "id": "f5_2", "type": "input", "prompt": "To be (temporary)", "answer": ["estar"], "newWord": "estar", "explanation": "Estar - to be (temporary states: eu estou, você está)" },
+        { "id": "f5_3", "type": "input", "prompt": "To have", "answer": ["ter"], "newWord": "ter", "explanation": "Ter - to have (eu tenho, você tem)" },
+        { "id": "f5_4", "type": "input", "prompt": "To do/make", "answer": ["fazer"], "newWord": "fazer", "explanation": "Fazer - to do/make (eu faço, você faz)" },
+        { "id": "f5_5", "type": "input", "prompt": "To go", "answer": ["ir"], "newWord": "ir", "explanation": "Ir - to go (eu vou, você vai)" },
+        { "id": "f5_6", "type": "input", "prompt": "To come", "answer": ["vir"], "newWord": "vir", "explanation": "Vir - to come (eu venho, você vem)" },
+        { "id": "f5_7", "type": "input", "prompt": "To speak", "answer": ["falar"], "newWord": "falar", "explanation": "Falar - to speak (eu falo, você fala)" },
+        { "id": "f5_8", "type": "input", "prompt": "To eat", "answer": ["comer"], "newWord": "comer", "explanation": "Comer - to eat (eu como, você come)" },
+        { "id": "f5_9", "type": "input", "prompt": "To drink", "answer": ["beber"], "newWord": "beber", "explanation": "Beber - to drink (eu bebo, você bebe)" },
+        { "id": "f5_10", "type": "input", "prompt": "To sleep", "answer": ["dormir"], "newWord": "dormir", "explanation": "Dormir - to sleep (eu durmo, você dorme)" }
+      ]
+    },
+    {
+      "id": "lesson_6",
+      "title": "Lesson 6: Common Objects",
+      "newWords": ["casa", "carro", "mesa", "cadeira", "livro", "água", "comida", "dinheiro", "trabalho", "escola"],
+      "masteryRequired": 8,
+      "practicalGoal": "Name common objects in daily life",
+      "grammar": "Common nouns with articles: a casa (the house), o carro (the car). Notice gender: casa (feminine), carro (masculine). This affects articles and adjectives.",
+      "items": [
+        { "id": "f6_1", "type": "input", "prompt": "House", "answer": ["casa"], "newWord": "casa", "explanation": "A casa - house/home" },
+        { "id": "f6_2", "type": "input", "prompt": "Car", "answer": ["carro"], "newWord": "carro", "explanation": "O carro - car" },
+        { "id": "f6_3", "type": "input", "prompt": "Table", "answer": ["mesa"], "newWord": "mesa", "explanation": "A mesa - table" },
+        { "id": "f6_4", "type": "input", "prompt": "Chair", "answer": ["cadeira"], "newWord": "cadeira", "explanation": "A cadeira - chair" },
+        { "id": "f6_5", "type": "input", "prompt": "Book", "answer": ["livro"], "newWord": "livro", "explanation": "O livro - book" },
+        { "id": "f6_6", "type": "input", "prompt": "Water", "answer": ["água"], "newWord": "água", "explanation": "A água - water" },
+        { "id": "f6_7", "type": "input", "prompt": "Food", "answer": ["comida"], "newWord": "comida", "explanation": "A comida - food" },
+        { "id": "f6_8", "type": "input", "prompt": "Money", "answer": ["dinheiro"], "newWord": "dinheiro", "explanation": "O dinheiro - money" },
+        { "id": "f6_9", "type": "input", "prompt": "Work/Job", "answer": ["trabalho"], "newWord": "trabalho", "explanation": "O trabalho - work/job" },
+        { "id": "f6_10", "type": "input", "prompt": "School", "answer": ["escola"], "newWord": "escola", "explanation": "A escola - school" }
+      ]
+    },
+    {
+      "id": "lesson_7",
+      "title": "Lesson 7: Personal Information",
+      "newWords": ["nome", "idade", "eu", "você", "meu", "minha", "seu", "sua", "onde", "quando"],
+      "masteryRequired": 8,
+      "practicalGoal": "Share and ask for basic personal information",
+      "grammar": "Personal pronouns: eu (I), você (you - informal). Possessives: meu/minha (my), seu/sua (your). These agree with the noun they modify, not the owner.",
+      "items": [
+        { "id": "f7_1", "type": "input", "prompt": "Name", "answer": ["nome"], "newWord": "nome", "explanation": "O nome - name" },
+        { "id": "f7_2", "type": "input", "prompt": "Age", "answer": ["idade"], "newWord": "idade", "explanation": "A idade - age" },
+        { "id": "f7_3", "type": "input", "prompt": "I", "answer": ["eu"], "newWord": "eu", "explanation": "Eu - I (subject pronoun)" },
+        { "id": "f7_4", "type": "input", "prompt": "You (informal)", "answer": ["você"], "newWord": "você", "explanation": "Você - you (informal, most common)" },
+        { "id": "f7_5", "type": "input", "prompt": "My (masculine)", "answer": ["meu"], "newWord": "meu", "explanation": "Meu - my (with masculine nouns: meu nome)" },
+        { "id": "f7_6", "type": "input", "prompt": "My (feminine)", "answer": ["minha"], "newWord": "minha", "explanation": "Minha - my (with feminine nouns: minha casa)" },
+        { "id": "f7_7", "type": "input", "prompt": "Your (masculine)", "answer": ["seu"], "newWord": "seu", "explanation": "Seu - your (with masculine nouns: seu nome)" },
+        { "id": "f7_8", "type": "input", "prompt": "Your (feminine)", "answer": ["sua"], "newWord": "sua", "explanation": "Sua - your (with feminine nouns: sua casa)" },
+        { "id": "f7_9", "type": "input", "prompt": "Where", "answer": ["onde"], "newWord": "onde", "explanation": "Onde - where (question word)" },
+        { "id": "f7_10", "type": "input", "prompt": "When", "answer": ["quando"], "newWord": "quando", "explanation": "Quando - when (question word)" }
+      ]
+    },
+    {
+      "id": "lesson_8",
+      "title": "Lesson 8: Simple Phrases",
+      "newWords": ["como", "que", "muito", "pouco", "bem", "mal", "aqui", "ali", "sim", "não"],
+      "masteryRequired": 8,
+      "practicalGoal": "Build simple sentences and express basic ideas",
+      "grammar": "Question words: como (how), que (what). Quantity: muito (much/many), pouco (little/few). Location: aqui (here), ali (there). These are building blocks for sentences.",
+      "items": [
+        { "id": "f8_1", "type": "input", "prompt": "How", "answer": ["como"], "newWord": "como", "explanation": "Como - how (question word, also means 'like')" },
+        { "id": "f8_2", "type": "input", "prompt": "What", "answer": ["que"], "newWord": "que", "explanation": "Que - what (question word, also means 'that')" },
+        { "id": "f8_3", "type": "input", "prompt": "Much/Many", "answer": ["muito"], "newWord": "muito", "explanation": "Muito - much/many/very (quantity and intensity)" },
+        { "id": "f8_4", "type": "input", "prompt": "Little/Few", "answer": ["pouco"], "newWord": "pouco", "explanation": "Pouco - little/few (small quantity)" },
+        { "id": "f8_5", "type": "input", "prompt": "Well/Good", "answer": ["bem"], "newWord": "bem", "explanation": "Bem - well/good (adverb: estou bem = I'm well)" },
+        { "id": "f8_6", "type": "input", "prompt": "Bad/Badly", "answer": ["mal"], "newWord": "mal", "explanation": "Mal - bad/badly (adverb: estou mal = I'm unwell)" },
+        { "id": "f8_7", "type": "input", "prompt": "Here", "answer": ["aqui"], "newWord": "aqui", "explanation": "Aqui - here (location)" },
+        { "id": "f8_8", "type": "input", "prompt": "There", "answer": ["ali"], "newWord": "ali", "explanation": "Ali - there (location, not too far)" },
+        { "id": "f8_9", "type": "input", "prompt": "Yes", "answer": ["sim"], "newWord": "sim", "explanation": "Sim - yes" },
+        { "id": "f8_10", "type": "input", "prompt": "No", "answer": ["não"], "newWord": "não", "explanation": "Não - no/not" }
+      ]
+    }
+  ]
+}

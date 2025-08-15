@@ -108,6 +108,107 @@ function loadAllContent() {
 
 let { subjects, items } = loadAllContent();
 
+// Portuguese course navigation helpers
+function getPortugueseCourseInfo(subjectId) {
+  // Map subject IDs to course hierarchy
+  const courseMapping = {
+    'portuguese_foundations': {
+      level: 1,
+      category: 'beginner',
+      title: 'Level 1: Foundations',
+      prerequisite: null,
+      nextCourse: 'portuguese_grammar_basics'
+    },
+    'portuguese_grammar_basics': {
+      level: 2,
+      category: 'beginner',
+      title: 'Level 2: Grammar Basics',
+      prerequisite: 'portuguese_foundations',
+      nextCourse: 'portuguese_conversation_starter'
+    },
+    'portuguese_conversation_starter': {
+      level: 3,
+      category: 'beginner',
+      title: 'Level 3: First Conversations',
+      prerequisite: 'portuguese_grammar_basics',
+      nextCourse: 'portuguese_grammar_intermediate'
+    },
+    'portuguese_grammar_intermediate': {
+      level: 4,
+      category: 'intermediate',
+      title: 'Level 4: Advanced Grammar',
+      prerequisite: 'portuguese_conversation_starter',
+      nextCourse: 'portuguese_verbs_mastery'
+    },
+    'portuguese_verbs_mastery': {
+      level: 5,
+      category: 'intermediate',
+      title: 'Level 5: Verb Mastery',
+      prerequisite: 'portuguese_grammar_intermediate',
+      nextCourse: 'portuguese_conversation_intermediate'
+    }
+  };
+  
+  // Extract course ID from lesson subject ID
+  const courseId = subjectId.split('::')[0];
+  return courseMapping[courseId] || null;
+}
+
+function getNavigationInfo(courseInfo) {
+  if (!courseInfo) return null;
+  
+  const { prerequisite, nextCourse } = courseInfo;
+  const isUnlocked = !prerequisite || isCourseCompleted(prerequisite);
+  
+  return {
+    isUnlocked,
+    prerequisite,
+    nextCourse,
+    canAdvance: isUnlocked && isCourseCompleted(extractCourseId(courseInfo))
+  };
+}
+
+function isCourseCompleted(courseId) {
+  if (!courseId) return false;
+  
+  const courseProgress = state.lessonProgress[courseId];
+  if (!courseProgress) return false;
+  
+  // Check if all lessons in the course are completed
+  const courseSubjects = subjects.filter(s => s.courseId === courseId);
+  const totalLessons = courseSubjects.length;
+  const completedLessons = courseProgress.completedLessons || [];
+  
+  return completedLessons.length >= totalLessons;
+}
+
+function extractCourseId(courseInfo) {
+  // This would need to be improved based on how we identify courses
+  // For now, return a placeholder
+  return null;
+}
+
+function getCourseProgress(courseId) {
+  const courseProgress = state.lessonProgress[courseId];
+  if (!courseProgress) {
+    return {
+      completedLessons: 0,
+      totalLessons: 0,
+      percentage: 0
+    };
+  }
+  
+  const courseSubjects = subjects.filter(s => s.courseId === courseId);
+  const totalLessons = courseSubjects.length;
+  const completedLessons = (courseProgress.completedLessons || []).length;
+  
+  return {
+    completedLessons,
+    totalLessons,
+    percentage: totalLessons > 0 ? Math.round((completedLessons / totalLessons) * 100) : 0
+  };
+}
+
 // Load state
 const defaultState = {
   user: {
@@ -551,7 +652,22 @@ async function handleApi(req, res) {
   // Refresh content if any new files appeared
   if (pathname === '/api/catalog' && req.method === 'GET') {
     ({ subjects, items } = loadAllContent());
-    return json(res, 200, { subjects });
+    
+    // Handle unified Portuguese course structure
+    const processedSubjects = subjects.map(subject => {
+      // Add navigation info for Portuguese courses
+      if (subject.id.includes('portuguese_')) {
+        const courseInfo = getPortugueseCourseInfo(subject.id);
+        return {
+          ...subject,
+          courseInfo,
+          navigationInfo: courseInfo ? getNavigationInfo(courseInfo) : null
+        };
+      }
+      return subject;
+    });
+    
+    return json(res, 200, { subjects: processedSubjects });
   }
 
   if (pathname === '/api/user' && req.method === 'GET') {
@@ -581,6 +697,30 @@ async function handleApi(req, res) {
       user: state.user,
       progress: prog,
       badges: state.user.badges,
+    });
+  }
+
+  if (pathname === '/api/portuguese-curriculum' && req.method === 'GET') {
+    // Load the unified Portuguese curriculum structure
+    const unifiedCourse = readJson(path.join(CONTENT_DIR, 'portuguese_unified_course.json'), null);
+    if (!unifiedCourse) {
+      return json(res, 404, { error: 'Unified Portuguese course not found' });
+    }
+    
+    // Add progress information to each course
+    const coursesWithProgress = unifiedCourse.categories.map(category => ({
+      ...category,
+      courses: category.courses.map(course => ({
+        ...course,
+        isUnlocked: !course.prerequisite || isCourseCompleted(course.prerequisite),
+        isCompleted: isCourseCompleted(course.id),
+        progress: getCourseProgress(course.id)
+      }))
+    }));
+    
+    return json(res, 200, {
+      ...unifiedCourse,
+      categories: coursesWithProgress
     });
   }
 

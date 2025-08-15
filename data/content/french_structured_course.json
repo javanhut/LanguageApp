@@ -1,0 +1,190 @@
+{
+  "id": "french_structured_course",
+  "title": "French Complete Course (10 Lessons)",
+  "track": "spoken",
+  "langFrom": "en",
+  "langTo": "fr",
+  "description": "Complete French course with grammar, vocabulary, and conversations",
+  "lessons": [
+    {
+      "id": "lesson_1",
+      "title": "Lesson 1: Greetings & Politeness",
+      "grammar": "French has formal (vous) and informal (tu) forms. Use 'vous' with strangers, elders, or in professional settings. 'Tu' with friends and family.",
+      "vocabulary": ["bonjour", "bonsoir", "salut", "au revoir", "merci", "s'il vous plaît", "de rien", "pardon"],
+      "items": [
+        { "id": "l1_1", "type": "input", "prompt": "Hello", "answer": ["bonjour"], "hints": ["Most common greeting"] },
+        { "id": "l1_2", "type": "input", "prompt": "Good evening", "answer": ["bonsoir"], "hints": ["After 6 PM"] },
+        { "id": "l1_3", "type": "input", "prompt": "Hi (informal)", "answer": ["salut"], "hints": ["With friends"] },
+        { "id": "l1_4", "type": "input", "prompt": "Goodbye", "answer": ["au revoir"], "hints": ["Common farewell"] },
+        { "id": "l1_5", "type": "input", "prompt": "Thank you", "answer": ["merci"], "hints": ["Gratitude"] },
+        { "id": "l1_6", "type": "input", "prompt": "Please", "answer": ["s'il vous plaît", "s'il vous plait"], "hints": ["Polite request"] },
+        { "id": "l1_7", "type": "input", "prompt": "You're welcome", "answer": ["de rien"], "hints": ["Response to thanks"] },
+        { "id": "l1_8", "type": "input", "prompt": "Excuse me/Sorry", "answer": ["pardon", "excusez-moi"], "hints": ["Apology or attention"] },
+        { "id": "l1_9", "type": "input", "prompt": "How are you? (formal)", "answer": ["comment allez-vous", "comment allez vous"], "hints": ["Formal greeting"] },
+        { "id": "l1_10", "type": "input", "prompt": "I'm fine", "answer": ["ça va bien", "je vais bien", "ca va bien"], "hints": ["Response to how are you"] }
+      ]
+    },
+    {
+      "id": "lesson_2",
+      "title": "Lesson 2: Basic Questions & Answers",
+      "grammar": "Question words in French: Qui (who), Que/Quoi (what), Où (where), Quand (when), Pourquoi (why), Comment (how). Inversion or 'est-ce que' can form questions.",
+      "vocabulary": ["oui", "non", "peut-être", "qui", "que", "où", "quand", "pourquoi", "comment", "est-ce que"],
+      "items": [
+        { "id": "l2_1", "type": "input", "prompt": "Yes", "answer": ["oui"], "hints": ["Affirmative"] },
+        { "id": "l2_2", "type": "input", "prompt": "No", "answer": ["non"], "hints": ["Negative"] },
+        { "id": "l2_3", "type": "input", "prompt": "Maybe", "answer": ["peut-être", "peut etre"], "hints": ["Uncertainty"] },
+        { "id": "l2_4", "type": "input", "prompt": "Who?", "answer": ["qui"], "hints": ["Person question"] },
+        { "id": "l2_5", "type": "input", "prompt": "What?", "answer": ["que", "quoi"], "hints": ["Thing question"] },
+        { "id": "l2_6", "type": "input", "prompt": "Where?", "answer": ["où", "ou"], "hints": ["Location question"] },
+        { "id": "l2_7", "type": "input", "prompt": "When?", "answer": ["quand"], "hints": ["Time question"] },
+        { "id": "l2_8", "type": "input", "prompt": "Why?", "answer": ["pourquoi"], "hints": ["Reason question"] },
+        { "id": "l2_9", "type": "input", "prompt": "How?", "answer": ["comment"], "hints": ["Method question"] },
+        { "id": "l2_10", "type": "input", "prompt": "Do you speak French?", "answer": ["parlez-vous français", "est-ce que vous parlez français", "parlez vous francais"], "hints": ["Language question"] }
+      ]
+    },
+    {
+      "id": "lesson_3",
+      "title": "Lesson 3: Numbers 1-20",
+      "grammar": "Numbers 1-16 have unique names. From 17-19, combine 'dix' + unit. Number 20 is 'vingt'. Numbers are generally invariable except 'un/une'.",
+      "vocabulary": ["un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix"],
+      "items": [
+        { "id": "l3_1", "type": "input", "prompt": "One", "answer": ["un", "une"], "hints": ["Masculine/feminine"] },
+        { "id": "l3_2", "type": "input", "prompt": "Two", "answer": ["deux"], "hints": ["Same for all genders"] },
+        { "id": "l3_3", "type": "input", "prompt": "Three", "answer": ["trois"], "hints": ["Sounds like 'twa'"] },
+        { "id": "l3_4", "type": "input", "prompt": "Four", "answer": ["quatre"], "hints": ["Like 'cat-ruh'"] },
+        { "id": "l3_5", "type": "input", "prompt": "Five", "answer": ["cinq"], "hints": ["Silent 'q'"] },
+        { "id": "l3_6", "type": "input", "prompt": "Six", "answer": ["six"], "hints": ["Sounds like 'sees'"] },
+        { "id": "l3_7", "type": "input", "prompt": "Seven", "answer": ["sept"], "hints": ["Silent 'pt'"] },
+        { "id": "l3_8", "type": "input", "prompt": "Eight", "answer": ["huit"], "hints": ["Silent 't'"] },
+        { "id": "l3_9", "type": "input", "prompt": "Nine", "answer": ["neuf"], "hints": ["Like 'nuff'"] },
+        { "id": "l3_10", "type": "input", "prompt": "Ten", "answer": ["dix"], "hints": ["Like 'deese'"] }
+      ]
+    },
+    {
+      "id": "lesson_4",
+      "title": "Lesson 4: Days & Time",
+      "grammar": "Days of the week are masculine and use 'le' for 'on Monday' (le lundi). Months are not capitalized in French. Use 'aujourd'hui' for today, 'demain' for tomorrow.",
+      "vocabulary": ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche", "aujourd'hui", "demain", "hier"],
+      "items": [
+        { "id": "l4_1", "type": "input", "prompt": "Monday", "answer": ["lundi"], "hints": ["Start of work week"] },
+        { "id": "l4_2", "type": "input", "prompt": "Tuesday", "answer": ["mardi"], "hints": ["Second day"] },
+        { "id": "l4_3", "type": "input", "prompt": "Wednesday", "answer": ["mercredi"], "hints": ["Mid-week"] },
+        { "id": "l4_4", "type": "input", "prompt": "Thursday", "answer": ["jeudi"], "hints": ["Before Friday"] },
+        { "id": "l4_5", "type": "input", "prompt": "Friday", "answer": ["vendredi"], "hints": ["End of work week"] },
+        { "id": "l4_6", "type": "input", "prompt": "Saturday", "answer": ["samedi"], "hints": ["Weekend begins"] },
+        { "id": "l4_7", "type": "input", "prompt": "Sunday", "answer": ["dimanche"], "hints": ["Rest day"] },
+        { "id": "l4_8", "type": "input", "prompt": "Today", "answer": ["aujourd'hui", "aujourd hui"], "hints": ["This day"] },
+        { "id": "l4_9", "type": "input", "prompt": "Tomorrow", "answer": ["demain"], "hints": ["Next day"] },
+        { "id": "l4_10", "type": "input", "prompt": "Yesterday", "answer": ["hier"], "hints": ["Previous day"] }
+      ]
+    },
+    {
+      "id": "lesson_5",
+      "title": "Lesson 5: Family & People",
+      "grammar": "Family nouns often have masculine/feminine pairs: père/mère, frère/sœur. Use possessives: mon/ma (my), ton/ta (your), son/sa (his/her). They agree with the noun, not the owner.",
+      "vocabulary": ["famille", "père", "mère", "frère", "sœur", "fils", "fille", "mari", "femme"],
+      "items": [
+        { "id": "l5_1", "type": "input", "prompt": "Family", "answer": ["famille"], "hints": ["Group of relatives"] },
+        { "id": "l5_2", "type": "input", "prompt": "Father", "answer": ["père", "pere"], "hints": ["Male parent"] },
+        { "id": "l5_3", "type": "input", "prompt": "Mother", "answer": ["mère", "mere"], "hints": ["Female parent"] },
+        { "id": "l5_4", "type": "input", "prompt": "Brother", "answer": ["frère", "frere"], "hints": ["Male sibling"] },
+        { "id": "l5_5", "type": "input", "prompt": "Sister", "answer": ["sœur", "soeur"], "hints": ["Female sibling"] },
+        { "id": "l5_6", "type": "input", "prompt": "Son", "answer": ["fils"], "hints": ["Male child"] },
+        { "id": "l5_7", "type": "input", "prompt": "Daughter", "answer": ["fille"], "hints": ["Female child"] },
+        { "id": "l5_8", "type": "input", "prompt": "Husband", "answer": ["mari"], "hints": ["Male spouse"] },
+        { "id": "l5_9", "type": "input", "prompt": "Wife", "answer": ["femme", "épouse", "epouse"], "hints": ["Female spouse"] },
+        { "id": "l5_10", "type": "input", "prompt": "My family", "answer": ["ma famille"], "hints": ["Possessive + feminine noun"] }
+      ]
+    },
+    {
+      "id": "lesson_6",
+      "title": "Lesson 6: Food & Drink",
+      "grammar": "Food vocabulary uses articles: le pain (bread), la viande (meat). Use 'j'ai faim' (I'm hungry), 'j'ai soif' (I'm thirsty). 'Je voudrais' (I would like) is polite for ordering.",
+      "vocabulary": ["pain", "eau", "lait", "café", "thé", "vin", "bière", "fromage", "viande", "poisson"],
+      "items": [
+        { "id": "l6_1", "type": "input", "prompt": "Bread", "answer": ["pain"], "hints": ["Basic food"] },
+        { "id": "l6_2", "type": "input", "prompt": "Water", "answer": ["eau"], "hints": ["Essential drink"] },
+        { "id": "l6_3", "type": "input", "prompt": "Milk", "answer": ["lait"], "hints": ["Dairy drink"] },
+        { "id": "l6_4", "type": "input", "prompt": "Coffee", "answer": ["café", "cafe"], "hints": ["Morning drink"] },
+        { "id": "l6_5", "type": "input", "prompt": "Tea", "answer": ["thé", "the"], "hints": ["Afternoon drink"] },
+        { "id": "l6_6", "type": "input", "prompt": "Wine", "answer": ["vin"], "hints": ["French specialty"] },
+        { "id": "l6_7", "type": "input", "prompt": "Beer", "answer": ["bière", "biere"], "hints": ["Alcoholic drink"] },
+        { "id": "l6_8", "type": "input", "prompt": "Cheese", "answer": ["fromage"], "hints": ["Dairy product"] },
+        { "id": "l6_9", "type": "input", "prompt": "Meat", "answer": ["viande"], "hints": ["Protein source"] },
+        { "id": "l6_10", "type": "input", "prompt": "Fish", "answer": ["poisson"], "hints": ["Sea food"] }
+      ]
+    },
+    {
+      "id": "lesson_7",
+      "title": "Lesson 7: Colors & Descriptions",
+      "grammar": "Most adjectives come after the noun and agree in gender/number: une voiture rouge, des voitures rouges. Some common adjectives (petit, grand, beau) come before the noun.",
+      "vocabulary": ["rouge", "bleu", "vert", "jaune", "noir", "blanc", "grand", "petit", "beau", "joli"],
+      "items": [
+        { "id": "l7_1", "type": "input", "prompt": "Red", "answer": ["rouge"], "hints": ["Same for masculine/feminine"] },
+        { "id": "l7_2", "type": "input", "prompt": "Blue", "answer": ["bleu", "bleue"], "hints": ["Bleu (m), bleue (f)"] },
+        { "id": "l7_3", "type": "input", "prompt": "Green", "answer": ["vert", "verte"], "hints": ["Vert (m), verte (f)"] },
+        { "id": "l7_4", "type": "input", "prompt": "Yellow", "answer": ["jaune"], "hints": ["Same for both genders"] },
+        { "id": "l7_5", "type": "input", "prompt": "Black", "answer": ["noir", "noire"], "hints": ["Noir (m), noire (f)"] },
+        { "id": "l7_6", "type": "input", "prompt": "White", "answer": ["blanc", "blanche"], "hints": ["Blanc (m), blanche (f)"] },
+        { "id": "l7_7", "type": "input", "prompt": "Big/Large", "answer": ["grand", "grande"], "hints": ["Grand (m), grande (f)"] },
+        { "id": "l7_8", "type": "input", "prompt": "Small", "answer": ["petit", "petite"], "hints": ["Petit (m), petite (f)"] },
+        { "id": "l7_9", "type": "input", "prompt": "Beautiful (masculine)", "answer": ["beau"], "hints": ["For masculine nouns"] },
+        { "id": "l7_10", "type": "input", "prompt": "Pretty", "answer": ["joli", "jolie"], "hints": ["Joli (m), jolie (f)"] }
+      ]
+    },
+    {
+      "id": "lesson_8",
+      "title": "Lesson 8: Common Verbs",
+      "grammar": "French verbs are conjugated by person and number. Key verbs: être (to be), avoir (to have), aller (to go), faire (to do/make), venir (to come). These are irregular.",
+      "vocabulary": ["être", "avoir", "aller", "venir", "faire", "dire", "voir", "savoir", "vouloir", "pouvoir"],
+      "items": [
+        { "id": "l8_1", "type": "input", "prompt": "To be", "answer": ["être", "etre"], "hints": ["Most important verb"] },
+        { "id": "l8_2", "type": "input", "prompt": "To have", "answer": ["avoir"], "hints": ["Essential possession"] },
+        { "id": "l8_3", "type": "input", "prompt": "To go", "answer": ["aller"], "hints": ["Movement verb"] },
+        { "id": "l8_4", "type": "input", "prompt": "To come", "answer": ["venir"], "hints": ["Approach movement"] },
+        { "id": "l8_5", "type": "input", "prompt": "To do/make", "answer": ["faire"], "hints": ["Action verb"] },
+        { "id": "l8_6", "type": "input", "prompt": "To say", "answer": ["dire"], "hints": ["Speech verb"] },
+        { "id": "l8_7", "type": "input", "prompt": "To see", "answer": ["voir"], "hints": ["Vision verb"] },
+        { "id": "l8_8", "type": "input", "prompt": "To know (facts)", "answer": ["savoir"], "hints": ["Knowledge of facts"] },
+        { "id": "l8_9", "type": "input", "prompt": "To want", "answer": ["vouloir"], "hints": ["Desire verb"] },
+        { "id": "l8_10", "type": "input", "prompt": "To be able", "answer": ["pouvoir"], "hints": ["Capability verb"] }
+      ]
+    },
+    {
+      "id": "lesson_9",
+      "title": "Lesson 9: Places & Directions",
+      "grammar": "Use prepositions with places: à (to/at), de (from), dans (in), sur (on), sous (under). 'Chez' means 'at someone's place'. Cities use 'à', countries vary by gender.",
+      "vocabulary": ["maison", "école", "magasin", "restaurant", "hôtel", "gare", "aéroport", "rue", "ville", "pays"],
+      "items": [
+        { "id": "l9_1", "type": "input", "prompt": "House", "answer": ["maison"], "hints": ["Where you live"] },
+        { "id": "l9_2", "type": "input", "prompt": "School", "answer": ["école", "ecole"], "hints": ["Place of learning"] },
+        { "id": "l9_3", "type": "input", "prompt": "Store", "answer": ["magasin"], "hints": ["Place to buy"] },
+        { "id": "l9_4", "type": "input", "prompt": "Restaurant", "answer": ["restaurant"], "hints": ["Place to eat"] },
+        { "id": "l9_5", "type": "input", "prompt": "Hotel", "answer": ["hôtel", "hotel"], "hints": ["Place to stay"] },
+        { "id": "l9_6", "type": "input", "prompt": "Train station", "answer": ["gare"], "hints": ["Transport hub"] },
+        { "id": "l9_7", "type": "input", "prompt": "Airport", "answer": ["aéroport", "aeroport"], "hints": ["Flight hub"] },
+        { "id": "l9_8", "type": "input", "prompt": "Street", "answer": ["rue"], "hints": ["Road in city"] },
+        { "id": "l9_9", "type": "input", "prompt": "City", "answer": ["ville"], "hints": ["Urban area"] },
+        { "id": "l9_10", "type": "input", "prompt": "Country", "answer": ["pays"], "hints": ["Nation"] }
+      ]
+    },
+    {
+      "id": "lesson_10",
+      "title": "Lesson 10: Practical Phrases",
+      "grammar": "Common expressions for daily situations. 'Il y a' means 'there is/are'. 'C'est' means 'it is/this is'. Use 'Où est...' for 'Where is...'",
+      "vocabulary": ["il y a", "c'est", "voici", "voilà", "combien", "beaucoup", "un peu", "trop", "assez", "très"],
+      "items": [
+        { "id": "l10_1", "type": "input", "prompt": "There is/are", "answer": ["il y a"], "hints": ["Existence phrase"] },
+        { "id": "l10_2", "type": "input", "prompt": "It is/This is", "answer": ["c'est", "c est"], "hints": ["Identification phrase"] },
+        { "id": "l10_3", "type": "input", "prompt": "Here is/are", "answer": ["voici"], "hints": ["Presentation (near)"] },
+        { "id": "l10_4", "type": "input", "prompt": "There is/are (pointing)", "answer": ["voilà", "voila"], "hints": ["Presentation (far)"] },
+        { "id": "l10_5", "type": "input", "prompt": "How much/many", "answer": ["combien"], "hints": ["Quantity question"] },
+        { "id": "l10_6", "type": "input", "prompt": "A lot/Much", "answer": ["beaucoup"], "hints": ["Large quantity"] },
+        { "id": "l10_7", "type": "input", "prompt": "A little", "answer": ["un peu"], "hints": ["Small quantity"] },
+        { "id": "l10_8", "type": "input", "prompt": "Too much", "answer": ["trop"], "hints": ["Excessive quantity"] },
+        { "id": "l10_9", "type": "input", "prompt": "Enough", "answer": ["assez"], "hints": ["Sufficient quantity"] },
+        { "id": "l10_10", "type": "input", "prompt": "Very", "answer": ["très", "tres"], "hints": ["Intensity adverb"] }
+      ]
+    }
+  ]
+}

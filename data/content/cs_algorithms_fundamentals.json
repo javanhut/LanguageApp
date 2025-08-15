@@ -1,0 +1,309 @@
+{
+  "id": "cs_algorithms_fundamentals",
+  "title": "🧠 Computer Science: Algorithms - From Intuition to Mastery",
+  "track": "misc",
+  "description": "Build deep understanding of algorithms through interactive exploration, from basic concepts to advanced analysis",
+  "courseType": "conceptual",
+  "difficultyLevels": ["beginner", "intermediate", "advanced", "expert"],
+  "chapters": [
+    {
+      "id": "chapter_1_introduction",
+      "title": "Chapter 1: What Are Algorithms?",
+      "description": "Discover what algorithms are, why they matter, and how they power everything around you",
+      "significance": "Algorithms are step-by-step instructions that solve problems. They're everywhere - from GPS navigation finding the shortest route, to search engines finding relevant results, to social media deciding what posts you see. Understanding algorithms helps you think systematically about problem-solving and builds the foundation for all of computer science.",
+      "realWorldApplications": [
+        "GPS navigation systems use algorithms to find optimal routes",
+        "Search engines use algorithms to rank and retrieve relevant results",
+        "Recommendation systems (Netflix, Spotify) use algorithms to suggest content",
+        "Encryption algorithms protect your online banking and messages",
+        "Compression algorithms make files smaller for faster downloads"
+      ],
+      "lessons": [
+        {
+          "id": "lesson_1_1",
+          "title": "Understanding Algorithms Through Everyday Examples",
+          "type": "conceptual_introduction",
+          "explanation": "Let's start with something familiar: making a peanut butter sandwich. This is actually an algorithm! You follow specific steps in order to achieve a goal. In computer science, an algorithm is just a precise set of instructions to solve a problem or complete a task.",
+          "interactive_examples": [
+            {
+              "type": "step_builder",
+              "prompt": "Let's build an algorithm together! Put these steps for making a sandwich in the right order:",
+              "steps": [
+                "Get two slices of bread",
+                "Open the peanut butter jar",
+                "Spread peanut butter on one slice",
+                "Spread jelly on the other slice",
+                "Put the slices together",
+                "Close the jars",
+                "Clean the knife"
+              ],
+              "correctOrder": [1, 2, 3, 4, 5, 6, 7],
+              "explanation": "Notice how the ORDER matters! You can't spread peanut butter before opening the jar. This is a key property of algorithms - they must be executed in the correct sequence."
+            }
+          ],
+          "concepts": [
+            {
+              "name": "Algorithm Definition",
+              "explanation": "A finite sequence of well-defined instructions to solve a problem or perform a task",
+              "analogy": "Like a recipe in cooking or directions to a destination"
+            },
+            {
+              "name": "Input and Output",
+              "explanation": "Algorithms take input (ingredients, starting location) and produce output (sandwich, directions)",
+              "example": "Input: hungry person + ingredients → Algorithm: sandwich-making steps → Output: sandwich"
+            }
+          ],
+          "progress_check": {
+            "type": "understanding_check",
+            "question": "Which of these is NOT an algorithm?",
+            "options": [
+              "Recipe for baking cookies",
+              "Instructions for assembling IKEA furniture", 
+              "A random list of words",
+              "Steps to solve a math equation"
+            ],
+            "correct_answer": "A random list of words",
+            "explanation": "Algorithms must have a clear purpose and logical sequence of steps. A random list of words doesn't solve any problem or achieve any goal."
+          }
+        },
+        {
+          "id": "lesson_1_2", 
+          "title": "Algorithm Properties: What Makes a Good Algorithm?",
+          "type": "interactive_exploration",
+          "explanation": "Not all algorithms are created equal! Some are fast, some are slow, some use lots of memory, others are memory-efficient. Let's explore the key properties that make algorithms useful.",
+          "interactive_examples": [
+            {
+              "type": "algorithm_comparison",
+              "scenario": "Finding your friend in a crowded stadium",
+              "algorithms": [
+                {
+                  "name": "Random Search",
+                  "steps": "Walk randomly around the stadium looking for your friend",
+                  "pros": ["Simple to understand"],
+                  "cons": ["Might never find them", "Very slow", "Wastes energy"],
+                  "efficiency": "Very poor"
+                },
+                {
+                  "name": "Systematic Search", 
+                  "steps": "Start at row 1, check every seat, then row 2, etc.",
+                  "pros": ["Guaranteed to find them", "Won't miss anyone"],
+                  "cons": ["Could take a very long time", "Boring"],
+                  "efficiency": "Slow but reliable"
+                },
+                {
+                  "name": "Divide and Conquer",
+                  "steps": "Text your friend for their section, then search systematically in that area",
+                  "pros": ["Much faster", "Uses additional information", "Efficient"],
+                  "cons": ["Requires friend to respond"],
+                  "efficiency": "Very good"
+                }
+              ],
+              "question": "Which algorithm would you choose and why?"
+            }
+          ],
+          "concepts": [
+            {
+              "name": "Correctness",
+              "explanation": "Does the algorithm solve the problem correctly?",
+              "example": "A navigation algorithm that sometimes gives wrong directions is not correct"
+            },
+            {
+              "name": "Efficiency", 
+              "explanation": "How fast does it run? How much memory does it use?",
+              "example": "One sorting algorithm might sort 1000 numbers in 1 second, another might take 10 seconds"
+            },
+            {
+              "name": "Clarity",
+              "explanation": "Is the algorithm easy to understand and implement?",
+              "example": "Simple algorithms are easier to debug and modify"
+            }
+          ],
+          "hands_on_activity": {
+            "type": "algorithm_design",
+            "prompt": "Design an algorithm to find the tallest person in a group of 100 people. Consider different approaches and their trade-offs.",
+            "guided_questions": [
+              "What information do you need?",
+              "What steps would you follow?", 
+              "How would you track the tallest person so far?",
+              "How do you know when you're done?"
+            ],
+            "sample_solution": {
+              "steps": [
+                "Start with the first person as 'tallest so far'",
+                "For each remaining person:",
+                "  If they're taller than 'tallest so far', update 'tallest so far'",
+                "When you've checked everyone, 'tallest so far' is the answer"
+              ],
+              "explanation": "This is actually a fundamental algorithmic pattern called 'find maximum' - you'll see it everywhere!"
+            }
+          }
+        },
+        {
+          "id": "lesson_1_3",
+          "title": "Your First Programming Algorithm: Finding the Maximum",
+          "type": "guided_coding",
+          "explanation": "Now let's take that 'find tallest person' idea and turn it into actual code. Don't worry if you're new to programming - we'll build it step by step!",
+          "progressive_coding": {
+            "language": "python",
+            "stages": [
+              {
+                "stage": 1,
+                "title": "The Basic Idea",
+                "code_template": "# Let's find the largest number in a list\nnumbers = [3, 7, 2, 9, 5]\n\n# Start with the first number as our 'largest so far'\nlargest = numbers[0]\n\nprint(f'Starting with: {largest}')",
+                "explanation": "We begin by assuming the first number is the largest. This gives us a starting point for comparison."
+              },
+              {
+                "stage": 2,
+                "title": "Adding the Loop",
+                "code_template": "numbers = [3, 7, 2, 9, 5]\nlargest = numbers[0]\n\n# Check each remaining number\nfor number in numbers[1:]:  # Start from the second number\n    print(f'Checking {number} vs current largest {largest}')\n    # TODO: Add comparison logic here\n    \nprint(f'Final largest: {largest}')",
+                "explanation": "We loop through each number after the first one. For each number, we'll compare it to our current largest."
+              },
+              {
+                "stage": 3,
+                "title": "Complete Algorithm",
+                "code_template": "numbers = [3, 7, 2, 9, 5]\nlargest = numbers[0]\n\nfor number in numbers[1:]:\n    if number > largest:\n        print(f'{number} is larger than {largest}, updating!')\n        largest = number\n    else:\n        print(f'{number} is not larger than {largest}, keeping {largest}')\n        \nprint(f'The largest number is: {largest}')",
+                "explanation": "Now we have a complete algorithm! If the current number is larger than our 'largest so far', we update it. Otherwise, we keep the old value."
+              }
+            ],
+            "interactive_execution": {
+              "trace_through": true,
+              "step_by_step": true,
+              "variable_tracking": ["largest", "number"],
+              "allow_modification": true
+            }
+          },
+          "conceptual_connection": {
+            "title": "Why This Matters",
+            "points": [
+              "This 'find maximum' pattern appears everywhere in computer science",
+              "It's the foundation for more complex algorithms like sorting",
+              "Understanding how to track and update a 'best so far' is crucial",
+              "The same logic works for finding minimum, best route, highest score, etc."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "chapter_2_efficiency",
+      "title": "Chapter 2: Why Speed Matters - Understanding Algorithm Efficiency",
+      "description": "Learn how to measure and compare algorithm performance, and why it matters in the real world",
+      "significance": "When Facebook loads your newsfeed or Google searches billions of web pages, efficiency isn't just nice to have - it's essential. A slow algorithm might work fine for 10 items, but completely fail with 10 million items. Understanding efficiency helps you choose the right tool for the job and predict how your solutions will scale.",
+      "realWorldApplications": [
+        "Google processes billions of searches per day - efficiency determines if results appear in milliseconds or minutes",
+        "Video streaming services need efficient compression algorithms to deliver HD video without buffering",
+        "High-frequency trading algorithms must make buy/sell decisions in microseconds",
+        "Machine learning algorithms processing massive datasets need efficiency to finish in reasonable time"
+      ],
+      "lessons": [
+        {
+          "id": "lesson_2_1",
+          "title": "The Great Algorithm Race: Visualizing Performance Differences", 
+          "type": "interactive_simulation",
+          "explanation": "Imagine two friends, Alice and Bob, competing to sort playing cards. Alice arranges them methodically, Bob just randomly shuffles hoping they'll end up sorted. Let's see what happens as we increase the number of cards!",
+          "simulation": {
+            "type": "algorithm_race",
+            "algorithms": [
+              {
+                "name": "Alice's Method (Selection Sort)",
+                "description": "Find the smallest card, put it first. Find the next smallest, put it second. Repeat.",
+                "visualization": "step_by_step",
+                "time_formula": "n²",
+                "color": "blue"
+              },
+              {
+                "name": "Bob's Method (Random Shuffle)",
+                "description": "Randomly shuffle the cards and check if they're sorted. If not, shuffle again.",
+                "visualization": "random_chaos",
+                "time_formula": "n! (factorial)",
+                "color": "red"
+              }
+            ],
+            "test_sizes": [5, 10, 20, 50],
+            "interactive_controls": {
+              "speed": true,
+              "step_through": true,
+              "compare_times": true
+            }
+          },
+          "observations": [
+            "With 5 cards, both methods work reasonably well",
+            "With 10 cards, Alice is clearly faster",
+            "With 20 cards, Bob might not finish in your lifetime!",
+            "With 50 cards, Bob's method becomes completely impractical"
+          ],
+          "key_insight": "The difference between algorithms becomes dramatic as the input size grows. This is why we need to understand efficiency!"
+        },
+        {
+          "id": "lesson_2_2",
+          "title": "Big-O Notation: The Universal Language of Efficiency",
+          "type": "concept_building",
+          "explanation": "Big-O notation is how computer scientists communicate about efficiency. Instead of saying 'this algorithm takes 347 milliseconds on my laptop', we say 'this algorithm is O(n log n)' - which tells us how it behaves as the input grows, regardless of the specific computer.",
+          "intuitive_introduction": {
+            "analogy": "Reading Books",
+            "scenarios": [
+              {
+                "task": "Find a specific word in a book",
+                "method": "Read every page from start to finish",
+                "time": "Proportional to number of pages (n)",
+                "big_o": "O(n)",
+                "example": "100 pages = 100 minutes, 200 pages = 200 minutes"
+              },
+              {
+                "task": "Find a word in a dictionary",
+                "method": "Use alphabetical ordering to jump to the right section",
+                "time": "Proportional to log of number of pages",
+                "big_o": "O(log n)", 
+                "example": "1000 pages = ~10 lookups, 1 million pages = ~20 lookups"
+              },
+              {
+                "task": "Find all pairs of rhyming words",
+                "method": "Compare every word with every other word",
+                "time": "Proportional to number of words squared",
+                "big_o": "O(n²)",
+                "example": "100 words = 10,000 comparisons, 200 words = 40,000 comparisons"
+              }
+            ]
+          },
+          "interactive_graph": {
+            "type": "big_o_comparison",
+            "functions": ["O(1)", "O(log n)", "O(n)", "O(n log n)", "O(n²)", "O(2ⁿ)"],
+            "x_axis": "Input Size (n)",
+            "y_axis": "Time/Operations",
+            "interactive_slider": true,
+            "hover_explanations": true
+          },
+          "practical_examples": [
+            {
+              "operation": "Looking up a contact in your phone",
+              "complexity": "O(1)",
+              "why": "Direct access - doesn't matter if you have 10 or 10,000 contacts"
+            },
+            {
+              "operation": "Binary search in a phone book",
+              "complexity": "O(log n)",
+              "why": "Each guess eliminates half the remaining possibilities"
+            },
+            {
+              "operation": "Counting all your photos",
+              "complexity": "O(n)", 
+              "why": "Must look at each photo once"
+            },
+            {
+              "operation": "Checking all pairs of photos for duplicates",
+              "complexity": "O(n²)",
+              "why": "Compare each photo with every other photo"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "assessment_philosophy": "Understanding over memorization",
+  "assessment_types": {
+    "conceptual_check": "Test understanding of concepts through scenarios",
+    "application": "Apply concepts to new problems", 
+    "analysis": "Analyze and compare different approaches",
+    "design": "Create algorithms for given problems"
+  }
+}
