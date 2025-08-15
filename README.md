@@ -1,4 +1,4 @@
-LanguageApp — Gamified Learning for Spoken and Programming Languages
+Learning App — Gamified Learning.
 
 Overview
 - Single-node server with zero dependencies (Node http module)
