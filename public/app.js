@@ -559,6 +559,9 @@
 
   async function renderPortugueseCurriculum() {
     try {
+      // Clean up any existing curriculum containers first
+      closeCurriculum();
+      
       const curriculum = await api('/api/portuguese-curriculum');
       curriculumState.curriculum = curriculum;
       
