@@ -1,0 +1,553 @@
+{
+  "id": "german_level_1",
+  "title": "🇩🇪 German - Level 1: Foundation",
+  "track": "spoken",
+  "langFrom": "en",
+  "langTo": "de",
+  "description": "Complete beginner German - start here! Learn basic greetings, articles, and essential words. Master 8/10 new words per lesson to advance.",
+  "level": 1,
+  "totalLessons": 8,
+  "vocabularyGoal": 64,
+  "lessons": [
+    {
+      "id": "lesson_1",
+      "title": "Lesson 1: Basic Greetings and Politeness",
+      "newWords": ["hallo", "guten Tag", "guten Morgen", "guten Abend", "auf Wiedersehen", "danke", "bitte", "entschuldigung", "ja", "nein"],
+      "masteryRequired": 8,
+      "practicalGoal": "Greet people and respond politely in basic situations",
+      "grammar": "German greetings: 'guten' (good) + time of day. 'Guten Tag' = good day (general), 'Guten Morgen' = good morning. Always capitalize nouns in German.",
+      "items": [
+        { 
+          "id": "l1_1", 
+          "type": "input", 
+          "prompt": "Hello (casual)", 
+          "answer": ["hallo"], 
+          "newWord": "hallo", 
+          "explanation": "Hallo - casual hello greeting, works any time of day"
+        },
+        { 
+          "id": "l1_2", 
+          "type": "input", 
+          "prompt": "Good day (formal hello)", 
+          "answer": ["guten tag", "guten Tag"], 
+          "newWord": "guten Tag", 
+          "explanation": "Guten Tag - formal hello, literally 'good day', most common greeting"
+        },
+        { 
+          "id": "l1_3", 
+          "type": "input", 
+          "prompt": "Good morning", 
+          "answer": ["guten morgen", "guten Morgen"], 
+          "newWord": "guten Morgen", 
+          "explanation": "Guten Morgen - good morning greeting until around 10-11 AM"
+        },
+        { 
+          "id": "l1_4", 
+          "type": "input", 
+          "prompt": "Good evening", 
+          "answer": ["guten abend", "guten Abend"], 
+          "newWord": "guten Abend", 
+          "explanation": "Guten Abend - good evening greeting, used after 6 PM"
+        },
+        { 
+          "id": "l1_5", 
+          "type": "input", 
+          "prompt": "Goodbye", 
+          "answer": ["auf wiedersehen", "auf Wiedersehen"], 
+          "newWord": "auf Wiedersehen", 
+          "explanation": "Auf Wiedersehen - formal goodbye, literally 'until we see again'"
+        },
+        { 
+          "id": "l1_6", 
+          "type": "input", 
+          "prompt": "Thank you", 
+          "answer": ["danke"], 
+          "newWord": "danke", 
+          "explanation": "Danke - thank you (casual), short for 'danke schön'"
+        },
+        { 
+          "id": "l1_7", 
+          "type": "input", 
+          "prompt": "Please/You're welcome", 
+          "answer": ["bitte"], 
+          "newWord": "bitte", 
+          "explanation": "Bitte - please (when asking) or you're welcome (when responding)"
+        },
+        { 
+          "id": "l1_8", 
+          "type": "input", 
+          "prompt": "Excuse me/Sorry", 
+          "answer": ["entschuldigung"], 
+          "newWord": "entschuldigung", 
+          "explanation": "Entschuldigung - excuse me or sorry (formal)"
+        },
+        { 
+          "id": "l1_9", 
+          "type": "input", 
+          "prompt": "Yes", 
+          "answer": ["ja"], 
+          "newWord": "ja", 
+          "explanation": "Ja - yes"
+        },
+        { 
+          "id": "l1_10", 
+          "type": "input", 
+          "prompt": "No", 
+          "answer": ["nein"], 
+          "newWord": "nein", 
+          "explanation": "Nein - no"
+        }
+      ]
+    },
+    {
+      "id": "lesson_2",
+      "title": "Lesson 2: Articles and Basic Nouns",
+      "newWords": ["der", "die", "das", "ein", "eine", "Mann", "Frau", "Kind", "Haus", "Auto"],
+      "masteryRequired": 8,
+      "practicalGoal": "Use correct articles with basic nouns and understand gender system",
+      "grammar": "German has three genders: masculine (der), feminine (die), neuter (das). Indefinite articles: ein (masculine/neuter), eine (feminine). All nouns are capitalized.",
+      "items": [
+        { 
+          "id": "l2_1", 
+          "type": "input", 
+          "prompt": "The (masculine)", 
+          "answer": ["der"], 
+          "newWord": "der", 
+          "explanation": "Der - definite article for masculine nouns (der Mann = the man)"
+        },
+        { 
+          "id": "l2_2", 
+          "type": "input", 
+          "prompt": "The (feminine)", 
+          "answer": ["die"], 
+          "newWord": "die", 
+          "explanation": "Die - definite article for feminine nouns (die Frau = the woman)"
+        },
+        { 
+          "id": "l2_3", 
+          "type": "input", 
+          "prompt": "The (neuter)", 
+          "answer": ["das"], 
+          "newWord": "das", 
+          "explanation": "Das - definite article for neuter nouns (das Kind = the child)"
+        },
+        { 
+          "id": "l2_4", 
+          "type": "input", 
+          "prompt": "A/An (masculine/neuter)", 
+          "answer": ["ein"], 
+          "newWord": "ein", 
+          "explanation": "Ein - indefinite article for masculine and neuter nouns"
+        },
+        { 
+          "id": "l2_5", 
+          "type": "input", 
+          "prompt": "A/An (feminine)", 
+          "answer": ["eine"], 
+          "newWord": "eine", 
+          "explanation": "Eine - indefinite article for feminine nouns"
+        },
+        { 
+          "id": "l2_6", 
+          "type": "input", 
+          "prompt": "Man", 
+          "answer": ["mann", "Mann"], 
+          "newWord": "Mann", 
+          "explanation": "Der Mann - man (masculine noun)"
+        },
+        { 
+          "id": "l2_7", 
+          "type": "input", 
+          "prompt": "Woman", 
+          "answer": ["frau", "Frau"], 
+          "newWord": "Frau", 
+          "explanation": "Die Frau - woman (feminine noun)"
+        },
+        { 
+          "id": "l2_8", 
+          "type": "input", 
+          "prompt": "Child", 
+          "answer": ["kind", "Kind"], 
+          "newWord": "Kind", 
+          "explanation": "Das Kind - child (neuter noun)"
+        },
+        { 
+          "id": "l2_9", 
+          "type": "input", 
+          "prompt": "House", 
+          "answer": ["haus", "Haus"], 
+          "newWord": "Haus", 
+          "explanation": "Das Haus - house (neuter noun)"
+        },
+        { 
+          "id": "l2_10", 
+          "type": "input", 
+          "prompt": "Car", 
+          "answer": ["auto", "Auto"], 
+          "newWord": "Auto", 
+          "explanation": "Das Auto - car (neuter noun)"
+        }
+      ]
+    },
+    {
+      "id": "lesson_3",
+      "title": "Lesson 3: Colors and Adjectives",
+      "newWords": ["rot", "blau", "grün", "gelb", "schwarz", "weiß", "groß", "klein", "schön", "gut"],
+      "masteryRequired": 8,
+      "practicalGoal": "Describe objects using colors and basic adjectives",
+      "grammar": "German adjectives can change endings depending on case, gender, and article. Basic forms: rot (red), groß (big). Note: ß is 'sharp s', used after long vowels.",
+      "items": [
+        { 
+          "id": "l3_1", 
+          "type": "input", 
+          "prompt": "Red", 
+          "answer": ["rot"], 
+          "newWord": "rot", 
+          "explanation": "Rot - red (color adjective)"
+        },
+        { 
+          "id": "l3_2", 
+          "type": "input", 
+          "prompt": "Blue", 
+          "answer": ["blau"], 
+          "newWord": "blau", 
+          "explanation": "Blau - blue (color adjective)"
+        },
+        { 
+          "id": "l3_3", 
+          "type": "input", 
+          "prompt": "Green", 
+          "answer": ["grün", "gruen"], 
+          "newWord": "grün", 
+          "explanation": "Grün - green (color adjective), uses umlaut ü"
+        },
+        { 
+          "id": "l3_4", 
+          "type": "input", 
+          "prompt": "Yellow", 
+          "answer": ["gelb"], 
+          "newWord": "gelb", 
+          "explanation": "Gelb - yellow (color adjective)"
+        },
+        { 
+          "id": "l3_5", 
+          "type": "input", 
+          "prompt": "Black", 
+          "answer": ["schwarz"], 
+          "newWord": "schwarz", 
+          "explanation": "Schwarz - black (color adjective)"
+        },
+        { 
+          "id": "l3_6", 
+          "type": "input", 
+          "prompt": "White", 
+          "answer": ["weiß", "weiss"], 
+          "newWord": "weiß", 
+          "explanation": "Weiß - white (color adjective), uses ß (sharp s)"
+        },
+        { 
+          "id": "l3_7", 
+          "type": "input", 
+          "prompt": "Big/Large", 
+          "answer": ["groß", "gross"], 
+          "newWord": "groß", 
+          "explanation": "Groß - big/large (size adjective), uses ß"
+        },
+        { 
+          "id": "l3_8", 
+          "type": "input", 
+          "prompt": "Small", 
+          "answer": ["klein"], 
+          "newWord": "klein", 
+          "explanation": "Klein - small (size adjective)"
+        },
+        { 
+          "id": "l3_9", 
+          "type": "input", 
+          "prompt": "Beautiful", 
+          "answer": ["schön", "schoen"], 
+          "newWord": "schön", 
+          "explanation": "Schön - beautiful/nice (quality adjective), uses umlaut ö"
+        },
+        { 
+          "id": "l3_10", 
+          "type": "input", 
+          "prompt": "Good", 
+          "answer": ["gut"], 
+          "newWord": "gut", 
+          "explanation": "Gut - good (quality adjective)"
+        }
+      ]
+    },
+    {
+      "id": "lesson_4",
+      "title": "Lesson 4: Numbers 1-10",
+      "newWords": ["eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun", "zehn"],
+      "masteryRequired": 8,
+      "practicalGoal": "Count objects and express quantities 1-10",
+      "grammar": "German numbers 1-10: eins through zehn. Note: 'eins' becomes 'ein' before nouns. Numbers are not capitalized unless starting a sentence.",
+      "items": [
+        { 
+          "id": "l4_1", 
+          "type": "input", 
+          "prompt": "One", 
+          "answer": ["eins"], 
+          "newWord": "eins", 
+          "explanation": "Eins - one (becomes 'ein' before nouns)"
+        },
+        { 
+          "id": "l4_2", 
+          "type": "input", 
+          "prompt": "Two", 
+          "answer": ["zwei"], 
+          "newWord": "zwei", 
+          "explanation": "Zwei - two"
+        },
+        { 
+          "id": "l4_3", 
+          "type": "input", 
+          "prompt": "Three", 
+          "answer": ["drei"], 
+          "newWord": "drei", 
+          "explanation": "Drei - three"
+        },
+        { 
+          "id": "l4_4", 
+          "type": "input", 
+          "prompt": "Four", 
+          "answer": ["vier"], 
+          "newWord": "vier", 
+          "explanation": "Vier - four"
+        },
+        { 
+          "id": "l4_5", 
+          "type": "input", 
+          "prompt": "Five", 
+          "answer": ["fünf", "fuenf"], 
+          "newWord": "fünf", 
+          "explanation": "Fünf - five, uses umlaut ü"
+        },
+        { 
+          "id": "l4_6", 
+          "type": "input", 
+          "prompt": "Six", 
+          "answer": ["sechs"], 
+          "newWord": "sechs", 
+          "explanation": "Sechs - six"
+        },
+        { 
+          "id": "l4_7", 
+          "type": "input", 
+          "prompt": "Seven", 
+          "answer": ["sieben"], 
+          "newWord": "sieben", 
+          "explanation": "Sieben - seven"
+        },
+        { 
+          "id": "l4_8", 
+          "type": "input", 
+          "prompt": "Eight", 
+          "answer": ["acht"], 
+          "newWord": "acht", 
+          "explanation": "Acht - eight"
+        },
+        { 
+          "id": "l4_9", 
+          "type": "input", 
+          "prompt": "Nine", 
+          "answer": ["neun"], 
+          "newWord": "neun", 
+          "explanation": "Neun - nine"
+        },
+        { 
+          "id": "l4_10", 
+          "type": "input", 
+          "prompt": "Ten", 
+          "answer": ["zehn"], 
+          "newWord": "zehn", 
+          "explanation": "Zehn - ten"
+        }
+      ]
+    },
+    {
+      "id": "lesson_5",
+      "title": "Lesson 5: Common Verbs",
+      "newWords": ["sein", "haben", "gehen", "kommen", "sprechen", "verstehen", "machen", "können", "wollen", "müssen"],
+      "masteryRequired": 8,
+      "practicalGoal": "Use basic verbs in simple sentences",
+      "grammar": "German verbs change endings based on who does the action. Key verbs: sein (to be), haben (to have), gehen (to go). Modal verbs: können (can), wollen (want), müssen (must).",
+      "items": [
+        { 
+          "id": "l5_1", 
+          "type": "input", 
+          "prompt": "To be", 
+          "answer": ["sein"], 
+          "newWord": "sein", 
+          "explanation": "Sein - to be (most important verb: ich bin, du bist, er ist)"
+        },
+        { 
+          "id": "l5_2", 
+          "type": "input", 
+          "prompt": "To have", 
+          "answer": ["haben"], 
+          "newWord": "haben", 
+          "explanation": "Haben - to have (ich habe, du hast, er hat)"
+        },
+        { 
+          "id": "l5_3", 
+          "type": "input", 
+          "prompt": "To go", 
+          "answer": ["gehen"], 
+          "newWord": "gehen", 
+          "explanation": "Gehen - to go (ich gehe, du gehst, er geht)"
+        },
+        { 
+          "id": "l5_4", 
+          "type": "input", 
+          "prompt": "To come", 
+          "answer": ["kommen"], 
+          "newWord": "kommen", 
+          "explanation": "Kommen - to come (ich komme, du kommst, er kommt)"
+        },
+        { 
+          "id": "l5_5", 
+          "type": "input", 
+          "prompt": "To speak", 
+          "answer": ["sprechen"], 
+          "newWord": "sprechen", 
+          "explanation": "Sprechen - to speak (ich spreche, du sprichst, er spricht)"
+        },
+        { 
+          "id": "l5_6", 
+          "type": "input", 
+          "prompt": "To understand", 
+          "answer": ["verstehen"], 
+          "newWord": "verstehen", 
+          "explanation": "Verstehen - to understand (ich verstehe, du verstehst, er versteht)"
+        },
+        { 
+          "id": "l5_7", 
+          "type": "input", 
+          "prompt": "To make/do", 
+          "answer": ["machen"], 
+          "newWord": "machen", 
+          "explanation": "Machen - to make/do (ich mache, du machst, er macht)"
+        },
+        { 
+          "id": "l5_8", 
+          "type": "input", 
+          "prompt": "Can/To be able to", 
+          "answer": ["können", "koennen"], 
+          "newWord": "können", 
+          "explanation": "Können - can/to be able to (modal verb), uses umlaut ö"
+        },
+        { 
+          "id": "l5_9", 
+          "type": "input", 
+          "prompt": "To want", 
+          "answer": ["wollen"], 
+          "newWord": "wollen", 
+          "explanation": "Wollen - to want (modal verb: ich will, du willst, er will)"
+        },
+        { 
+          "id": "l5_10", 
+          "type": "input", 
+          "prompt": "Must/To have to", 
+          "answer": ["müssen", "muessen"], 
+          "newWord": "müssen", 
+          "explanation": "Müssen - must/to have to (modal verb), uses umlaut ü"
+        }
+      ]
+    },
+    {
+      "id": "lesson_6",
+      "title": "Lesson 6: Family and People",
+      "newWords": ["Familie", "Vater", "Mutter", "Sohn", "Tochter", "Bruder", "Schwester", "Großvater", "Großmutter", "Freund"],
+      "masteryRequired": 8,
+      "practicalGoal": "Talk about family members and relationships",
+      "grammar": "Family words: die Familie (family). Note gender: der Vater (father), die Mutter (mother). Compound words: Groß- (grand) + Vater/Mutter.",
+      "items": [
+        { 
+          "id": "l6_1", 
+          "type": "input", 
+          "prompt": "Family", 
+          "answer": ["familie", "Familie"], 
+          "newWord": "Familie", 
+          "explanation": "Die Familie - family (feminine noun)"
+        },
+        { 
+          "id": "l6_2", 
+          "type": "input", 
+          "prompt": "Father", 
+          "answer": ["vater", "Vater"], 
+          "newWord": "Vater", 
+          "explanation": "Der Vater - father (masculine noun)"
+        },
+        { 
+          "id": "l6_3", 
+          "type": "input", 
+          "prompt": "Mother", 
+          "answer": ["mutter", "Mutter"], 
+          "newWord": "Mutter", 
+          "explanation": "Die Mutter - mother (feminine noun)"
+        },
+        { 
+          "id": "l6_4", 
+          "type": "input", 
+          "prompt": "Son", 
+          "answer": ["sohn", "Sohn"], 
+          "newWord": "Sohn", 
+          "explanation": "Der Sohn - son (masculine noun)"
+        },
+        { 
+          "id": "l6_5", 
+          "type": "input", 
+          "prompt": "Daughter", 
+          "answer": ["tochter", "Tochter"], 
+          "newWord": "Tochter", 
+          "explanation": "Die Tochter - daughter (feminine noun)"
+        },
+        { 
+          "id": "l6_6", 
+          "type": "input", 
+          "prompt": "Brother", 
+          "answer": ["bruder", "Bruder"], 
+          "newWord": "Bruder", 
+          "explanation": "Der Bruder - brother (masculine noun)"
+        },
+        { 
+          "id": "l6_7", 
+          "type": "input", 
+          "prompt": "Sister", 
+          "answer": ["schwester", "Schwester"], 
+          "newWord": "Schwester", 
+          "explanation": "Die Schwester - sister (feminine noun)"
+        },
+        { 
+          "id": "l6_8", 
+          "type": "input", 
+          "prompt": "Grandfather", 
+          "answer": ["großvater", "grossvater", "Großvater"], 
+          "newWord": "Großvater", 
+          "explanation": "Der Großvater - grandfather, compound: groß (big) + Vater"
+        },
+        { 
+          "id": "l6_9", 
+          "type": "input", 
+          "prompt": "Grandmother", 
+          "answer": ["großmutter", "grossmutter", "Großmutter"], 
+          "newWord": "Großmutter", 
+          "explanation": "Die Großmutter - grandmother, compound: groß (big) + Mutter"
+        },
+        { 
+          "id": "l6_10", 
+          "type": "input", 
+          "prompt": "Friend", 
+          "answer": ["freund", "Freund"], 
+          "newWord": "Freund", 
+          "explanation": "Der Freund - friend (masculine), die Freundin (feminine friend)"
+        }
+      ]
+    }
+  ]
+}

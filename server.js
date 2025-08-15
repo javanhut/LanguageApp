@@ -132,6 +132,12 @@ const defaultState = {
 
 let state = readJson(STATE_FILE, defaultState);
 
+// Create state.json from template if it doesn't exist (first run privacy protection)
+if (!fs.existsSync(STATE_FILE)) {
+  console.log('ℹ️ Creating user data file from template (first run)');
+  writeJson(STATE_FILE, defaultState);
+}
+
 function saveState() {
   writeJson(STATE_FILE, state);
 }

@@ -1,0 +1,613 @@
+{
+  "id": "japanese_hiragana_expanded",
+  "title": "🇯🇵 Japanese - Hiragana Building Blocks",
+  "track": "spoken",
+  "langFrom": "en",
+  "langTo": "ja",
+  "description": "Learn Japanese by mastering individual hiragana characters and building up to complete words. Each word is broken down into its constituent characters (e.g., ko-ni-chi-wa → こ-ん-に-ち-は)",
+  "level": 1,
+  "totalLessons": 8,
+  "vocabularyGoal": 64,
+  "lessons": [
+    {
+      "id": "lesson_1",
+      "title": "Lesson 1: Basic Hiragana - A, I, U, E, O Sounds",
+      "newWords": ["あ", "い", "う", "え", "お", "か", "き", "く", "け", "こ"],
+      "masteryRequired": 8,
+      "practicalGoal": "Master the five basic vowels and KA-row hiragana",
+      "grammar": "Hiragana is the basic Japanese syllabary. Every sound has its own character. あ (a), い (i), う (u), え (e), お (o) are the five basic vowels.",
+      "items": [
+        { 
+          "id": "l1_1", 
+          "type": "input", 
+          "prompt": "あ (a vowel sound)", 
+          "answer": ["あ", "a"], 
+          "newWord": "あ", 
+          "scripts": {
+            "hiragana": "あ",
+            "romanji": "a",
+            "breakdown": ["あ"],
+            "meaning": "a vowel"
+          },
+          "explanation": "あ (a) - the first and most basic hiragana character"
+        },
+        { 
+          "id": "l1_2", 
+          "type": "input", 
+          "prompt": "い (i vowel sound)", 
+          "answer": ["い", "i"], 
+          "newWord": "い", 
+          "scripts": {
+            "hiragana": "い",
+            "romanji": "i",
+            "breakdown": ["い"],
+            "meaning": "i vowel"
+          },
+          "explanation": "い (i) - the second basic hiragana vowel"
+        },
+        { 
+          "id": "l1_3", 
+          "type": "input", 
+          "prompt": "う (u vowel sound)", 
+          "answer": ["う", "u"], 
+          "newWord": "う", 
+          "scripts": {
+            "hiragana": "う",
+            "romanji": "u",
+            "breakdown": ["う"],
+            "meaning": "u vowel"
+          },
+          "explanation": "う (u) - the third basic hiragana vowel"
+        },
+        { 
+          "id": "l1_4", 
+          "type": "input", 
+          "prompt": "え (e vowel sound)", 
+          "answer": ["え", "e"], 
+          "newWord": "え", 
+          "scripts": {
+            "hiragana": "え",
+            "romanji": "e",
+            "breakdown": ["え"],
+            "meaning": "e vowel"
+          },
+          "explanation": "え (e) - the fourth basic hiragana vowel"
+        },
+        { 
+          "id": "l1_5", 
+          "type": "input", 
+          "prompt": "お (o vowel sound)", 
+          "answer": ["お", "o"], 
+          "newWord": "お", 
+          "scripts": {
+            "hiragana": "お",
+            "romanji": "o",
+            "breakdown": ["お"],
+            "meaning": "o vowel"
+          },
+          "explanation": "お (o) - the fifth basic hiragana vowel"
+        },
+        { 
+          "id": "l1_6", 
+          "type": "input", 
+          "prompt": "か (ka sound)", 
+          "answer": ["か", "ka"], 
+          "newWord": "か", 
+          "scripts": {
+            "hiragana": "か",
+            "romanji": "ka",
+            "breakdown": ["か"],
+            "meaning": "ka sound"
+          },
+          "explanation": "か (ka) - K + A vowel combination"
+        },
+        { 
+          "id": "l1_7", 
+          "type": "input", 
+          "prompt": "き (ki sound)", 
+          "answer": ["き", "ki"], 
+          "newWord": "き", 
+          "scripts": {
+            "hiragana": "き",
+            "romanji": "ki",
+            "breakdown": ["き"],
+            "meaning": "ki sound"
+          },
+          "explanation": "き (ki) - K + I vowel combination"
+        },
+        { 
+          "id": "l1_8", 
+          "type": "input", 
+          "prompt": "く (ku sound)", 
+          "answer": ["く", "ku"], 
+          "newWord": "く", 
+          "scripts": {
+            "hiragana": "く",
+            "romanji": "ku",
+            "breakdown": ["く"],
+            "meaning": "ku sound"
+          },
+          "explanation": "く (ku) - K + U vowel combination"
+        },
+        { 
+          "id": "l1_9", 
+          "type": "input", 
+          "prompt": "け (ke sound)", 
+          "answer": ["け", "ke"], 
+          "newWord": "け", 
+          "scripts": {
+            "hiragana": "け",
+            "romanji": "ke",
+            "breakdown": ["け"],
+            "meaning": "ke sound"
+          },
+          "explanation": "け (ke) - K + E vowel combination"
+        },
+        { 
+          "id": "l1_10", 
+          "type": "input", 
+          "prompt": "こ (ko sound)", 
+          "answer": ["こ", "ko"], 
+          "newWord": "こ", 
+          "scripts": {
+            "hiragana": "こ",
+            "romanji": "ko",
+            "breakdown": ["こ"],
+            "meaning": "ko sound"
+          },
+          "explanation": "こ (ko) - K + O vowel combination"
+        }
+      ]
+    },
+    {
+      "id": "lesson_2",
+      "title": "Lesson 2: Building Hello - こんにちは Character by Character",
+      "newWords": ["ん", "に", "ち", "は", "こんにちは", "ko-n", "ni-chi", "wa"],
+      "masteryRequired": 8,
+      "practicalGoal": "Break down and understand 'hello' character by character: こ-ん-に-ち-は",
+      "grammar": "こんにちは (konnichiwa) = hello. Breaking it down: こ (ko) + ん (n) + に (ni) + ち (chi) + は (wa). Note: は is read as 'wa' when used as a particle.",
+      "items": [
+        { 
+          "id": "l2_1", 
+          "type": "input", 
+          "prompt": "ん (n sound)", 
+          "answer": ["ん", "n"], 
+          "newWord": "ん", 
+          "scripts": {
+            "hiragana": "ん",
+            "romanji": "n",
+            "breakdown": ["ん"],
+            "meaning": "n sound (nasal)"
+          },
+          "explanation": "ん (n) - the only standalone consonant in hiragana"
+        },
+        { 
+          "id": "l2_2", 
+          "type": "input", 
+          "prompt": "に (ni sound)", 
+          "answer": ["に", "ni"], 
+          "newWord": "に", 
+          "scripts": {
+            "hiragana": "に",
+            "romanji": "ni",
+            "breakdown": ["に"],
+            "meaning": "ni sound"
+          },
+          "explanation": "に (ni) - N + I vowel combination"
+        },
+        { 
+          "id": "l2_3", 
+          "type": "input", 
+          "prompt": "ち (chi sound)", 
+          "answer": ["ち", "chi"], 
+          "newWord": "ち", 
+          "scripts": {
+            "hiragana": "ち",
+            "romanji": "chi",
+            "breakdown": ["ち"],
+            "meaning": "chi sound"
+          },
+          "explanation": "ち (chi) - CH + I combination"
+        },
+        { 
+          "id": "l2_4", 
+          "type": "input", 
+          "prompt": "は (ha sound, but read as 'wa' in hello)", 
+          "answer": ["は", "ha", "wa"], 
+          "newWord": "は", 
+          "scripts": {
+            "hiragana": "は",
+            "romanji": "ha/wa",
+            "breakdown": ["は"],
+            "meaning": "ha sound (wa when particle)"
+          },
+          "explanation": "は (ha) - usually 'ha' but read as 'wa' when used as a particle"
+        },
+        { 
+          "id": "l2_5", 
+          "type": "input", 
+          "prompt": "First part: こん (ko-n)", 
+          "answer": ["こん", "kon"], 
+          "newWord": "こん", 
+          "scripts": {
+            "hiragana": "こん",
+            "romanji": "kon",
+            "breakdown": ["こ", "ん"],
+            "meaning": "ko + n"
+          },
+          "explanation": "こん (kon) = こ (ko) + ん (n) - first part of hello"
+        },
+        { 
+          "id": "l2_6", 
+          "type": "input", 
+          "prompt": "Middle part: にち (ni-chi)", 
+          "answer": ["にち", "nichi"], 
+          "newWord": "にち", 
+          "scripts": {
+            "hiragana": "にち",
+            "romanji": "nichi",
+            "breakdown": ["に", "ち"],
+            "meaning": "ni + chi"
+          },
+          "explanation": "にち (nichi) = に (ni) + ち (chi) - middle part of hello"
+        },
+        { 
+          "id": "l2_7", 
+          "type": "input", 
+          "prompt": "Final part: は (wa)", 
+          "answer": ["は", "wa"], 
+          "newWord": "は", 
+          "scripts": {
+            "hiragana": "は",
+            "romanji": "wa",
+            "breakdown": ["は"],
+            "meaning": "wa (particle)"
+          },
+          "explanation": "は (wa) - final particle in hello, written は but pronounced wa"
+        },
+        { 
+          "id": "l2_8", 
+          "type": "input", 
+          "prompt": "Complete word: Hello", 
+          "answer": ["こんにちは", "konnichiwa"], 
+          "newWord": "こんにちは", 
+          "scripts": {
+            "hiragana": "こんにちは",
+            "romanji": "konnichiwa",
+            "breakdown": ["こ", "ん", "に", "ち", "は"],
+            "meaning": "hello (afternoon greeting)"
+          },
+          "explanation": "こんにちは (konnichiwa) = こ (ko) + ん (n) + に (ni) + ち (chi) + は (wa) - hello"
+        },
+        { 
+          "id": "l2_9", 
+          "type": "input", 
+          "prompt": "Break down: ko-n-ni-chi-wa", 
+          "answer": ["こ-ん-に-ち-は", "ko-n-ni-chi-wa"], 
+          "newWord": "ko-n-ni-chi-wa", 
+          "scripts": {
+            "hiragana": "こ-ん-に-ち-は",
+            "romanji": "ko-n-ni-chi-wa",
+            "breakdown": ["こ", "ん", "に", "ち", "は"],
+            "meaning": "hello (broken down)"
+          },
+          "explanation": "Practice breaking down こんにちは into its 5 constituent characters"
+        },
+        { 
+          "id": "l2_10", 
+          "type": "input", 
+          "prompt": "Rebuild from parts: こ + ん + に + ち + は = ?", 
+          "answer": ["こんにちは", "konnichiwa"], 
+          "newWord": "こんにちは", 
+          "scripts": {
+            "hiragana": "こんにちは",
+            "romanji": "konnichiwa",
+            "breakdown": ["こ", "ん", "に", "ち", "は"],
+            "meaning": "hello (rebuilt)"
+          },
+          "explanation": "Building こんにちは from its parts: こ + ん + に + ち + は"
+        }
+      ]
+    },
+    {
+      "id": "lesson_3",
+      "title": "Lesson 3: S-row Hiragana and Good Evening Breakdown",
+      "newWords": ["さ", "し", "す", "せ", "そ", "ば", "こんばんは", "ko-n-ba-n-wa"],
+      "masteryRequired": 8,
+      "practicalGoal": "Learn S-row hiragana and break down こんばんは (good evening)",
+      "grammar": "S-row: さ (sa), し (shi), す (su), せ (se), そ (so). こんばんは (konbanwa) = good evening, broken down as: こ-ん-ば-ん-は",
+      "items": [
+        { 
+          "id": "l3_1", 
+          "type": "input", 
+          "prompt": "さ (sa sound)", 
+          "answer": ["さ", "sa"], 
+          "newWord": "さ", 
+          "scripts": {
+            "hiragana": "さ",
+            "romanji": "sa",
+            "breakdown": ["さ"],
+            "meaning": "sa sound"
+          },
+          "explanation": "さ (sa) - S + A vowel combination"
+        },
+        { 
+          "id": "l3_2", 
+          "type": "input", 
+          "prompt": "し (shi sound)", 
+          "answer": ["し", "shi"], 
+          "newWord": "し", 
+          "scripts": {
+            "hiragana": "し",
+            "romanji": "shi",
+            "breakdown": ["し"],
+            "meaning": "shi sound"
+          },
+          "explanation": "し (shi) - S + I vowel combination (not 'si')"
+        },
+        { 
+          "id": "l3_3", 
+          "type": "input", 
+          "prompt": "す (su sound)", 
+          "answer": ["す", "su"], 
+          "newWord": "す", 
+          "scripts": {
+            "hiragana": "す",
+            "romanji": "su",
+            "breakdown": ["す"],
+            "meaning": "su sound"
+          },
+          "explanation": "す (su) - S + U vowel combination"
+        },
+        { 
+          "id": "l3_4", 
+          "type": "input", 
+          "prompt": "せ (se sound)", 
+          "answer": ["せ", "se"], 
+          "newWord": "せ", 
+          "scripts": {
+            "hiragana": "せ",
+            "romanji": "se",
+            "breakdown": ["せ"],
+            "meaning": "se sound"
+          },
+          "explanation": "せ (se) - S + E vowel combination"
+        },
+        { 
+          "id": "l3_5", 
+          "type": "input", 
+          "prompt": "そ (so sound)", 
+          "answer": ["そ", "so"], 
+          "newWord": "そ", 
+          "scripts": {
+            "hiragana": "そ",
+            "romanji": "so",
+            "breakdown": ["そ"],
+            "meaning": "so sound"
+          },
+          "explanation": "そ (so) - S + O vowel combination"
+        },
+        { 
+          "id": "l3_6", 
+          "type": "input", 
+          "prompt": "ば (ba sound)", 
+          "answer": ["ば", "ba"], 
+          "newWord": "ば", 
+          "scripts": {
+            "hiragana": "ば",
+            "romanji": "ba",
+            "breakdown": ["ば"],
+            "meaning": "ba sound"
+          },
+          "explanation": "ば (ba) - modified は with dakuten (゛) marks"
+        },
+        { 
+          "id": "l3_7", 
+          "type": "input", 
+          "prompt": "Middle part: んば (n-ba)", 
+          "answer": ["んば", "nba"], 
+          "newWord": "んば", 
+          "scripts": {
+            "hiragana": "んば",
+            "romanji": "nba",
+            "breakdown": ["ん", "ば"],
+            "meaning": "n + ba"
+          },
+          "explanation": "んば (nba) = ん (n) + ば (ba) - part of good evening"
+        },
+        { 
+          "id": "l3_8", 
+          "type": "input", 
+          "prompt": "Good evening", 
+          "answer": ["こんばんは", "konbanwa"], 
+          "newWord": "こんばんは", 
+          "scripts": {
+            "hiragana": "こんばんは",
+            "romanji": "konbanwa",
+            "breakdown": ["こ", "ん", "ば", "ん", "は"],
+            "meaning": "good evening"
+          },
+          "explanation": "こんばんは (konbanwa) = こ + ん + ば + ん + は - good evening"
+        },
+        { 
+          "id": "l3_9", 
+          "type": "input", 
+          "prompt": "Break down: ko-n-ba-n-wa", 
+          "answer": ["こ-ん-ば-ん-は", "ko-n-ba-n-wa"], 
+          "newWord": "ko-n-ba-n-wa", 
+          "scripts": {
+            "hiragana": "こ-ん-ば-ん-は",
+            "romanji": "ko-n-ba-n-wa",
+            "breakdown": ["こ", "ん", "ば", "ん", "は"],
+            "meaning": "good evening (broken down)"
+          },
+          "explanation": "Breaking down こんばんは into its 5 constituent characters"
+        },
+        { 
+          "id": "l3_10", 
+          "type": "input", 
+          "prompt": "Rebuild: こ + ん + ば + ん + は = ?", 
+          "answer": ["こんばんは", "konbanwa"], 
+          "newWord": "こんばんは", 
+          "scripts": {
+            "hiragana": "こんばんは",
+            "romanji": "konbanwa",
+            "breakdown": ["こ", "ん", "ば", "ん", "は"],
+            "meaning": "good evening (rebuilt)"
+          },
+          "explanation": "Building こんばんは from parts: こ + ん + ば + ん + は"
+        }
+      ]
+    },
+    {
+      "id": "lesson_4",
+      "title": "Lesson 4: T-row Hiragana and Thank You Breakdown",
+      "newWords": ["た", "て", "と", "が", "と", "う", "ありがとう", "a-ri-ga-to-u"],
+      "masteryRequired": 8,
+      "practicalGoal": "Learn T-row hiragana and break down ありがとう (thank you)",
+      "grammar": "T-row: た (ta), ち (chi), つ (tsu), て (te), と (to). ありがとう (arigatou) = thank you, broken down as: あ-り-が-と-う",
+      "items": [
+        { 
+          "id": "l4_1", 
+          "type": "input", 
+          "prompt": "た (ta sound)", 
+          "answer": ["た", "ta"], 
+          "newWord": "た", 
+          "scripts": {
+            "hiragana": "た",
+            "romanji": "ta",
+            "breakdown": ["た"],
+            "meaning": "ta sound"
+          },
+          "explanation": "た (ta) - T + A vowel combination"
+        },
+        { 
+          "id": "l4_2", 
+          "type": "input", 
+          "prompt": "て (te sound)", 
+          "answer": ["て", "te"], 
+          "newWord": "て", 
+          "scripts": {
+            "hiragana": "て",
+            "romanji": "te",
+            "breakdown": ["て"],
+            "meaning": "te sound"
+          },
+          "explanation": "て (te) - T + E vowel combination"
+        },
+        { 
+          "id": "l4_3", 
+          "type": "input", 
+          "prompt": "と (to sound)", 
+          "answer": ["と", "to"], 
+          "newWord": "と", 
+          "scripts": {
+            "hiragana": "と",
+            "romanji": "to",
+            "breakdown": ["と"],
+            "meaning": "to sound"
+          },
+          "explanation": "と (to) - T + O vowel combination"
+        },
+        { 
+          "id": "l4_4", 
+          "type": "input", 
+          "prompt": "り (ri sound)", 
+          "answer": ["り", "ri"], 
+          "newWord": "り", 
+          "scripts": {
+            "hiragana": "り",
+            "romanji": "ri",
+            "breakdown": ["り"],
+            "meaning": "ri sound"
+          },
+          "explanation": "り (ri) - R + I vowel combination"
+        },
+        { 
+          "id": "l4_5", 
+          "type": "input", 
+          "prompt": "が (ga sound)", 
+          "answer": ["が", "ga"], 
+          "newWord": "が", 
+          "scripts": {
+            "hiragana": "が",
+            "romanji": "ga",
+            "breakdown": ["が"],
+            "meaning": "ga sound"
+          },
+          "explanation": "が (ga) - modified か with dakuten (゛) marks"
+        },
+        { 
+          "id": "l4_6", 
+          "type": "input", 
+          "prompt": "First part: あり (a-ri)", 
+          "answer": ["あり", "ari"], 
+          "newWord": "あり", 
+          "scripts": {
+            "hiragana": "あり",
+            "romanji": "ari",
+            "breakdown": ["あ", "り"],
+            "meaning": "a + ri"
+          },
+          "explanation": "あり (ari) = あ (a) + り (ri) - first part of thank you"
+        },
+        { 
+          "id": "l4_7", 
+          "type": "input", 
+          "prompt": "Middle part: がと (ga-to)", 
+          "answer": ["がと", "gato"], 
+          "newWord": "がと", 
+          "scripts": {
+            "hiragana": "がと",
+            "romanji": "gato",
+            "breakdown": ["が", "と"],
+            "meaning": "ga + to"
+          },
+          "explanation": "がと (gato) = が (ga) + と (to) - middle part of thank you"
+        },
+        { 
+          "id": "l4_8", 
+          "type": "input", 
+          "prompt": "Thank you", 
+          "answer": ["ありがとう", "arigatou"], 
+          "newWord": "ありがとう", 
+          "scripts": {
+            "hiragana": "ありがとう",
+            "romanji": "arigatou",
+            "breakdown": ["あ", "り", "が", "と", "う"],
+            "meaning": "thank you"
+          },
+          "explanation": "ありがとう (arigatou) = あ + り + が + と + う - thank you"
+        },
+        { 
+          "id": "l4_9", 
+          "type": "input", 
+          "prompt": "Break down: a-ri-ga-to-u", 
+          "answer": ["あ-り-が-と-う", "a-ri-ga-to-u"], 
+          "newWord": "a-ri-ga-to-u", 
+          "scripts": {
+            "hiragana": "あ-り-が-と-う",
+            "romanji": "a-ri-ga-to-u",
+            "breakdown": ["あ", "り", "が", "と", "う"],
+            "meaning": "thank you (broken down)"
+          },
+          "explanation": "Breaking down ありがとう into its 5 constituent characters"
+        },
+        { 
+          "id": "l4_10", 
+          "type": "input", 
+          "prompt": "Rebuild: あ + り + が + と + う = ?", 
+          "answer": ["ありがとう", "arigatou"], 
+          "newWord": "ありがとう", 
+          "scripts": {
+            "hiragana": "ありがとう",
+            "romanji": "arigatou",
+            "breakdown": ["あ", "り", "が", "と", "う"],
+            "meaning": "thank you (rebuilt)"
+          },
+          "explanation": "Building ありがとう from parts: あ + り + が + と + う"
+        }
+      ]
+    }
+  ]
+}

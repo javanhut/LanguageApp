@@ -647,6 +647,24 @@
         { char: 'à', label: 'à' }, { char: 'è', label: 'è' }, { char: 'é', label: 'é' },
         { char: 'ì', label: 'ì' }, { char: 'ò', label: 'ò' }, { char: 'ù', label: 'ù' }
       ];
+    } else if (langTo === 'de' || subjectLower.includes('german')) {
+      return [
+        { char: 'ä', label: 'ä' }, { char: 'ö', label: 'ö' }, { char: 'ü', label: 'ü' },
+        { char: 'ß', label: 'ß' }, { char: 'Ä', label: 'Ä' }, { char: 'Ö', label: 'Ö' },
+        { char: 'Ü', label: 'Ü' }
+      ];
+    } else if (langTo === 'ja' || subjectLower.includes('japanese')) {
+      return [
+        { char: 'あ', label: 'あ' }, { char: 'い', label: 'い' }, { char: 'う', label: 'う' },
+        { char: 'え', label: 'え' }, { char: 'お', label: 'お' }, { char: 'か', label: 'か' },
+        { char: 'き', label: 'き' }, { char: 'く', label: 'く' }, { char: 'け', label: 'け' },
+        { char: 'こ', label: 'こ' }, { char: 'ん', label: 'ん' }, { char: 'に', label: 'に' },
+        { char: 'ち', label: 'ち' }, { char: 'は', label: 'は' }, { char: 'ば', label: 'ば' },
+        { char: 'さ', label: 'さ' }, { char: 'し', label: 'し' }, { char: 'す', label: 'す' },
+        { char: 'せ', label: 'せ' }, { char: 'そ', label: 'そ' }, { char: 'た', label: 'た' },
+        { char: 'て', label: 'て' }, { char: 'と', label: 'と' }, { char: 'り', label: 'り' },
+        { char: 'が', label: 'が' }
+      ];
     }
     return [];
   }
@@ -657,7 +675,8 @@
       'es': 'á ñ ¿ ▼',
       'fr': 'é è ç ▼',
       'de': 'ä ö ü ▼',
-      'it': 'à è ì ▼'
+      'it': 'à è ì ▼',
+      'ja': 'あ い う ▼'
     };
     return labels[langTo] || 'á ñ ç ▼';
   }

@@ -22,7 +22,8 @@ Project Structure
   - `styles.css`: modern, gamified look
   - `app.js`: client logic, API calls, practice loop
 - `data/content/`: Subject content packs (JSON)
-- `data/state.json`: Local persistence for user state and SRS
+- `data/state.json`: Local persistence for user state and SRS (⚠️ **NOT COMMITTED** - contains personal data)
+- `data/state.template.json`: Template for fresh installations
 
 Core Concepts
 - Tracks: `spoken`, `programming`, `misc` — clearly separated in UI and catalog
@@ -82,6 +83,13 @@ Future Extensions
 - Audio prompts and TTS for spoken languages (basic TTS included)
 - Leaderboards and quests
 - Adaptive difficulty and smart item selection across subjects
+
+Privacy & Data Protection
+- ✅ **User data is stored locally only** (never sent to external servers)
+- ✅ **Personal information protected** - `data/state.json` is gitignored
+- ✅ **No tracking or analytics** - complete privacy
+- ✅ **Dynamic name validation** - personalized learning without data exposure
+- Fresh install: copy `data/state.template.json` to `data/state.json`
 
 Troubleshooting
 - Port in use: set `PORT=4000 node server.js`
